@@ -1,0 +1,98 @@
+* New name: Abra
+	- still use com.paulnettle.stevie as the bundle id
+
+------------------------------------------------------------------------------------------------------------------------
+Functionality
+------------------------------------------------------------------------------------------------------------------------
+
+* General
+	- Should layout nicely in a way that best utilizes the iPhone and iPad form factors
+	- Decks should be viewed in multiple ways:
+		- single fan
+		- layered fans (multiple rows of fans on top of each other)
+		- overlapping grid
+
+* Devices
+	- Note that "known" devices are those that are technically connected
+		- So when the app presents a "connection" interface to the user, that interface really just makes
+		  a device active. All non-active devices are maintained but ignored.
+	- If no device connected:
+		- List of devices found
+			- Should include device IP and config information (version, etc.)
+		- Connect to specific device
+	- For a connected device:
+		- Disconnect from device
+		- Reboot
+		- Shutdown
+		- Update
+
+* Tricks
+	- The app should have the concept of a "trick"
+		- A trick is a series of steps, which can be triggered manually or by looking for conditions
+			- example:
+				- Wait until a card is found missing, store missing card
+				- Wait until a card is replaced
+				- Report position where missing card was placed in the deck
+	- Each trick has a custom view, specific to that trick
+	- Initial tricks:
+		- Raw/debug view (with NDO notification)
+			- With card filter
+				- A row of "A 2 3 4 5 6 7 8 9 10 J K Q" and another row of "Hearts, Clubs, Diamonds, Spades"
+				  you toggle each and all matching cards are highlighted.
+		- Report missing card(s)
+		- Report backwards card(s)
+
+* Config view
+	- This should not be ugly on iPads
+	  Perhaps a dual-column view?
+
+* Log view
+
+* Info view
+	- Same as what we have now with device vesions
+
+* Viewport view
+	- Should be visible for all tricks
+	- An optional overlay of some kind, perhaps?
+	- Focus mode
+	- Pause button
+		- Should this include the Freeze functionality?
+	- Note that if the viewport can be hidden how do we handle functions attached to the viewport (like pause)?
+
+* Actions/Options/Features:
+	- Deck format selection
+	- Focus
+	- Local Server
+	- Notify
+	- Freeze (if not part of the viewport's pause function)
+	- Enable error correction
+	- Connected state icon (green = connected, red = not connected)
+	- Debug info (fps, etc.)
+	- Scanning status (move closer, etc)
+	- Confidence (95%, etc)
+
+------------------------------------------------------------------------------------------------------------------------
+UI Inspiration
+------------------------------------------------------------------------------------------------------------------------
+
+* Sites
+	https://www.justinmind.com/blog/ios-app-design/
+	
+
+* UI Elements and navigation ideas
+	- Provide a light/dark themes and leverage iOS controls/colors to make this work well
+	- Tab bar for modes (Trick, Config, Log, Info)
+	- Slide out side-bar for options
+	- Slide-up panel for the viewport
+		- If we use this for the viewport, then this should shrink stuff above it and not obscure that stuff
+	- Animated controls
+
+------------------------------------------------------------------------------------------------------------------------
+Swift UI
+------------------------------------------------------------------------------------------------------------------------
+
+Apple videos:
+	Introduction to Swift UI
+	Data Essentials in Swift UI (covers Observable Object)
+
+

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:../decks.json">
+   </FileRef>
+   <FileRef
+      location = "group:../todo.txt">
+   </FileRef>
+   <FileRef
+      location = "group:../whisper.conf">
+   </FileRef>
+   <FileRef
+      location = "group:Abra/Abra.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CardBars/CardBars.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:mdscodes/mdscodes.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Minion/Minion.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:NativeTasks/NativeTasks.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Seer/Seer.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Steve/Steve.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:whisper/whisper.xcodeproj">
+   </FileRef>
+</Workspace>

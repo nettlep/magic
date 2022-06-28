@@ -1,0 +1,48 @@
+Steve
+
+	- If steve starts without a video file, it will not start properly when one is dragged into the UI
+
+Seer
+
+	- Cleanup the whole playLastFrame, replayLastFrame and replayTemporalState mess
+	- Move image rotation from the rPI to the app
+		- Note that the rpi would still need to know when the camera is upside down
+		  and rotate the search lines accordingly (and perhaps other stuff?)
+
+Whisper
+
+	- Software updates need to be hardened against bricking the device
+	- Add support for WiFi configuration
+
+Abra
+
+	- iOS bugs:
+		1. Pulling up a description view from a server config will cause the description view to appear, then immediately disappear
+			- This only happens on device, not in the simulator or previews
+		2. Seen on simulator: Select new deck format and the button text doesn't change until you tap it.
+		3. Seen once: The cards in the view were not displayed properly. They would have gaps and some cards would appear on top of
+			the wrong cards in the view. Perhaps a multithreading issue with the card list?
+	- App relies on its built-in decks.json file rather than the decks availble from the server
+	- Config tab needs a commit button to cause the device to write the config file for persistent settings
+
+When time permits
+
+	- Run thread sanitizer on all apps and get some good coverage
+	- Check out other sanitizers and diagnostic tools to help find bugs
+	- Find all places where we Thread.sleep on a boolean and use DispatchSemaphore
+		- https://medium.com/@roykronenfeld/semaphores-in-swift-e296ea80f860
+	- CardBars should have a way to show Code Definition validation errors/warnings (currently, they are only visible in the logs)
+	- Figure out how to get the iPad to see UV/black ink automatically (the camera can do this)
+	- Possibly a "binarize" method in EdgeDetection which rolls the min/max but checks sample and returns Bools rather than Edges?
+	- Thread it for more cores (trace marks is a good starting point) - or.. maybe not?
+	- Support for GPIO
+	- While Whisper is in daemon mode, do not scan while nothing is connected (and kill the camera to save battery)
+
+IMPROVEMENTS (when time permits)
+
+	- For development, the video decoder is too slow on rPI. Maybe check re-installing from scratch?
+	- It freaks out at 45-degrees, likely due to the use of perpendicular normals due to the integer math
+	- Decks do not detect well when rotated on the Y axis (this adds perspective to the marks)
+	- Missing cards are only inserted if one is missing (and not a chain of missing cards)
+	- Dealing with a rounded top card (somehow)
+	- The messages sent over wifi should be JSON rather than binary

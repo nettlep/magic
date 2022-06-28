@@ -1,0 +1,8 @@
+module C_Libav [system]
+{
+	header "cheader.h"
+	link "avcodec"
+	link "avutil"
+	link "avformat"
+	export *
+}

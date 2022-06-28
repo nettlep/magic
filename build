@@ -1,0 +1,413 @@
+#!/bin/bash
+
+# Constants
+LAST_BUILD_PLATFORM_FILE=".lastBuildPlatform"
+
+scriptName=$(basename $0)
+packagePath=.
+toolsPath=./tools
+outPath=./.out
+deviceAddress=${MAGIC_PROJECT_DEVICE_ADDRESS}
+serverAddress="${MAGIC_PROJECT_SERVER_ADDRESS}:${MAGIC_PROJECT_SERVER_PATH}"
+
+allProducts=(
+	"whisper"
+	"mdscodes"
+	"Minion"
+	"Seer"
+	"NativeTasks"
+)
+allVersionedModules=(
+	"Minion"
+	"Seer"
+	"whisper"
+)
+allTargets=(
+	"armv6"
+	"armv7"
+)
+allTargetDestinations=(
+	"/Library/Developer/Destinations/armhf-5.1.1-RELEASE_armv6.json"
+	"/Library/Developer/Destinations/armhf-5.1.1-RELEASE.json"
+)
+allTargetToolchains=(
+	"/Library/Developer/Toolchains/armhf-5.1.1-RELEASE_armv6.xctoolchain/usr/bin/"
+	"/Library/Developer/Toolchains/armhf-5.1.1-RELEASE.xctoolchain/usr/bin/"
+)
+allTargetOptions=(
+	"
+		-Xswiftc -DTARGET_ARCH_armv6 -Xswiftc -DPLATFORM_RPI -Xswiftc -DUSE_MMAL\
+		-Xcxx    -DTARGET_ARCH_armv6 -Xcxx    -DPLATFORM_RPI -Xcxx    -DUSE_MMAL\
+		\
+		-Xcxx -I/Library/Developer/SDKs/armhf-5.1.1-RELEASE_armv6.sdk/opt/vc/include\
+		-Xswiftc -I/Library/Developer/SDKs/armhf-5.1.1-RELEASE_armv6.sdk/opt/vc/include\
+        -Xswiftc -L/Library/Developer/SDKs/armhf-5.1.1-RELEASE_armv6.sdk/opt/vc/lib\
+        \
+		-Xlinker -lmmal_core\
+        -Xlinker -lmmal_util\
+        -Xlinker -lmmal_vc_client\
+        -Xlinker -lvcos\
+        -Xlinker -lbcm_host\
+        -Xlinker -lvcsm\
+	"
+	"
+		-Xswiftc -DTARGET_ARCH_armv7 -Xswiftc -DPLATFORM_RPI -Xswiftc -DUSE_MMAL\
+		-Xcxx    -DTARGET_ARCH_armv7 -Xcxx    -DPLATFORM_RPI -Xcxx    -DUSE_MMAL\
+		\
+		-Xcxx -I/Library/Developer/SDKs/armhf-5.1.1-RELEASE.sdk/opt/vc/include\
+		-Xswiftc -I/Library/Developer/SDKs/armhf-5.1.1-RELEASE.sdk/opt/vc/include\
+        -Xswiftc -L/Library/Developer/SDKs/armhf-5.1.1-RELEASE.sdk/opt/vc/lib\
+        \
+		-Xlinker -lmmal_core\
+        -Xlinker -lmmal_util\
+        -Xlinker -lmmal_vc_client\
+        -Xlinker -lvcos\
+        -Xlinker -lbcm_host\
+        -Xlinker -lvcsm\
+	"
+)
+
+# Options
+products=""
+targetPlatform=""
+targetToolchainDestination=""
+targetToolchainBinPath=""
+targetOptions=""
+
+# Flags
+clean=0
+build=0
+lint=0
+copyDevice=0
+copyServer=0
+skipVersion=0
+verbose=0
+
+configs=""
+hasDebugConfig=0
+hasReleaseConfig=0
+
+printUsage()
+{
+	echo "Usage: ${scriptName} [command] [configuration] [flag [flag]...] [cross-target [cross-target]...] [product [product]...]"
+	echo
+	echo "COMMANDS:"
+	echo "  build:         Perform a build. This is implied if no other command is specified."
+	echo "  clean:         Remove all build output and artifacts. If also building, this is done first."
+	echo "  lint:          Perform a lint step. If also building, this is done first."
+	echo
+	echo "CONFIGURATIONS:"
+	echo "  debug:         Generate a debug build for each product."
+	echo "  release:       Generate a release build for each product. This is implied if no other"
+	echo "                 configuration is specified."
+	echo
+	echo "ARGUMENTS:"
+	echo "  cross-target:  Specify cross-compilation target platform. By default, products are built"
+	echo "                 for the host platform. Must be one of: ${allTargets[@]}."
+	echo "  product:       Case-sensitive product name. If no products specified, all products are"
+	echo "                 built (you may optionally specify 'all' if you prefer.) A product must be"
+	echo "                 one or more of: ${allProducts[@]}"
+	echo
+	echo "FLAGS:"
+	echo "    -cd          Copy build to device (via scp) to '${deviceAddress}'"
+	echo "                 It also assumes ssh keys are already configured for the user."
+	echo "    -cs          Copy build to server (via scp) to '${serverAddress}'."
+	echo "                 This will force a clean build and requires an rpi release build."
+	echo "                 It also assumes ssh keys are already configured for the user."
+	echo "    -nv          Do not update Version.swift files."
+	echo "    -v           Output verbose build information."
+	echo "    -h           This help"
+	echo
+	echo " TIPS:"
+	echo "    ./build clean              # Cleans the build"
+	echo "    ./build lint build whisper # Lint and build release build for the host OS platform"
+	exit -1
+}
+
+# Call with <config>
+addConfig()
+{
+	if [[ ! -z $configs ]]; then configs+=" "; fi
+	configs+=$1
+}
+
+# Call with <product>
+addProduct()
+{
+	if [[ ! -z $products ]]; then products+=" "; fi
+	products+=$1
+}
+
+#
+# Parse the command line
+#
+
+while [[ $# -gt 0 ]]; do
+	case $1 in
+		-cd)
+			if [[ -z ${deviceAddress} ]]; then
+				echo "ERROR:"
+				echo
+				echo "In order to copy to the device, you must setup the device address in the"
+				echo "environment variable MAGIC_PROJECT_DEVICE_ADDRESS. For example:"
+				echo
+				echo "   export MAGIC_PROJECT_DEVICE_ADDRESS=user@192.168.1.13"
+				exit -1
+			fi
+			copyDevice=1
+			;;
+		-cs)
+			if [[ ${serverAddress} == ":" ]]; then
+				echo "ERROR:"
+				echo
+				echo "In order to copy to the server, you must setup the device address in the"
+				echo "environment variables MAGIC_PROJECT_SERVER_ADDRESS and"
+				echo "MAGIC_PROJECT_SERVER_PATH. For example:"
+				echo
+				echo "   export MAGIC_PROJECT_SERVER_ADDRESS=user@myserver.com"
+				echo "   export MAGIC_PROJECT_SERVER_PATH=/var/www/mywebsite.com/path/to/updates"
+				exit -1
+			fi
+			copyServer=1
+			;;
+		-nv)
+			skipVersion=1
+			;;
+		-v)
+			verbose=1
+			;;
+		-h | --help)
+			printUsage
+			;;
+		-*)
+			echo "ERROR: Unknown flag: $1"
+			printUsage
+			;;
+		build)
+			build=1
+			;;
+		clean)
+			clean=1
+			;;
+		lint)
+			lint=1
+			;;
+		all)
+			products=${allProducts[@]}
+			;;
+		debug)
+			addConfig debug
+			hasDebugConfig=1
+			;;
+		release)
+			addConfig release
+			hasReleaseConfig=1
+			;;
+		*)
+			found=0
+			if [[ $found == 0 ]]; then
+				for i in ${!allProducts[@]}; do
+					if [[ ${allProducts[$i]} == $1 ]]; then
+						addProduct $1
+						found=1
+						break
+					fi
+				done
+			fi
+
+			if [[ $found == 0 ]]; then
+				for i in ${!allTargets[@]}; do
+					if [[ ${allTargets[$i]} == $1 ]]; then
+						if [[ -z $targetToolchainDestination ]]; then
+							targetPlatform="$1"
+							targetToolchainDestination="${allTargetDestinations[$i]}"
+							targetToolchainBinPath="${allTargetToolchains[$i]}"
+							targetOptions="${allTargetOptions[$i]}"
+							found=1
+							break
+						fi
+					fi
+				done
+			fi
+
+			if [[ $found == 0 ]]; then
+				echo "ERROR: Unknown parameter: $1"
+				printUsage
+			fi
+			;;
+	esac
+	shift
+done
+
+# If they didn't specify a command, imply 'build'
+if [[ $build == 0 && $clean == 0 && $lint == 0 ]]; then
+	build=1
+fi
+
+# If we haven't specified a target, force 'all'
+if [[ -z ${products} ]]; then
+	products=${allProducts[@]}
+fi
+
+# If we haven't specified a configuration, force 'release'
+if [[ -z ${configs} ]]; then
+	addConfig release
+	hasReleaseConfig=1
+fi
+
+#
+# Logical modifications to the build settings
+#
+
+# If we're copying to the server, force a clean release build and ensure we're building for the RPI
+if [[ ${copyServer} == 1 ]]; then
+	if [[ ${clean} != 1 ]]; then
+		echo ">>> Forcing clean (copying to the server)"
+		clean=1
+	fi
+	if [[ ${hasReleaseConfig} == 0 ]]; then
+		echo ">>> Forcing release build (copying to the server)"
+		addConfig release
+		hasReleaseConfig=1
+	fi
+	if [[ ${targetPlatform} != "armv6" && ${targetPlatform} != "armv7" ]]; then
+		echo "ERROR: Copying to the server requires an RPI build"
+		printUsage
+	fi
+fi
+
+# If we're copying to the device, force a clean release build and ensure we're building for the RPI
+if [[ ${copyDevice} == 1 && ${targetPlatform} != "armv6" && ${targetPlatform} != "armv7" ]]; then
+	echo "ERROR: Copying to the device requires an RPI build (target platform = ${targetPlatform})"
+	printUsage
+fi
+
+# Force a clean build if we switched platforms
+if [[ $clean != 1 ]]; then
+	if [[ -f ${LAST_BUILD_PLATFORM_FILE} ]]; then
+		lastBuiltPlatform=`cat ${LAST_BUILD_PLATFORM_FILE}`
+	fi
+
+	if [[ ${lastBuiltPlatform} != "${targetPlatform}" ]]; then
+		if [[ ! -z ${lastBuiltPlatform} ]]; then
+			echo ">>> FORCING CLEAN (new platform: '${targetPlatform}' != '${lastBuiltPlatform}')"
+			clean=1
+		fi
+
+		# Update the build platform file
+		echo "${targetPlatform}" > ${LAST_BUILD_PLATFORM_FILE}
+	fi
+fi
+
+#
+# Build
+#
+
+if [[ $clean == 1 ]]; then
+	echo ">>> CLEANING"
+
+	rm -rf ${outPath}
+	rm -f "${LAST_BUILD_PLATFORM_FILE}"
+
+	for versionedModule in ${allVersionedModules[@]}; do
+		rm -f "${packagePath}/Sources/${versionedModule}/${versionedModule}/Version.swift"
+	done
+fi
+
+if [[ $lint == 1 ]]; then
+	echo ">>> LINTING"
+	${toolsPath}/slint ${packagePath}
+fi
+
+# If they aren't building, bail now
+if [[ $build != 1 ]]; then
+	exit 0
+fi
+
+# Update Version.swift files
+if [[ $skipVersion == 0 ]]; then
+	echo ">>> CHECKING Version.swift FILES"
+	for versionedModule in ${allVersionedModules[@]}; do
+		${toolsPath}/swiftrevision ${versionedModule} ${packagePath}/Sources/${versionedModule}/${versionedModule} ${packagePath}/Sources/${versionedModule}/${versionedModule}/Version.swift
+	done
+fi
+
+targetString=""
+if [[ ! -z $targetToolchainDestination ]]; then
+	targetString=" for $targetPlatform"
+fi
+
+echo ">>> BUILDING [${products}] [$configs]${targetString}"
+
+for config in ${configs}; do
+	args="-c $config"
+
+	if [[ $verbose == 1 ]]; then
+		args+=" -v -Xswiftc -v"
+	fi
+
+	if [[ ! -z ${targetToolchainDestination} ]]; then
+		args+=" --destination $targetToolchainDestination"
+	fi
+
+	if [[ ! -z ${targetOptions} ]]; then
+		args+=" ${targetOptions}"
+	fi
+
+	for product in ${products}; do
+		echo ">>> BUILDING PRODUCT (${product} ${config}${targetString})"
+		${targetToolchainBinPath}swift build --package-path ${packagePath} --build-path ${outPath} ${args} --product ${product}
+		if [[ $? != 0 ]]; then
+			echo ">>> FAILED"
+			exit -1
+		fi
+	done
+done
+
+#
+# Post-build operations
+#
+
+# Copy to the server?
+if [[ $copyServer == 1 ]]; then
+	echo ">>> PROPPING TO SERVER (release whisper + whisper.conf + decks.json)"
+	scp ${outPath}/release/whisper whisper.conf decks.json ${serverAddress}/${targetPlatform}
+fi
+
+# Copy to the device?
+if [[ $copyDevice == 1 ]]; then
+	echo ">>> PROPPING (whisper.conf)"
+	scp whisper.conf ${deviceAddress}:/etc
+	if [[ $? != 0 ]]; then
+		echo ">>> FAILED"
+		exit -1
+	fi
+
+	echo ">>> PROPPING (decks.json)"
+	scp decks.json ${deviceAddress}:/etc
+	if [[ $? != 0 ]]; then
+		echo ">>> FAILED"
+		exit -1
+	fi
+
+	if [[ ${hasReleaseConfig} == 1 ]]; then
+		echo ">>> PROPPING (release whisper)"
+		scp ${outPath}/release/whisper ${deviceAddress}:release
+		if [[ $? != 0 ]]; then
+			echo ">>> FAILED"
+			exit -1
+		fi
+	fi
+
+	if [[ ${hasDebugConfig} == 1 ]]; then
+		echo ">>> PROPPING (debug whisper)"
+		scp ${outPath}/debug/whisper ${deviceAddress}:debug
+		if [[ $? != 0 ]]; then
+			echo ">>> FAILED"
+			exit -1
+		fi
+	fi
+fi
+
+echo ">>> SUCCESS"
+exit 0

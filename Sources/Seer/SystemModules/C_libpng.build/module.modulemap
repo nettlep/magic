@@ -1,0 +1,6 @@
+module C_libpng [system]
+{
+	header "cheader.h"
+	link "png"
+	export *
+}

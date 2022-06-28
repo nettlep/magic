@@ -1,0 +1,155 @@
+abra screen real estate:
+
+Main
+	Tabs via opaque icons at bottom (like Sky Guide)
+		- Tricks
+		- Devices
+		- Config
+		- Log
+		- Info
+
+Trick (raw/debug):
+	Must show:
+		Filter button row(s) (A-K + H,C,D,S)
+		Full deck of cards
+		NDO icon
+		Viewport
+			camera view
+			focus toggle (visible when viewport is hidden)
+			pause (visible when viewport is hidden)
+		Options
+			Scanning status
+			Confidence graphic
+			Connected state
+			Deck format selection
+			Notify
+			Error correction toggle
+			Debug info (fps, etc.)
+
+
+-- We could use scrolling lists of buttons (for things like deck selection or filter rows)
+-- Confidence should be a graphic
+-- Deck format ("mds12-54r") is a button that, when tapped, converts to a sliding list of formats to choose from
+-- Viewport tray does not collapse all the way, leaving the top row of action buttons & scanning status visible
+
++---------------------------------------------+
+|                                             |
+|   [Robust]   [MDS12-54r]  [Notify]  [CONN]  | < Status icons (error correction toggle, notify action, connected state icon)
+|                                             |   
+|  A  2  3  4  5  6  7  8  9  10  J  Q  K     | < filter row (ace - king)
+|        [H]    [C]    [D]    [S]             | < filter row (heart - spade)
+|                                             |
+|  +----+----+----+----+----+----+----+----+  |
+|  |    |    |    |    |    |    |    |    |  |
+|  +----+----+----+----+----+----+----+----+  |
+|  |    |    |    |    |    |    |    |    |  |
+|  +----+----+----+----+----+----+----+----+  |
+|  |    |    |    |    |    |    |    |    |  |
+|  +----+----+----+----+----+----+----+----+  | < deck view (larger when viewport tray is down)
+|  |    |    |    |    |    |    |    |    |  |
+|  +----+----+----+----+----+----+----+----+  |
+|  |    |    |    |    |    |    |    |    |  |
+|  +----+----+----+----+----+----+----+----+  |
+|  |    |    |    |    |    |    |    |    |  |
+|  +----+----+----+----+----+----+----+----+  |
+|  [confidence]                       [NDO]   | < Confidence graphic + NDO status (Grey | Hilited)
+|                     ===                     |
+| - - - - - - - - - - - - - - - - - - - - - - | < slide-out for viewport tray
+|       [pause]                  [focus]      | < action buttons
+|               {move closer}                 | < scanning status
+|   +-------------------------------------+   |
+|   |                                     |   |
+|   |                                     |   |
+|   |                                     |   |
+|   |                                     |   |
+|   |                                     |   | < camera view (tap to pause, pause icon appears when paused)
+|   |                                     |   |
+|   |                                     |   |
+|   |                                     |   |
+|   | (fps, etc.)                         |   | < fps, etc in bottom row of viewport
+|   +-------------------------------------+   |
++---------------------------------------------+
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+
+* General
+	- Should layout nicely in a way that best utilizes the iPhone and iPad form factors
+
+* Devices
+	- Note that "known" devices are those that are technically connected
+		- So when the app presents a "connection" interface to the user, that interface really just makes
+		  a device active. All non-active devices are maintained but ignored.
+	- If no device connected:
+		- List of devices found
+			- Should include device IP and config information (version, etc.)
+		- Connect to specific device
+	- For a connected device:
+		- Disconnect from device
+		- Reboot
+		- Shutdown
+		- Update
+
+* Tricks
+	- The app should have the concept of a "trick"
+		- A trick is a series of steps, which can be triggered manually or by looking for conditions
+			- example:
+				- Wait until a card is found missing, store missing card
+				- Wait until a card is replaced
+				- Report position where missing card was placed in the deck
+	- Each trick has a custom view, specific to that trick
+	- Initial tricks:
+		- Raw/debug view (with NDO notification)
+			- With card filter
+				- A row of "A 2 3 4 5 6 7 8 9 10 J K Q" and another row of "Hearts, Clubs, Diamonds, Spades"
+				  you toggle each and all matching cards are highlighted.
+		- Report missing card(s)
+		- Report backwards card(s)
+
+* Config view
+	- This should not be ugly on iPads
+	  Perhaps a dual-column view?
+
+* Log view
+
+* Info view
+	- Same as what we have now with device vesions
+
+* Viewport view
+	- Should be visible for all tricks
+	- An optional overlay of some kind, perhaps?
+	- Focus mode
+	- Pause button
+		- Should this include the Freeze functionality?
+	- Note that if the viewport can be hidden how do we handle functions attached to the viewport (like pause)?
+
+* Actions/Options/Features:
+	- Deck format selection
+	- Focus
+	- Local Server
+	- Notify
+	- Freeze (if not part of the viewport's pause function)
+	- Enable error correction
+	- Connected state icon (green = connected, red = not connected)
+	- Debug info (fps, etc.)
+
+------------------------------------------------------------------------------------------------------------------------
+UI Inspiration
+------------------------------------------------------------------------------------------------------------------------
+
+* Sites
+	https://www.justinmind.com/blog/ios-app-design/
+	
+
+* UI Elements and navigation ideas
+	- Provide a light/dark themes and leverage iOS controls/colors to make this work well
+	- Tab bar for modes (Trick, Config, Log, Info)
+	- Slide out side-bar for options
+	- Slide-up panel for the viewport
+		- If we use this for the viewport, then this should shrink stuff above it and not obscure that stuff
+	- Animated controls
+

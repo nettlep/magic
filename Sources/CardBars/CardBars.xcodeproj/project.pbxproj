@@ -1,0 +1,455 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE1B271A272E42B800F1D118 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE1B2718272E42B800F1D118 /* Assets.xcassets */; };
+		AE1B271F272E42FF00F1D118 /* CardBarsAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1B271C272E42FF00F1D118 /* CardBarsAppDelegate.swift */; };
+		AE1B2720272E42FF00F1D118 /* CardBarsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1B271D272E42FF00F1D118 /* CardBarsViewController.swift */; };
+		AE1B2721272E42FF00F1D118 /* BarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1B271E272E42FF00F1D118 /* BarView.swift */; };
+		AE1B2788272E501F00F1D118 /* Minion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE1B2785272E501F00F1D118 /* Minion.framework */; };
+		AE1B2789272E501F00F1D118 /* Minion.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AE1B2785272E501F00F1D118 /* Minion.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AE1B278A272E501F00F1D118 /* NativeTasks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE1B2786272E501F00F1D118 /* NativeTasks.framework */; };
+		AE1B278B272E501F00F1D118 /* NativeTasks.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AE1B2786272E501F00F1D118 /* NativeTasks.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AE1B278C272E501F00F1D118 /* Seer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE1B2787272E501F00F1D118 /* Seer.framework */; };
+		AE1B278D272E501F00F1D118 /* Seer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AE1B2787272E501F00F1D118 /* Seer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AED353C41E928B9900F05956 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AED353C21E928B9900F05956 /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AE1B2669272D0A3800F1D118 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AEDF6FEA1DD148F3001E9083 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE961A4E1F79319F0071499D;
+			remoteInfo = Minion;
+		};
+		AE1B266D272D0A3D00F1D118 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AEDF6FEA1DD148F3001E9083 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE32E3131EDC3CC100F9AAF5;
+			remoteInfo = NativeTasks;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AE7E1AB81E900D810071EA22 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AE1B278B272E501F00F1D118 /* NativeTasks.framework in Embed Frameworks */,
+				AE1B2789272E501F00F1D118 /* Minion.framework in Embed Frameworks */,
+				AE1B278D272E501F00F1D118 /* Seer.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AE1B2718272E42B800F1D118 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE1B2719272E42B800F1D118 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE1B271C272E42FF00F1D118 /* CardBarsAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardBarsAppDelegate.swift; sourceTree = "<group>"; };
+		AE1B271D272E42FF00F1D118 /* CardBarsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardBarsViewController.swift; sourceTree = "<group>"; };
+		AE1B271E272E42FF00F1D118 /* BarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarView.swift; sourceTree = "<group>"; };
+		AE1B2785272E501F00F1D118 /* Minion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Minion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE1B2786272E501F00F1D118 /* NativeTasks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NativeTasks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE1B2787272E501F00F1D118 /* Seer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Seer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE53154427362E7E00CA406E /* CardBars.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CardBars.entitlements; sourceTree = "<group>"; };
+		AE59E89D1E42A4970069973E /* CardBars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardBars.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AED353C31E928B9900F05956 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE59E89A1E42A4970069973E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE1B278A272E501F00F1D118 /* NativeTasks.framework in Frameworks */,
+				AE1B2788272E501F00F1D118 /* Minion.framework in Frameworks */,
+				AE1B278C272E501F00F1D118 /* Seer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AE59E89E1E42A4970069973E /* CardBars */ = {
+			isa = PBXGroup;
+			children = (
+				AE53154427362E7E00CA406E /* CardBars.entitlements */,
+				AEA4C2201E91133D0002110E /* @Supporting files */,
+				AE1B271E272E42FF00F1D118 /* BarView.swift */,
+				AE1B271C272E42FF00F1D118 /* CardBarsAppDelegate.swift */,
+				AE1B271D272E42FF00F1D118 /* CardBarsViewController.swift */,
+			);
+			path = CardBars;
+			sourceTree = "<group>";
+		};
+		AEA4C2201E91133D0002110E /* @Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				AE1B2718272E42B800F1D118 /* Assets.xcassets */,
+				AE1B2719272E42B800F1D118 /* Info.plist */,
+				AED353C21E928B9900F05956 /* Main.storyboard */,
+			);
+			name = "@Supporting files";
+			sourceTree = "<group>";
+		};
+		AEB28F861DD2883F00045CAC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE1B2785272E501F00F1D118 /* Minion.framework */,
+				AE1B2786272E501F00F1D118 /* NativeTasks.framework */,
+				AE1B2787272E501F00F1D118 /* Seer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AEDF6FE91DD148F3001E9083 = {
+			isa = PBXGroup;
+			children = (
+				AE59E89E1E42A4970069973E /* CardBars */,
+				AEDF6FF31DD148F3001E9083 /* Products */,
+				AEB28F861DD2883F00045CAC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AEDF6FF31DD148F3001E9083 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE59E89D1E42A4970069973E /* CardBars.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE59E89C1E42A4970069973E /* CardBars */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE59E8AC1E42A4970069973E /* Build configuration list for PBXNativeTarget "CardBars" */;
+			buildPhases = (
+				AEEAC4BB1E5C5CE400CC8411 /* Swift lint */,
+				AE59E8991E42A4970069973E /* Sources */,
+				AE59E89A1E42A4970069973E /* Frameworks */,
+				AE59E89B1E42A4970069973E /* Resources */,
+				AE7E1AB81E900D810071EA22 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE1B266A272D0A3800F1D118 /* PBXTargetDependency */,
+				AE1B266E272D0A3D00F1D118 /* PBXTargetDependency */,
+			);
+			name = CardBars;
+			productName = CardBars;
+			productReference = AE59E89D1E42A4970069973E /* CardBars.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AEDF6FEA1DD148F3001E9083 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1310;
+				ORGANIZATIONNAME = "Paul Nettle";
+				TargetAttributes = {
+					AE59E89C1E42A4970069973E = {
+						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 1020;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = AEDF6FED1DD148F3001E9083 /* Build configuration list for PBXProject "CardBars" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AEDF6FE91DD148F3001E9083;
+			productRefGroup = AEDF6FF31DD148F3001E9083 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE59E89C1E42A4970069973E /* CardBars */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE59E89B1E42A4970069973E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE1B271A272E42B800F1D118 /* Assets.xcassets in Resources */,
+				AED353C41E928B9900F05956 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AEEAC4BB1E5C5CE400CC8411 /* Swift lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Swift lint";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint lint --quiet\nelse\n    echo \"Not found in the path, checking /opt/homebrew\"\n    if [ -f /opt/homebrew/bin/swiftlint ]; then\n        /opt/homebrew/bin/swiftlint lint --quiet\n    else\n        echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\n    fi\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE59E8991E42A4970069973E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE1B2721272E42FF00F1D118 /* BarView.swift in Sources */,
+				AE1B2720272E42FF00F1D118 /* CardBarsViewController.swift in Sources */,
+				AE1B271F272E42FF00F1D118 /* CardBarsAppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AE1B266A272D0A3800F1D118 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			targetProxy = AE1B2669272D0A3800F1D118 /* PBXContainerItemProxy */;
+		};
+		AE1B266E272D0A3D00F1D118 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			targetProxy = AE1B266D272D0A3D00F1D118 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AED353C21E928B9900F05956 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AED353C31E928B9900F05956 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AE59E8A91E42A4970069973E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = CardBars/CardBars.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = H72QHZNSAJ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				INFOPLIST_FILE = "$(SRCROOT)/CardBars/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.paulnettle.CardBars;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_INCLUDE_PATHS = SystemModules;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		AE59E8AB1E42A4970069973E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = CardBars/CardBars.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = H72QHZNSAJ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				INFOPLIST_FILE = "$(SRCROOT)/CardBars/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.paulnettle.CardBars;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_INCLUDE_PATHS = SystemModules;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		AEDF6FFF1DD148F3001E9083 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_DISABLE_SAFETY_CHECKS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		AEDF70001DD148F3001E9083 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_DISABLE_SAFETY_CHECKS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE59E8AC1E42A4970069973E /* Build configuration list for PBXNativeTarget "CardBars" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE59E8A91E42A4970069973E /* Debug */,
+				AE59E8AB1E42A4970069973E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AEDF6FED1DD148F3001E9083 /* Build configuration list for PBXProject "CardBars" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEDF6FFF1DD148F3001E9083 /* Debug */,
+				AEDF70001DD148F3001E9083 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AEDF6FEA1DD148F3001E9083 /* Project object */;
+}

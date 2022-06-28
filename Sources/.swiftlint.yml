@@ -1,0 +1,19 @@
+disabled_rules:
+    - for_where
+    - opening_brace
+    - identifier_name
+    - line_length
+    - file_length
+    - function_body_length
+    - cyclomatic_complexity
+    - type_body_length
+    - statement_position
+    - function_parameter_count
+    - large_tuple
+    - trailing_comma
+    - switch_case_alignment
+    - closure_parameter_position
+    - nesting
+    - legacy_hashing
+    - unused_setter_value
+    - comment_spacing

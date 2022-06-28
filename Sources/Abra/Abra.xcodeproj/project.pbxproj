@@ -1,0 +1,1071 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		658373292712A78100262042 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658373282712A78100262042 /* InfoView.swift */; };
+		6583732A2712A78100262042 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658373282712A78100262042 /* InfoView.swift */; };
+		AE1B279D272E547C00F1D118 /* MinionIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE1B279A272E547C00F1D118 /* MinionIOS.framework */; };
+		AE1B279E272E547C00F1D118 /* MinionIOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AE1B279A272E547C00F1D118 /* MinionIOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AE1B279F272E547C00F1D118 /* NativeTasksIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE1B279B272E547C00F1D118 /* NativeTasksIOS.framework */; };
+		AE1B27A0272E547C00F1D118 /* NativeTasksIOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AE1B279B272E547C00F1D118 /* NativeTasksIOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AE1B27A1272E547C00F1D118 /* SeerIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE1B279C272E547C00F1D118 /* SeerIOS.framework */; };
+		AE1B27A2272E547C00F1D118 /* SeerIOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AE1B279C272E547C00F1D118 /* SeerIOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AE1B27A6272E548500F1D118 /* Minion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE1B27A3272E548500F1D118 /* Minion.framework */; };
+		AE1B27A7272E548500F1D118 /* Minion.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AE1B27A3272E548500F1D118 /* Minion.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AE1B27A8272E548500F1D118 /* NativeTasks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE1B27A4272E548500F1D118 /* NativeTasks.framework */; };
+		AE1B27A9272E548500F1D118 /* NativeTasks.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AE1B27A4272E548500F1D118 /* NativeTasks.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AE1B27AA272E548500F1D118 /* Seer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE1B27A5272E548500F1D118 /* Seer.framework */; };
+		AE1B27AB272E548500F1D118 /* Seer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AE1B27A5272E548500F1D118 /* Seer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AE1B27AE272E551C00F1D118 /* decks.json in Resources */ = {isa = PBXBuildFile; fileRef = AE1B27AC272E551C00F1D118 /* decks.json */; };
+		AE1B27AF272E551C00F1D118 /* decks.json in Resources */ = {isa = PBXBuildFile; fileRef = AE1B27AC272E551C00F1D118 /* decks.json */; };
+		AE1B27B0272E551C00F1D118 /* whisper.conf in Resources */ = {isa = PBXBuildFile; fileRef = AE1B27AD272E551C00F1D118 /* whisper.conf */; };
+		AE1B27B1272E551C00F1D118 /* whisper.conf in Resources */ = {isa = PBXBuildFile; fileRef = AE1B27AD272E551C00F1D118 /* whisper.conf */; };
+		AE1B27CF273054C600F1D118 /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1B27CE273054C600F1D118 /* Version.swift */; };
+		AE1B27D0273054C600F1D118 /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1B27CE273054C600F1D118 /* Version.swift */; };
+		AE23D4B7272A4E2F00245102 /* CameraListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE23D4B6272A4E2F00245102 /* CameraListView.swift */; };
+		AE23D4B8272A4E2F00245102 /* CameraListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE23D4B6272A4E2F00245102 /* CameraListView.swift */; };
+		AE35F958271B4EAD006AD1D9 /* ServerConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE35F956271B4EAD006AD1D9 /* ServerConfigView.swift */; };
+		AE35F95A2721C95C006AD1D9 /* ServerConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE35F9592721C959006AD1D9 /* ServerConfig.swift */; };
+		AE35F95B2721C95E006AD1D9 /* ServerConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE35F9592721C959006AD1D9 /* ServerConfig.swift */; };
+		AE5AA141273A273900FEB5A6 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5AA140273A273900FEB5A6 /* MenuView.swift */; };
+		AE5AA142273A273900FEB5A6 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5AA140273A273900FEB5A6 /* MenuView.swift */; };
+		AE5AA144273A353200FEB5A6 /* ServerConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5AA143273A348D00FEB5A6 /* ServerConfigView.swift */; };
+		AEC6EC6E270CDA98004F980F /* AbraLogDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC6EC6D270CDA98004F980F /* AbraLogDevice.swift */; };
+		AEC6EC6F270CDA98004F980F /* AbraLogDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC6EC6D270CDA98004F980F /* AbraLogDevice.swift */; };
+		AEC6EC75270CE347004F980F /* LogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC6EC74270CE347004F980F /* LogView.swift */; };
+		AEC6EC76270CE347004F980F /* LogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC6EC74270CE347004F980F /* LogView.swift */; };
+		AEC6EC7A270CE7FD004F980F /* AbraCaptureMediaProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC6EC77270CE7FC004F980F /* AbraCaptureMediaProvider.swift */; };
+		AEC6EC7B270CE7FD004F980F /* AbraCaptureMediaProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC6EC77270CE7FC004F980F /* AbraCaptureMediaProvider.swift */; };
+		AEC6EC7C270CE7FD004F980F /* AbraClientPeer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC6EC78270CE7FC004F980F /* AbraClientPeer.swift */; };
+		AEC6EC7D270CE7FD004F980F /* AbraClientPeer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC6EC78270CE7FC004F980F /* AbraClientPeer.swift */; };
+		AEC6EC7E270CE7FD004F980F /* AbraServerPeer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC6EC79270CE7FD004F980F /* AbraServerPeer.swift */; };
+		AEC6EC7F270CE7FD004F980F /* AbraServerPeer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC6EC79270CE7FD004F980F /* AbraServerPeer.swift */; };
+		AEC6EC81270CEEB2004F980F /* UIState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC6EC80270CEEB2004F980F /* UIState.swift */; };
+		AEC6EC82270CEEB2004F980F /* UIState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC6EC80270CEEB2004F980F /* UIState.swift */; };
+		AEC6EC84270D51B9004F980F /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC6EC83270D51B9004F980F /* Preferences.swift */; };
+		AEC6EC85270D51B9004F980F /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC6EC83270D51B9004F980F /* Preferences.swift */; };
+		AEDB0D01270CA52800BF40EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEDB0CD9270CA51300BF40EB /* Assets.xcassets */; };
+		AEDB0D02270CA52800BF40EB /* AbraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDB0CD7270CA51300BF40EB /* AbraApp.swift */; };
+		AEDB0D03270CA52800BF40EB /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDB0CDC270CA51300BF40EB /* Card.swift */; };
+		AEDB0D04270CA52800BF40EB /* BouncingTapGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDB0CE3270CA51300BF40EB /* BouncingTapGesture.swift */; };
+		AEDB0D05270CA52800BF40EB /* PlatformBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDB0CD5270CA51300BF40EB /* PlatformBackgroundView.swift */; };
+		AEDB0D06270CA52800BF40EB /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDB0CD2270CA51300BF40EB /* ViewExtensions.swift */; };
+		AEDB0D0A270CA52800BF40EB /* CardTestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDB0CDE270CA51300BF40EB /* CardTestData.swift */; };
+		AEDB0D0B270CA52800BF40EB /* DeckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDB0CDF270CA51300BF40EB /* DeckView.swift */; };
+		AEDB0D0D270CA52800BF40EB /* Card.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEDB0CE5270CA51300BF40EB /* Card.xcassets */; };
+		AEDB0D0E270CA52800BF40EB /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDB0CD4270CA51300BF40EB /* CardView.swift */; };
+		AEDB0D10270CA52800BF40EB /* FormatListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDB0CD3270CA51300BF40EB /* FormatListView.swift */; };
+		AEDB0D11270CA52800BF40EB /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDB0CE0270CA51300BF40EB /* ScannerView.swift */; };
+		AEDB0D12270CA52800BF40EB /* ViewportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDB0CD8270CA51300BF40EB /* ViewportView.swift */; };
+		AEDB0D13270CA52800BF40EB /* ScanResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDB0CD6270CA51300BF40EB /* ScanResultsView.swift */; };
+		AEDB0D15270CA52800BF40EB /* ConfidenceGaugeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDB0CE4270CA51300BF40EB /* ConfidenceGaugeView.swift */; };
+		AEDB0D16270CA52800BF40EB /* FannedDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDB0CD1270CA51300BF40EB /* FannedDeck.swift */; };
+		AEDB0D18270CA52800BF40EB /* AbraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDB0CD7270CA51300BF40EB /* AbraApp.swift */; };
+		AEDB0D19270CA52800BF40EB /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDB0CDC270CA51300BF40EB /* Card.swift */; };
+		AEDB0D1A270CA52800BF40EB /* BouncingTapGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDB0CE3270CA51300BF40EB /* BouncingTapGesture.swift */; };
+		AEDB0D1B270CA52800BF40EB /* PlatformBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDB0CD5270CA51300BF40EB /* PlatformBackgroundView.swift */; };
+		AEDB0D1C270CA52800BF40EB /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDB0CD2270CA51300BF40EB /* ViewExtensions.swift */; };
+		AEDB0D20270CA52800BF40EB /* CardTestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDB0CDE270CA51300BF40EB /* CardTestData.swift */; };
+		AEDB0D21270CA52800BF40EB /* DeckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDB0CDF270CA51300BF40EB /* DeckView.swift */; };
+		AEDB0D23270CA52800BF40EB /* Card.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEDB0CE5270CA51300BF40EB /* Card.xcassets */; };
+		AEDB0D24270CA52800BF40EB /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDB0CD4270CA51300BF40EB /* CardView.swift */; };
+		AEDB0D26270CA52800BF40EB /* FormatListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDB0CD3270CA51300BF40EB /* FormatListView.swift */; };
+		AEDB0D27270CA52800BF40EB /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDB0CE0270CA51300BF40EB /* ScannerView.swift */; };
+		AEDB0D28270CA52800BF40EB /* ViewportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDB0CD8270CA51300BF40EB /* ViewportView.swift */; };
+		AEDB0D29270CA52800BF40EB /* ScanResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDB0CD6270CA51300BF40EB /* ScanResultsView.swift */; };
+		AEDB0D2B270CA52800BF40EB /* ConfidenceGaugeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDB0CE4270CA51300BF40EB /* ConfidenceGaugeView.swift */; };
+		AEDB0D2C270CA52800BF40EB /* FannedDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDB0CD1270CA51300BF40EB /* FannedDeck.swift */; };
+		AEF00CB8270F3A330089B49E /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF00CB7270F3A330089B49E /* ColorExtensions.swift */; };
+		AEF00CB9270F3A330089B49E /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF00CB7270F3A330089B49E /* ColorExtensions.swift */; };
+		AEF00CBC2710E0460089B49E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF00CBB2710E0450089B49E /* SettingsView.swift */; };
+		AEF00CBD2710E0460089B49E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF00CBB2710E0450089B49E /* SettingsView.swift */; };
+		AEF00CC22710EF110089B49E /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF00CC12710EF100089B49E /* ActionButton.swift */; };
+		AEF00CC32710EF110089B49E /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF00CC12710EF100089B49E /* ActionButton.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AEC6EC4F270CC9AB004F980F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AE1B27A0272E547C00F1D118 /* NativeTasksIOS.framework in Embed Frameworks */,
+				AE1B27A2272E547C00F1D118 /* SeerIOS.framework in Embed Frameworks */,
+				AE1B279E272E547C00F1D118 /* MinionIOS.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEC6EC5C270CC9B4004F980F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AE1B27A9272E548500F1D118 /* NativeTasks.framework in Embed Frameworks */,
+				AE1B27A7272E548500F1D118 /* Minion.framework in Embed Frameworks */,
+				AE1B27AB272E548500F1D118 /* Seer.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		658373282712A78100262042 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		AE1B279A272E547C00F1D118 /* MinionIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MinionIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE1B279B272E547C00F1D118 /* NativeTasksIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NativeTasksIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE1B279C272E547C00F1D118 /* SeerIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SeerIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE1B27A3272E548500F1D118 /* Minion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Minion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE1B27A4272E548500F1D118 /* NativeTasks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NativeTasks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE1B27A5272E548500F1D118 /* Seer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Seer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE1B27AC272E551C00F1D118 /* decks.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = decks.json; path = ../../decks.json; sourceTree = "<group>"; };
+		AE1B27AD272E551C00F1D118 /* whisper.conf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = whisper.conf; path = ../../whisper.conf; sourceTree = "<group>"; };
+		AE1B27CE273054C600F1D118 /* Version.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Version.swift; sourceTree = "<group>"; };
+		AE23D4B6272A4E2F00245102 /* CameraListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraListView.swift; sourceTree = "<group>"; };
+		AE35F956271B4EAD006AD1D9 /* ServerConfigView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerConfigView.swift; sourceTree = "<group>"; };
+		AE35F9592721C959006AD1D9 /* ServerConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerConfig.swift; sourceTree = "<group>"; };
+		AE5AA140273A273900FEB5A6 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		AE5AA143273A348D00FEB5A6 /* ServerConfigView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerConfigView.swift; sourceTree = "<group>"; };
+		AEC6EC6D270CDA98004F980F /* AbraLogDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbraLogDevice.swift; sourceTree = "<group>"; };
+		AEC6EC74270CE347004F980F /* LogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogView.swift; sourceTree = "<group>"; };
+		AEC6EC77270CE7FC004F980F /* AbraCaptureMediaProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbraCaptureMediaProvider.swift; sourceTree = "<group>"; };
+		AEC6EC78270CE7FC004F980F /* AbraClientPeer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbraClientPeer.swift; sourceTree = "<group>"; };
+		AEC6EC79270CE7FD004F980F /* AbraServerPeer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbraServerPeer.swift; sourceTree = "<group>"; };
+		AEC6EC80270CEEB2004F980F /* UIState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIState.swift; sourceTree = "<group>"; };
+		AEC6EC83270D51B9004F980F /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		AEDB0CB6270CA45500BF40EB /* Abra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Abra.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEDB0CBB270CA45500BF40EB /* Abra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Abra.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEDB0CD1270CA51300BF40EB /* FannedDeck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FannedDeck.swift; sourceTree = "<group>"; };
+		AEDB0CD2270CA51300BF40EB /* ViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
+		AEDB0CD3270CA51300BF40EB /* FormatListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormatListView.swift; sourceTree = "<group>"; };
+		AEDB0CD4270CA51300BF40EB /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		AEDB0CD5270CA51300BF40EB /* PlatformBackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlatformBackgroundView.swift; sourceTree = "<group>"; };
+		AEDB0CD6270CA51300BF40EB /* ScanResultsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanResultsView.swift; sourceTree = "<group>"; };
+		AEDB0CD7270CA51300BF40EB /* AbraApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbraApp.swift; sourceTree = "<group>"; };
+		AEDB0CD8270CA51300BF40EB /* ViewportView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewportView.swift; sourceTree = "<group>"; };
+		AEDB0CD9270CA51300BF40EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AEDB0CDC270CA51300BF40EB /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		AEDB0CDE270CA51300BF40EB /* CardTestData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTestData.swift; sourceTree = "<group>"; };
+		AEDB0CDF270CA51300BF40EB /* DeckView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckView.swift; sourceTree = "<group>"; };
+		AEDB0CE0270CA51300BF40EB /* ScannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
+		AEDB0CE3270CA51300BF40EB /* BouncingTapGesture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BouncingTapGesture.swift; sourceTree = "<group>"; };
+		AEDB0CE4270CA51300BF40EB /* ConfidenceGaugeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfidenceGaugeView.swift; sourceTree = "<group>"; };
+		AEDB0CE5270CA51300BF40EB /* Card.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Card.xcassets; sourceTree = "<group>"; };
+		AEDB0CE8270CA51300BF40EB /* macOS.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		AEDB0D2D270CA72900BF40EB /* iOS.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = iOS.entitlements; sourceTree = "<group>"; };
+		AEF00CB7270F3A330089B49E /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
+		AEF00CBA2710BBEF0089B49E /* Abra--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Abra--iOS--Info.plist"; sourceTree = "<group>"; };
+		AEF00CBB2710E0450089B49E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		AEF00CC12710EF100089B49E /* ActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AEDB0CB3270CA45500BF40EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE1B279F272E547C00F1D118 /* NativeTasksIOS.framework in Frameworks */,
+				AE1B27A1272E547C00F1D118 /* SeerIOS.framework in Frameworks */,
+				AE1B279D272E547C00F1D118 /* MinionIOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEDB0CB8270CA45500BF40EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE1B27A8272E548500F1D118 /* NativeTasks.framework in Frameworks */,
+				AE1B27A6272E548500F1D118 /* Minion.framework in Frameworks */,
+				AE1B27AA272E548500F1D118 /* Seer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AEB28F861DD2883F00045CAC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE1B27A3272E548500F1D118 /* Minion.framework */,
+				AE1B27A4272E548500F1D118 /* NativeTasks.framework */,
+				AE1B27A5272E548500F1D118 /* Seer.framework */,
+				AE1B279A272E547C00F1D118 /* MinionIOS.framework */,
+				AE1B279B272E547C00F1D118 /* NativeTasksIOS.framework */,
+				AE1B279C272E547C00F1D118 /* SeerIOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AEC6EC40270CC748004F980F /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				AE23D4B6272A4E2F00245102 /* CameraListView.swift */,
+				AEDB0CD4270CA51300BF40EB /* CardView.swift */,
+				AEDB0CE4270CA51300BF40EB /* ConfidenceGaugeView.swift */,
+				AEDB0CDF270CA51300BF40EB /* DeckView.swift */,
+				AEDB0CD3270CA51300BF40EB /* FormatListView.swift */,
+				AEDB0CD5270CA51300BF40EB /* PlatformBackgroundView.swift */,
+				AEDB0CD6270CA51300BF40EB /* ScanResultsView.swift */,
+				AEDB0CD8270CA51300BF40EB /* ViewportView.swift */,
+			);
+			name = Subviews;
+			sourceTree = "<group>";
+		};
+		AEC6EC41270CC7BF004F980F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				658373282712A78100262042 /* InfoView.swift */,
+				AEC6EC74270CE347004F980F /* LogView.swift */,
+				AE5AA140273A273900FEB5A6 /* MenuView.swift */,
+				AEF00CBB2710E0450089B49E /* SettingsView.swift */,
+				AEDB0CE0270CA51300BF40EB /* ScannerView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		AEC6EC42270CC7DB004F980F /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				AEF00CC12710EF100089B49E /* ActionButton.swift */,
+				AEDB0CE3270CA51300BF40EB /* BouncingTapGesture.swift */,
+			);
+			name = Modifiers;
+			sourceTree = "<group>";
+		};
+		AEDB0CCC270CA48400BF40EB /* Abra */ = {
+			isa = PBXGroup;
+			children = (
+				AEDB0CD0270CA51300BF40EB /* Shared */,
+				AEDB0CE7270CA51300BF40EB /* macOS */,
+				AEDB0CCD270CA50200BF40EB /* iOS */,
+			);
+			path = Abra;
+			sourceTree = "<group>";
+		};
+		AEDB0CCD270CA50200BF40EB /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				AE5AA143273A348D00FEB5A6 /* ServerConfigView.swift */,
+				AEF00CBA2710BBEF0089B49E /* Abra--iOS--Info.plist */,
+				AEDB0D2D270CA72900BF40EB /* iOS.entitlements */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		AEDB0CD0270CA51300BF40EB /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				AEF00CB6270F3A190089B49E /* Extensions */,
+				AEC6EC42270CC7DB004F980F /* Modifiers */,
+				AEC6EC40270CC748004F980F /* Subviews */,
+				AEC6EC41270CC7BF004F980F /* Views */,
+				AEDB0CD7270CA51300BF40EB /* AbraApp.swift */,
+				AEC6EC77270CE7FC004F980F /* AbraCaptureMediaProvider.swift */,
+				AEC6EC78270CE7FC004F980F /* AbraClientPeer.swift */,
+				AEC6EC6D270CDA98004F980F /* AbraLogDevice.swift */,
+				AEC6EC79270CE7FD004F980F /* AbraServerPeer.swift */,
+				AEDB0CDC270CA51300BF40EB /* Card.swift */,
+				AEDB0CDE270CA51300BF40EB /* CardTestData.swift */,
+				AEDB0CD1270CA51300BF40EB /* FannedDeck.swift */,
+				AEC6EC83270D51B9004F980F /* Preferences.swift */,
+				AE35F9592721C959006AD1D9 /* ServerConfig.swift */,
+				AEC6EC80270CEEB2004F980F /* UIState.swift */,
+				AE1B27CE273054C600F1D118 /* Version.swift */,
+				AEDB0CD9270CA51300BF40EB /* Assets.xcassets */,
+				AEDB0CE5270CA51300BF40EB /* Card.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		AEDB0CE7270CA51300BF40EB /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				AE35F956271B4EAD006AD1D9 /* ServerConfigView.swift */,
+				AEDB0CE8270CA51300BF40EB /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		AEDF6FE91DD148F3001E9083 = {
+			isa = PBXGroup;
+			children = (
+				AE1B27AC272E551C00F1D118 /* decks.json */,
+				AE1B27AD272E551C00F1D118 /* whisper.conf */,
+				AEDB0CCC270CA48400BF40EB /* Abra */,
+				AEDF6FF31DD148F3001E9083 /* Products */,
+				AEB28F861DD2883F00045CAC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AEDF6FF31DD148F3001E9083 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AEDB0CB6270CA45500BF40EB /* Abra.app */,
+				AEDB0CBB270CA45500BF40EB /* Abra.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AEF00CB6270F3A190089B49E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AEDB0CD2270CA51300BF40EB /* ViewExtensions.swift */,
+				AEF00CB7270F3A330089B49E /* ColorExtensions.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AEDB0CB5270CA45500BF40EB /* Abra (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEDB0CCA270CA45500BF40EB /* Build configuration list for PBXNativeTarget "Abra (iOS)" */;
+			buildPhases = (
+				AEC6EC38270CC3DA004F980F /* Update version */,
+				AEC6EC3A270CC42E004F980F /* Swift lint */,
+				AEDB0CB2270CA45500BF40EB /* Sources */,
+				AEDB0CB3270CA45500BF40EB /* Frameworks */,
+				AEDB0CB4270CA45500BF40EB /* Resources */,
+				AEC6EC4F270CC9AB004F980F /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Abra (iOS)";
+			productName = "Abra (iOS)";
+			productReference = AEDB0CB6270CA45500BF40EB /* Abra.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AEDB0CBA270CA45500BF40EB /* Abra (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEDB0CCB270CA45500BF40EB /* Build configuration list for PBXNativeTarget "Abra (macOS)" */;
+			buildPhases = (
+				AEC6EC3C270CC468004F980F /* Update version */,
+				AEC6EC3B270CC452004F980F /* Swift lint */,
+				AEDB0CB7270CA45500BF40EB /* Sources */,
+				AEDB0CB8270CA45500BF40EB /* Frameworks */,
+				AEDB0CB9270CA45500BF40EB /* Resources */,
+				AEC6EC5C270CC9B4004F980F /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Abra (macOS)";
+			productName = "Abra (macOS)";
+			productReference = AEDB0CBB270CA45500BF40EB /* Abra.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AEDF6FEA1DD148F3001E9083 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1310;
+				ORGANIZATIONNAME = "Paul Nettle";
+				TargetAttributes = {
+					AEDB0CB5270CA45500BF40EB = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					AEDB0CBA270CA45500BF40EB = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = AEDF6FED1DD148F3001E9083 /* Build configuration list for PBXProject "Abra" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AEDF6FE91DD148F3001E9083;
+			productRefGroup = AEDF6FF31DD148F3001E9083 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AEDB0CB5270CA45500BF40EB /* Abra (iOS) */,
+				AEDB0CBA270CA45500BF40EB /* Abra (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AEDB0CB4270CA45500BF40EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE1B27AE272E551C00F1D118 /* decks.json in Resources */,
+				AEDB0D01270CA52800BF40EB /* Assets.xcassets in Resources */,
+				AE1B27B0272E551C00F1D118 /* whisper.conf in Resources */,
+				AEDB0D0D270CA52800BF40EB /* Card.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEDB0CB9270CA45500BF40EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE1B27AF272E551C00F1D118 /* decks.json in Resources */,
+				AE1B27B1272E551C00F1D118 /* whisper.conf in Resources */,
+				AEDB0D23270CA52800BF40EB /* Card.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AEC6EC38270CC3DA004F980F /* Update version */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Update version";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "projectName=\"Abra\"\nversionDir=\"${PROJECT_DIR}/Abra/Shared\"\nsourceFile=\"${versionDir}/Version.swift\"\n\n# The revision\nrevision=$(git -C ${versionDir} rev-list HEAD --count)\nif [ $? -ne 0 ]; then\n    echo \"> ERROR: Unable to get the revision of '${versionDir}' - is it a valid git-controlled directory?\"\n    echo\n    printUsage\nfi\n\n# The branch name\nbranch=\"$(git -C ${versionDir} symbolic-ref HEAD 2>/dev/null)\" || branch=\"(unnamed branch)\"\nif [ $? -ne 0 ]; then\n    echo \"> ERROR: Unable to get the branch name for '${versionDir}' - is it a valid git-controlled directory?\"\n    echo\n    printUsage\nfi\nbranch=${branch##refs/heads/}\n\n# The flags (i.e., was this from a modified build?)\nflags=\"\"\ngit -C ${versionDir} diff-index --quiet HEAD --\nif [ $? -ne 0 ]; then\n    flags=\":m\"\nfi\n\nversionString=\"${revision}@${branch}${flags}\"\n\n# Get the current source information\nif [[ -f ${sourceFile} ]]; then\n\tcurSource=$(cat ${sourceFile})\nelse\n\tcurSource=\"\"\nfi\n\n# Generate new source\nread -r -d '' newSource <<EOF\npublic var ${projectName}Version: String = \"${versionString}\"\n\nEOF\n\nif [[ ${curSource} != ${newSource} ]]; then\n\techo \"Updating source: '${sourceFile}'\"\n\techo \"${newSource}\" > \"${sourceFile}\"\nfi\n\nexit 0\n";
+		};
+		AEC6EC3A270CC42E004F980F /* Swift lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Swift lint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint lint --quiet\nelse\n    echo \"Not found in the path, checking /opt/homebrew\"\n    if [ -f /opt/homebrew/bin/swiftlint ]; then\n        /opt/homebrew/bin/swiftlint lint --quiet\n    else\n        echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\n    fi\nfi\n";
+		};
+		AEC6EC3B270CC452004F980F /* Swift lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Swift lint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint lint --quiet\nelse\n    echo \"Not found in the path, checking /opt/homebrew\"\n    if [ -f /opt/homebrew/bin/swiftlint ]; then\n        /opt/homebrew/bin/swiftlint lint --quiet\n    else\n        echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\n    fi\nfi\n";
+		};
+		AEC6EC3C270CC468004F980F /* Update version */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Update version";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "projectName=\"Abra\"\nversionDir=\"${PROJECT_DIR}/Abra\"\nsourceFile=\"${versionDir}/Version.swift\"\n\n# The revision\nrevision=$(git -C ${versionDir} rev-list HEAD --count)\nif [ $? -ne 0 ]; then\n    echo \"> ERROR: Unable to get the revision of '${versionDir}' - is it a valid git-controlled directory?\"\n    echo\n    printUsage\nfi\n\n# The branch name\nbranch=\"$(git -C ${versionDir} symbolic-ref HEAD 2>/dev/null)\" || branch=\"(unnamed branch)\"\nif [ $? -ne 0 ]; then\n    echo \"> ERROR: Unable to get the branch name for '${versionDir}' - is it a valid git-controlled directory?\"\n    echo\n    printUsage\nfi\nbranch=${branch##refs/heads/}\n\n# The flags (i.e., was this from a modified build?)\nflags=\"\"\ngit -C ${versionDir} diff-index --quiet HEAD --\nif [ $? -ne 0 ]; then\n    flags=\":m\"\nfi\n\nversionString=\"${revision}@${branch}${flags}\"\n\n# Get the current source information\nif [[ -f ${sourceFile} ]]; then\n\tcurSource=$(cat ${sourceFile})\nelse\n\tcurSource=\"\"\nfi\n\n# Generate new source\nread -r -d '' newSource <<EOF\npublic var ${projectName}Version: String = \"${versionString}\"\n\nEOF\n\nif [[ ${curSource} != ${newSource} ]]; then\n\techo \"Updating source: '${sourceFile}'\"\n\techo \"${newSource}\" > \"${sourceFile}\"\nfi\n\nexit 0\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AEDB0CB2270CA45500BF40EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEDB0D02270CA52800BF40EB /* AbraApp.swift in Sources */,
+				AEDB0D15270CA52800BF40EB /* ConfidenceGaugeView.swift in Sources */,
+				AEDB0D16270CA52800BF40EB /* FannedDeck.swift in Sources */,
+				AE5AA144273A353200FEB5A6 /* ServerConfigView.swift in Sources */,
+				AEC6EC7C270CE7FD004F980F /* AbraClientPeer.swift in Sources */,
+				AEDB0D03270CA52800BF40EB /* Card.swift in Sources */,
+				AEF00CC22710EF110089B49E /* ActionButton.swift in Sources */,
+				AEDB0D10270CA52800BF40EB /* FormatListView.swift in Sources */,
+				658373292712A78100262042 /* InfoView.swift in Sources */,
+				AEC6EC7E270CE7FD004F980F /* AbraServerPeer.swift in Sources */,
+				AEDB0D11270CA52800BF40EB /* ScannerView.swift in Sources */,
+				AEDB0D0A270CA52800BF40EB /* CardTestData.swift in Sources */,
+				AE23D4B7272A4E2F00245102 /* CameraListView.swift in Sources */,
+				AEDB0D04270CA52800BF40EB /* BouncingTapGesture.swift in Sources */,
+				AEDB0D12270CA52800BF40EB /* ViewportView.swift in Sources */,
+				AE35F95A2721C95C006AD1D9 /* ServerConfig.swift in Sources */,
+				AEF00CBC2710E0460089B49E /* SettingsView.swift in Sources */,
+				AE1B27CF273054C600F1D118 /* Version.swift in Sources */,
+				AEC6EC75270CE347004F980F /* LogView.swift in Sources */,
+				AEC6EC7A270CE7FD004F980F /* AbraCaptureMediaProvider.swift in Sources */,
+				AEC6EC81270CEEB2004F980F /* UIState.swift in Sources */,
+				AEDB0D0B270CA52800BF40EB /* DeckView.swift in Sources */,
+				AEF00CB8270F3A330089B49E /* ColorExtensions.swift in Sources */,
+				AEDB0D06270CA52800BF40EB /* ViewExtensions.swift in Sources */,
+				AEC6EC6E270CDA98004F980F /* AbraLogDevice.swift in Sources */,
+				AEC6EC84270D51B9004F980F /* Preferences.swift in Sources */,
+				AE5AA141273A273900FEB5A6 /* MenuView.swift in Sources */,
+				AEDB0D0E270CA52800BF40EB /* CardView.swift in Sources */,
+				AEDB0D05270CA52800BF40EB /* PlatformBackgroundView.swift in Sources */,
+				AEDB0D13270CA52800BF40EB /* ScanResultsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEDB0CB7270CA45500BF40EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEDB0D18270CA52800BF40EB /* AbraApp.swift in Sources */,
+				AEDB0D2B270CA52800BF40EB /* ConfidenceGaugeView.swift in Sources */,
+				AEDB0D2C270CA52800BF40EB /* FannedDeck.swift in Sources */,
+				AEC6EC7D270CE7FD004F980F /* AbraClientPeer.swift in Sources */,
+				AEDB0D19270CA52800BF40EB /* Card.swift in Sources */,
+				AEF00CC32710EF110089B49E /* ActionButton.swift in Sources */,
+				AEDB0D26270CA52800BF40EB /* FormatListView.swift in Sources */,
+				6583732A2712A78100262042 /* InfoView.swift in Sources */,
+				AEC6EC7F270CE7FD004F980F /* AbraServerPeer.swift in Sources */,
+				AEDB0D27270CA52800BF40EB /* ScannerView.swift in Sources */,
+				AEDB0D20270CA52800BF40EB /* CardTestData.swift in Sources */,
+				AE23D4B8272A4E2F00245102 /* CameraListView.swift in Sources */,
+				AEDB0D1A270CA52800BF40EB /* BouncingTapGesture.swift in Sources */,
+				AEDB0D28270CA52800BF40EB /* ViewportView.swift in Sources */,
+				AE35F95B2721C95E006AD1D9 /* ServerConfig.swift in Sources */,
+				AEF00CBD2710E0460089B49E /* SettingsView.swift in Sources */,
+				AE1B27D0273054C600F1D118 /* Version.swift in Sources */,
+				AEC6EC76270CE347004F980F /* LogView.swift in Sources */,
+				AEC6EC7B270CE7FD004F980F /* AbraCaptureMediaProvider.swift in Sources */,
+				AEC6EC82270CEEB2004F980F /* UIState.swift in Sources */,
+				AEDB0D21270CA52800BF40EB /* DeckView.swift in Sources */,
+				AEF00CB9270F3A330089B49E /* ColorExtensions.swift in Sources */,
+				AEDB0D1C270CA52800BF40EB /* ViewExtensions.swift in Sources */,
+				AEC6EC6F270CDA98004F980F /* AbraLogDevice.swift in Sources */,
+				AEC6EC85270D51B9004F980F /* Preferences.swift in Sources */,
+				AE5AA142273A273900FEB5A6 /* MenuView.swift in Sources */,
+				AEDB0D24270CA52800BF40EB /* CardView.swift in Sources */,
+				AEDB0D1B270CA52800BF40EB /* PlatformBackgroundView.swift in Sources */,
+				AE35F958271B4EAD006AD1D9 /* ServerConfigView.swift in Sources */,
+				AEDB0D29270CA52800BF40EB /* ScanResultsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AE7102321E18A32700A9A58E /* Debug.optimized */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_DISABLE_SAFETY_CHECKS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug.optimized;
+		};
+		AEDB0CC4270CA45500BF40EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = Abra/iOS/iOS.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H72QHZNSAJ;
+				ENABLE_HARDENED_RUNTIME = NO;
+				ENABLE_PREVIEWS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Abra/iOS/Abra--iOS--Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Used for scanning codes from the edges of cards";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.paulnettle.stevie;
+				PRODUCT_NAME = Abra;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AEDB0CC5270CA45500BF40EB /* Debug.optimized */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = Abra/iOS/iOS.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H72QHZNSAJ;
+				ENABLE_HARDENED_RUNTIME = NO;
+				ENABLE_PREVIEWS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Abra/iOS/Abra--iOS--Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Used for scanning codes from the edges of cards";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.paulnettle.stevie;
+				PRODUCT_NAME = Abra;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug.optimized;
+		};
+		AEDB0CC6270CA45500BF40EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = Abra/iOS/iOS.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H72QHZNSAJ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Abra/iOS/Abra--iOS--Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Used for scanning codes from the edges of cards";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.paulnettle.stevie;
+				PRODUCT_NAME = Abra;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AEDB0CC7270CA45500BF40EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = Abra/macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H72QHZNSAJ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/opt/homebrew/include,
+				);
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Used for scanning codes from the edges of cards";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 Paul Nettle. All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.paulnettle.stevie;
+				PRODUCT_NAME = Abra;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		AEDB0CC8270CA45500BF40EB /* Debug.optimized */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = Abra/macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H72QHZNSAJ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/opt/homebrew/include,
+				);
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Used for scanning codes from the edges of cards";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 Paul Nettle. All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.paulnettle.stevie;
+				PRODUCT_NAME = Abra;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug.optimized;
+		};
+		AEDB0CC9270CA45500BF40EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = Abra/macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H72QHZNSAJ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/opt/homebrew/include,
+				);
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Used for scanning codes from the edges of cards";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 Paul Nettle. All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.paulnettle.stevie;
+				PRODUCT_NAME = Abra;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		AEDF6FFF1DD148F3001E9083 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_DISABLE_SAFETY_CHECKS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		AEDF70001DD148F3001E9083 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_DISABLE_SAFETY_CHECKS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AEDB0CCA270CA45500BF40EB /* Build configuration list for PBXNativeTarget "Abra (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEDB0CC4270CA45500BF40EB /* Debug */,
+				AEDB0CC5270CA45500BF40EB /* Debug.optimized */,
+				AEDB0CC6270CA45500BF40EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AEDB0CCB270CA45500BF40EB /* Build configuration list for PBXNativeTarget "Abra (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEDB0CC7270CA45500BF40EB /* Debug */,
+				AEDB0CC8270CA45500BF40EB /* Debug.optimized */,
+				AEDB0CC9270CA45500BF40EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AEDF6FED1DD148F3001E9083 /* Build configuration list for PBXProject "Abra" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEDF6FFF1DD148F3001E9083 /* Debug */,
+				AE7102321E18A32700A9A58E /* Debug.optimized */,
+				AEDF70001DD148F3001E9083 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AEDF6FEA1DD148F3001E9083 /* Project object */;
+}

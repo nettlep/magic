@@ -1,0 +1,1479 @@
+{
+	"formats":
+	[
+		{
+			"id": 1,
+			"ignored": false,
+			"invertLuma": false,
+			"type": "normal",
+			"name": "inter6",
+			"description": "The original non-error correcting deck. A deck format comprised of two 6-bit values, interleaved and reversed",
+			"physicalLengthMM": 88.2,
+			"physicalWidthMM": 63.0,
+			"printableMaxWidthMM": 55.0,
+			"physicalStackHeight52CardsMM": 15.6,
+			"physicalCompressedStackHeight52CardsMM": 15.07037037037037,
+			"minCardCount": 35,
+			"cardCodesNdo":
+			[
+				 560,   95, 3590,  389, 1074,  173, 2466, 2745, 3024, 1616,  931,  481, 3015,
+				3059, 3328, 3363, 2761,  866,  964,  825, 1777, 3765,  341, 3269, 3188, 2652,
+				2493, 1046,  109,  406, 3629, 3619,  524, 3658,  304, 3202, 3340, 1203, 2580,
+				1927, 1117, 2118, 1772,  908, 2109,  137, 1611, 2265, 2548, 2122,  594, 2592,
+				1434, 3483
+			],
+			"faceCodesNdo":
+			[
+				"AH", "2H", "3H", "4H", "5H", "6H", "7H", "8H", "9H", "TH", "JH", "QH", "KH",
+				"AC", "2C", "3C", "4C", "5C", "6C", "7C", "8C", "9C", "TC", "JC", "QC", "KC",
+				"KD", "QD", "JD", "TD", "9D", "8D", "7D", "6D", "5D", "4D", "3D", "2D", "AD",
+				"KS", "QS", "JS", "TS", "9S", "8S", "7S", "6S", "5S", "4S", "3S", "2S", "AS",
+				"X1", "X2"
+			],
+			"faceCodesTestDeckOrder":
+			[
+		         "2C", "2D", "2H", "2S",
+		         "9C", "9D", "9H", "9S",
+		         "6C", "6D", "6H", "6S",
+		         "QC", "QD", "QH", "QS",
+		         "7C", "7D", "7H", "7S",
+		         "3C", "3D", "3H", "3S",
+		         "TC", "TD", "TH", "TS",
+		         "AC", "AD", "AH", "AS",
+		         "JC", "JD", "JH", "JS",
+		         "5C", "5D", "5H", "5S",
+		         "8C", "8D", "8H", "8S",
+		         "KC", "KD", "KH", "KS",
+		         "4C", "4D", "4H", "4S",
+		         "X1", "X2"
+			],
+			"marks":
+			[
+				{"widthMM": 2.0, "type": "Landmark"},
+				{"widthMM": 2.0, "type": "Space"},
+				{"widthMM": 4.0, "type": "Landmark"},
+				{"widthMM": 2.0, "type": "Space"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Space"},
+				{"widthMM": 2.0, "type": "Landmark"},
+				{"widthMM": 2.0, "type": "Space"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Space"},
+				{"widthMM": 4.0, "type": "Landmark"},
+				{"widthMM": 2.0, "type": "Space"},
+				{"widthMM": 2.0, "type": "Landmark"},
+				{"widthMM": 2.0, "type": "Space"},
+				{"widthMM": 2.0, "type": "Landmark"}
+			]
+		},
+		{
+			"id": 22,
+			"ignored": false,
+			"invertLuma": false,
+			"type": "palindrome",
+			"name": "pal6d3t1",
+			"description": "Palindrome 6 / d=3 / t=1",
+			"physicalLengthMM": 88.2,
+			"physicalWidthMM": 63.0,
+			"printableMaxWidthMM": 55.0,
+			"physicalStackHeight52CardsMM": 15.6,
+			"physicalCompressedStackHeight52CardsMM": 15.07037037037037,
+			"minCardCount": 35,
+			"cardCodesNdo":
+			[
+			   3142,   3238,   5397,   4030,   3598,   5285,   2386,   4529,   2634,   2274,
+			   4889,   5621,   5645,   2482,   5981,   4777,   2842,   5869,   7175,   2730,
+			   4097,   8191,   5189,   5113,   6419,   6077,   7511,   6307,   4433,   7399,
+			   6667,   4321,   7759,   1460,   4681,   6643,   1820,   7607,   7003,    160,
+			   7967,   6891,    856,   7855,   1028,    496,   6211,   2044,    520,   7099,
+			    272,   3574,   1364,   1708,   3934,   1252,     64,   3822,   1612,    952,
+			   2050,    744,   3350,   3066
+			],
+			"faceCodesNdo":
+			[
+				"AH", "2H", "3H", "4H", "5H", "6H", "7H", "8H", "9H", "TH", "JH", "QH", "KH",
+				"AC", "2C", "3C", "4C", "5C", "6C", "7C", "8C", "9C", "TC", "JC", "QC", "KC",
+				"KD", "QD", "JD", "TD", "9D", "8D", "7D", "6D", "5D", "4D", "3D", "2D", "AD",
+				"KS", "QS", "JS", "TS", "9S", "8S", "7S", "6S", "5S", "4S", "3S", "2S", "AS",
+				"X1", "X2"
+			],
+			"faceCodesTestDeckOrder":
+			[
+				"AH", "2H", "3H", "4H", "5H", "6H", "7H", "8H", "9H", "TH", "JH", "QH", "KH",
+				"AC", "2C", "3C", "4C", "5C", "6C", "7C", "8C", "9C", "TC", "JC", "QC", "KC",
+				"KD", "QD", "JD", "TD", "9D", "8D", "7D", "6D", "5D", "4D", "3D", "2D", "AD",
+				"KS", "QS", "JS", "TS", "9S", "8S", "7S", "6S", "5S", "4S", "3S", "2S", "AS",
+				"X1", "X2"
+			],
+			"marks":
+			[
+				{"widthMM": 3.0, "type": "Landmark"},
+				{"widthMM": 1.5, "type": "Space"},
+				{"widthMM": 2.0, "type": "Landmark"},
+				{"widthMM": 1.5, "type": "Space"},
+				{"widthMM": 4.0, "type": "Landmark"},
+				{"widthMM": 1.5, "type": "Space"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 1.5, "type": "Space"},
+				{"widthMM": 4.0, "type": "Landmark"},
+				{"widthMM": 1.5, "type": "Space"},
+				{"widthMM": 2.0, "type": "Landmark"},
+				{"widthMM": 1.5, "type": "Space"},
+				{"widthMM": 3.0, "type": "Landmark"}
+			]
+		},
+		{
+			"id": 23,
+			"ignored": false,
+			"invertLuma": false,
+			"type": "normal",
+			"name": "ply10.6d3t1",
+			"description": "Polynomial Matrix 10,6 / d=3 / t=1",
+			"physicalLengthMM": 88.2,
+			"physicalWidthMM": 63.0,
+			"printableMaxWidthMM": 55.0,
+			"physicalStackHeight52CardsMM": 15.6,
+			"physicalCompressedStackHeight52CardsMM": 15.07037037037037,
+			"minCardCount": 35,
+			"cardCodesNdo":
+			[
+			    67,    547,    326,    907,    219,    534,    319,    874,    151,    623,
+			   402,    806,    238,    863,    478,    706,    423,    654,     80,    759,
+			    58,    920,    118,   1010,    300,    958,    352,    636,    266,    560,
+			   132,    602,    200,    821,    162,    844,    461,    768,    436,    585,
+			   504,    740,    385,    680,    101,    889,     28,    941,    177,    980,
+			   281,    787,    341,    669,    491,    517,     41,    699,    253,    993,
+			    15,    721,    371,    967
+			],
+			"faceCodesNdo":
+			[
+				"AH", "2H", "3H", "4H", "5H", "6H", "7H", "8H", "9H", "TH", "JH", "QH", "KH",
+				"AC", "2C", "3C", "4C", "5C", "6C", "7C", "8C", "9C", "TC", "JC", "QC", "KC",
+				"KD", "QD", "JD", "TD", "9D", "8D", "7D", "6D", "5D", "4D", "3D", "2D", "AD",
+				"KS", "QS", "JS", "TS", "9S", "8S", "7S", "6S", "5S", "4S", "3S", "2S", "AS",
+				"X1", "X2"
+			],
+			"faceCodesTestDeckOrder":
+			[
+				"AH", "2H", "3H", "4H", "5H", "6H", "7H", "8H", "9H", "TH", "JH", "QH", "KH",
+				"AC", "2C", "3C", "4C", "5C", "6C", "7C", "8C", "9C", "TC", "JC", "QC", "KC",
+				"KD", "QD", "JD", "TD", "9D", "8D", "7D", "6D", "5D", "4D", "3D", "2D", "AD",
+				"KS", "QS", "JS", "TS", "9S", "8S", "7S", "6S", "5S", "4S", "3S", "2S", "AS",
+				"X1", "X2"
+			],
+			"marks":
+			[
+				{"widthMM": 3.0, "type": "Landmark"},
+				{"widthMM": 1.5, "type": "Space"},
+				{"widthMM": 2.0, "type": "Landmark"},
+				{"widthMM": 1.5, "type": "Space"},
+				{"widthMM": 4.0, "type": "Landmark"},
+				{"widthMM": 1.5, "type": "Space"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 1.5, "type": "Space"},
+				{"widthMM": 4.0, "type": "Landmark"},
+				{"widthMM": 1.5, "type": "Space"},
+				{"widthMM": 2.0, "type": "Landmark"}
+			]
+		},
+		{
+			"id": 2,
+			"ignored": false,
+			"invertLuma": false,
+			"type": "reversible",
+			"name": "mds12-54r",
+			"description": "[FLAWED] 12 bits, 54 values, MDS 4, reversible",
+			"physicalLengthMM": 88.2,
+			"physicalWidthMM": 63.0,
+			"printableMaxWidthMM": 55.0,
+			"physicalStackHeight52CardsMM": 15.6,
+			"physicalCompressedStackHeight52CardsMM": 15.07037037037037,
+			"minCardCount": 35,
+			"cardCodesNdo":
+			[
+				2491, 1581, 3303,  910, 1416,  190,  897, 3304,  219, 2379, 3214, 3096, 1746,
+				2695, 2679, 1757,  212,  237, 3876,  881, 3918,  226, 1570, 1611, 3198, 2484,
+				1716, 2680,  177, 1723, 1415, 2338, 3095,   78, 4017, 3869, 3858,  791,  999,
+				2696, 3883, 1000, 3905,  792, 2514, 3201, 1400, 2525, 1604,  894, 2349, 2372,
+				1399, 3185
+			],
+			"faceCodesNdo":
+			[
+				"AH", "2H", "3H", "4H", "5H", "6H", "7H", "8H", "9H", "TH", "JH", "QH", "KH",
+				"AC", "2C", "3C", "4C", "5C", "6C", "7C", "8C", "9C", "TC", "JC", "QC", "KC",
+				"KD", "QD", "JD", "TD", "9D", "8D", "7D", "6D", "5D", "4D", "3D", "2D", "AD",
+				"KS", "QS", "JS", "TS", "9S", "8S", "7S", "6S", "5S", "4S", "3S", "2S", "AS",
+				"X1", "X2"
+			],
+			"faceCodesTestDeckOrder":
+			[
+				"AH", "2H", "3H", "4H", "5H", "6H", "7H", "8H", "9H", "TH", "JH", "QH", "KH",
+				"AC", "2C", "3C", "4C", "5C", "6C", "7C", "8C", "9C", "TC", "JC", "QC", "KC",
+				"KD", "QD", "JD", "TD", "9D", "8D", "7D", "6D", "5D", "4D", "3D", "2D", "AD",
+				"KS", "QS", "JS", "TS", "9S", "8S", "7S", "6S", "5S", "4S", "3S", "2S", "AS",
+				"X1", "X2"
+			],
+			"marks":
+			[
+				{"widthMM": 3.0, "type": "Landmark"},
+				{"widthMM": 1.5, "type": "Space"},
+				{"widthMM": 2.0, "type": "Landmark"},
+				{"widthMM": 1.5, "type": "Space"},
+				{"widthMM": 4.0, "type": "Landmark"},
+				{"widthMM": 1.5, "type": "Space"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 1.5, "type": "Space"},
+				{"widthMM": 4.0, "type": "Landmark"},
+				{"widthMM": 1.5, "type": "Space"},
+				{"widthMM": 2.0, "type": "Landmark"},
+				{"widthMM": 1.5, "type": "Space"},
+				{"widthMM": 3.0, "type": "Landmark"}
+			]
+		},
+		{
+			"id": 3,
+			"ignored": true,
+			"invertLuma": true,
+			"type": "reversible",
+			"name": "mds12-54r-uv",
+			"description": "[FLAWED] 12 bits, 54 values, MDS 4, reversible, inverted luma for UV",
+			"physicalLengthMM": 88.2,
+			"physicalWidthMM": 63.0,
+			"printableMaxWidthMM": 55.0,
+			"physicalStackHeight52CardsMM": 15.6,
+			"physicalCompressedStackHeight52CardsMM": 15.07037037037037,
+			"minCardCount": 35,
+			"cardCodesNdo":
+			[
+				2491, 1581, 3303,  910, 1416,  190,  897, 3304,  219, 2379, 3214, 3096, 1746,
+				2695, 2679, 1757,  212,  237, 3876,  881, 3918,  226, 1570, 1611, 3198, 2484,
+				1716, 2680,  177, 1723, 1415, 2338, 3095,   78, 4017, 3869, 3858,  791,  999,
+				2696, 3883, 1000, 3905,  792, 2514, 3201, 1400, 2525, 1604,  894, 2349, 2372,
+				1399, 3185
+			],
+			"faceCodesNdo":
+			[
+				"AH", "2H", "3H", "4H", "5H", "6H", "7H", "8H", "9H", "TH", "JH", "QH", "KH",
+				"AC", "2C", "3C", "4C", "5C", "6C", "7C", "8C", "9C", "TC", "JC", "QC", "KC",
+				"KD", "QD", "JD", "TD", "9D", "8D", "7D", "6D", "5D", "4D", "3D", "2D", "AD",
+				"KS", "QS", "JS", "TS", "9S", "8S", "7S", "6S", "5S", "4S", "3S", "2S", "AS",
+				"X1", "X2"
+			],
+			"faceCodesTestDeckOrder":
+			[
+				"AH", "2H", "3H", "4H", "5H", "6H", "7H", "8H", "9H", "TH", "JH", "QH", "KH",
+				"AC", "2C", "3C", "4C", "5C", "6C", "7C", "8C", "9C", "TC", "JC", "QC", "KC",
+				"KD", "QD", "JD", "TD", "9D", "8D", "7D", "6D", "5D", "4D", "3D", "2D", "AD",
+				"KS", "QS", "JS", "TS", "9S", "8S", "7S", "6S", "5S", "4S", "3S", "2S", "AS",
+				"X1", "X2"
+			],
+			"marks":
+			[
+				{"widthMM": 3.0, "type": "Landmark"},
+				{"widthMM": 1.5, "type": "Space"},
+				{"widthMM": 2.0, "type": "Landmark"},
+				{"widthMM": 1.5, "type": "Space"},
+				{"widthMM": 4.0, "type": "Landmark"},
+				{"widthMM": 1.5, "type": "Space"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 1.5, "type": "Space"},
+				{"widthMM": 4.0, "type": "Landmark"},
+				{"widthMM": 1.5, "type": "Space"},
+				{"widthMM": 2.0, "type": "Landmark"},
+				{"widthMM": 1.5, "type": "Space"},
+				{"widthMM": 3.0, "type": "Landmark"}
+			]
+		},
+		{
+			"id": 4,
+			"ignored": true,
+			"invertLuma": false,
+			"type": "normal",
+			"name": "mds12-54",
+			"description": "12 bits, 54 values, MDS 4 - BROKEN PALENDROME CODE",
+			"physicalLengthMM": 88.2,
+			"physicalWidthMM": 63.0,
+			"printableMaxWidthMM": 55.0,
+			"physicalStackHeight52CardsMM": 15.6,
+			"physicalCompressedStackHeight52CardsMM": 15.07037037037037,
+			"minCardCount": 35,
+			"cardCodesNdo":
+			[
+				2491, 1581, 3303,  910, 1416,  190,  897, 3304,  219, 2379, 3214, 3096, 1746,
+				2695, 2679, 1757,  212,  237, 3876,  881, 3918,  226, 1570, 1611, 3198, 2484,
+				1716, 2680,  177, 1723, 1415, 2338, 3095,   78, 4017, 3869, 3858,  791,  999,
+				2696, 3883, 1000, 3905,  792, 2514, 3201, 1400, 2525, 1604,  894, 2349, 2372,
+				1399, 3185
+			],
+			"faceCodesNdo":
+			[
+				"AH", "2H", "3H", "4H", "5H", "6H", "7H", "8H", "9H", "TH", "JH", "QH", "KH",
+				"AC", "2C", "3C", "4C", "5C", "6C", "7C", "8C", "9C", "TC", "JC", "QC", "KC",
+				"KD", "QD", "JD", "TD", "9D", "8D", "7D", "6D", "5D", "4D", "3D", "2D", "AD",
+				"KS", "QS", "JS", "TS", "9S", "8S", "7S", "6S", "5S", "4S", "3S", "2S", "AS",
+				"X1", "X2"
+			],
+			"faceCodesTestDeckOrder":
+			[
+				"AH", "2H", "3H", "4H", "5H", "6H", "7H", "8H", "9H", "TH", "JH", "QH", "KH",
+				"AC", "2C", "3C", "4C", "5C", "6C", "7C", "8C", "9C", "TC", "JC", "QC", "KC",
+				"KD", "QD", "JD", "TD", "9D", "8D", "7D", "6D", "5D", "4D", "3D", "2D", "AD",
+				"KS", "QS", "JS", "TS", "9S", "8S", "7S", "6S", "5S", "4S", "3S", "2S", "AS",
+				"X1", "X2"
+			],
+			"marks":
+			[
+				{"widthMM": 3.0, "type": "Landmark"},
+				{"widthMM": 1.0, "type": "Space"},
+				{"widthMM": 0.5, "type": "Space"},
+				{"widthMM": 2.0, "type": "Landmark"},
+				{"widthMM": 1.5, "type": "Space"},
+				{"widthMM": 4.0, "type": "Landmark"},
+				{"widthMM": 1.5, "type": "Space"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 1.5, "type": "Space"},
+				{"widthMM": 4.0, "type": "Landmark"},
+				{"widthMM": 1.5, "type": "Space"},
+				{"widthMM": 2.0, "type": "Landmark"},
+				{"widthMM": 1.5, "type": "Space"},
+				{"widthMM": 3.0, "type": "Landmark"}
+			]
+		},
+		{
+			"id": 5,
+			"ignored": true,
+			"invertLuma": false,
+			"type": "normal",
+			"name": "mds12-56",
+			"description": "12 bits, 56 values, MDS 4",
+			"physicalLengthMM": 88.2,
+			"physicalWidthMM": 63.0,
+			"printableMaxWidthMM": 55.0,
+			"physicalStackHeight52CardsMM": 15.6,
+			"physicalCompressedStackHeight52CardsMM": 15.07037037037037,
+			"minCardCount": 35,
+			"cardCodesNdo":
+			[
+				3438,  937, 2720, 1337,  857,  195, 1788, 2735, 1539, 4044, 2655, 1455,  101,
+				3237, 3157,  106,  204, 3321, 1632, 2409, 1695, 2445, 1548,  934, 1018, 2614,
+				3329,   51, 3162,  154,   60,  854, 3900, 1440,  149, 3891, 2418, 2761, 1647,
+				1360, 3318, 3242, 2488, 1375, 2454, 1680, 3483, 2640,  773, 3078, 1013, 1779,
+				3941, 4035, 2826, 1478
+			],
+			"faceCodesNdo":
+			[
+				"AH", "2H", "3H", "4H", "5H", "6H", "7H", "8H", "9H", "TH", "JH", "QH", "KH",
+				"AC", "2C", "3C", "4C", "5C", "6C", "7C", "8C", "9C", "TC", "JC", "QC", "KC",
+				"KD", "QD", "JD", "TD", "9D", "8D", "7D", "6D", "5D", "4D", "3D", "2D", "AD",
+				"KS", "QS", "JS", "TS", "9S", "8S", "7S", "6S", "5S", "4S", "3S", "2S", "AS",
+				"X1", "X2", "Z1", "Z2"
+			],
+			"faceCodesTestDeckOrder":
+			[
+				"AH", "2H", "3H", "4H", "5H", "6H", "7H", "8H", "9H", "TH", "JH", "QH", "KH",
+				"AC", "2C", "3C", "4C", "5C", "6C", "7C", "8C", "9C", "TC", "JC", "QC", "KC",
+				"KD", "QD", "JD", "TD", "9D", "8D", "7D", "6D", "5D", "4D", "3D", "2D", "AD",
+				"KS", "QS", "JS", "TS", "9S", "8S", "7S", "6S", "5S", "4S", "3S", "2S", "AS",
+				"X1", "X2", "Z1", "Z2"
+			],
+			"marks":
+			[
+				{"widthMM": 2.0, "type": "Landmark"},
+				{"widthMM": 2.0, "type": "Space"},
+				{"widthMM": 4.0, "type": "Landmark"},
+				{"widthMM": 2.0, "type": "Space"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Space"},
+				{"widthMM": 2.0, "type": "Landmark"},
+				{"widthMM": 2.0, "type": "Space"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Space"},
+				{"widthMM": 4.0, "type": "Landmark"},
+				{"widthMM": 2.0, "type": "Space"},
+				{"widthMM": 2.0, "type": "Landmark"},
+				{"widthMM": 2.0, "type": "Space"},
+				{"widthMM": 2.0, "type": "Landmark"}
+			]
+		},
+		{
+			"id": 6,
+			"ignored": true,
+			"invertLuma": false,
+			"type": "normal",
+			"name": "mds12-56b",
+			"description": "12 bits, 56 values, MDS 4 (hacky adjusted)",
+			"physicalLengthMM": 88.2,
+			"physicalWidthMM": 63.0,
+			"printableMaxWidthMM": 58.0,
+			"physicalStackHeight52CardsMM": 15.6,
+			"physicalCompressedStackHeight52CardsMM": 15.07037037037037,
+			"minCardCount": 35,
+			"cardCodesNdo":
+			[
+				3438,  937, 2720, 1337,  857,  195, 1788, 2735, 1539, 4044, 2655, 1455,  101,
+				3237, 3157,  106,  204, 3321, 1632, 2409, 1695, 2445, 1548,  934, 1018, 2614,
+				3329,   51, 3162,  154,   60,  854, 3900, 1440,  149, 3891, 2418, 2761, 1647,
+				1360, 3318, 3242, 2488, 1375, 2454, 1680, 3483, 2640,  773, 3078, 1013, 1779,
+				3941, 4035, 2826, 1478
+			],
+			"faceCodesNdo":
+			[
+				"AH", "2H", "3H", "4H", "5H", "6H", "7H", "8H", "9H", "TH", "JH", "QH", "KH",
+				"AC", "2C", "3C", "4C", "5C", "6C", "7C", "8C", "9C", "TC", "JC", "QC", "KC",
+				"KD", "QD", "JD", "TD", "9D", "8D", "7D", "6D", "5D", "4D", "3D", "2D", "AD",
+				"KS", "QS", "JS", "TS", "9S", "8S", "7S", "6S", "5S", "4S", "3S", "2S", "AS",
+				"X1", "X2", "Z1", "Z2"
+			],
+			"faceCodesTestDeckOrder":
+			[
+				"AH", "2H", "3H", "4H", "5H", "6H", "7H", "8H", "9H", "TH", "JH", "QH", "KH",
+				"AC", "2C", "3C", "4C", "5C", "6C", "7C", "8C", "9C", "TC", "JC", "QC", "KC",
+				"KD", "QD", "JD", "TD", "9D", "8D", "7D", "6D", "5D", "4D", "3D", "2D", "AD",
+				"KS", "QS", "JS", "TS", "9S", "8S", "7S", "6S", "5S", "4S", "3S", "2S", "AS",
+				"X1", "X2", "Z1", "Z2"
+			],
+			"marks":
+			[
+				{"widthMM": 2.0, "type": "Landmark"},
+				{"widthMM": 2.0, "type": "Space"},
+				{"widthMM": 4.0, "type": "Landmark"},
+				{"widthMM": 2.0, "type": "Space"},
+				{"widthMM": 3.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.5, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.5, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Space"},
+				{"widthMM": 2.0, "type": "Landmark"},
+				{"widthMM": 2.0, "type": "Space"},
+				{"widthMM": 2.5, "type": "Bit"},
+				{"widthMM": 2.5, "type": "Bit"},
+				{"widthMM": 2.5, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 3.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Space"},
+				{"widthMM": 3.0, "type": "Landmark"},
+				{"widthMM": 2.0, "type": "Space"},
+				{"widthMM": 2.0, "type": "Landmark"},
+				{"widthMM": 2.0, "type": "Space"},
+				{"widthMM": 2.0, "type": "Landmark"}
+			]
+		},
+		{
+			"id": 7,
+			"ignored": true,
+			"invertLuma": false,
+			"type": "normal",
+			"name": "mds12-104",
+			"description": "12 bits, 104 values, MDS 4",
+			"physicalLengthMM": 146.05,
+			"physicalWidthMM": 88.2,
+			"printableMaxWidthMM": 55.0,
+			"physicalStackHeight52CardsMM": 15.6,
+			"physicalCompressedStackHeight52CardsMM": 15.07037037037037,
+			"minCardCount": 80,
+			"cardCodesNdo":
+			[
+				 678, 2891, 1199, 3607,  426, 2884,  572, 1903, 3793, 2846, 2855, 2285, 1225,
+				1029, 3518, 2144, 2856, 3414, 3630, 3032, 3463, 1888, 2941, 3650,  406, 2038,
+				 707,  421, 1798, 3355, 1104,  618,  666, 1119, 1034,  563, 1994, 3362,  361,
+				2091, 3608, 1936,  304, 2041, 2260, 2250, 2232, 2207, 3617, 1184, 1180,  448,
+				 716, 1123, 3836,  613, 1081, 2957, 1132, 2101, 1274, 3707, 2174,  268, 1845,
+				1078,  319, 3393,  358,  409, 1955, 3497, 1875,  601,  598,  341, 3549, 1884,
+				 346, 1964, 3661,  681,  463, 2996, 3762, 3716, 3054, 3556, 1269,  661, 1171,
+				2833, 2119, 2066, 1951,  752, 3723, 2946,  767, 2177, 3815, 3448, 2547, 1801
+			],
+			"faceCodesNdo":
+			[
+				"H", "He", "Li", "Be", "B", "C", "N", "O", "F", "Ne", "Na", "Mg", "Al",
+				"Si", "P", "S", "Cl", "Ar", "K", "Ca", "Sc", "Ti", "V", "Cr", "Mn", "Fe",
+				"Co", "Ni", "Cu", "Zn", "Ga", "Ge", "As", "Se", "Br", "Kr", "Rb", "Sr", "Y",
+				"Zr", "Nb", "Mo", "Tc", "Ru", "Rh", "Pd", "Ag", "Cd", "In", "Sn", "Sb", "Te",
+				"I", "Xe", "Cs", "Ba", "La", "Ce", "Pr", "Nd", "Pm", "Sm", "Eu", "Gd", "Tb",
+				"Dy", "Ho", "Er", "Tm", "Yb", "Lu", "Hf", "Ta", "W", "Re", "Os", "Ir", "Pt",
+				"Au", "Hg", "Tl", "Pb", "Bi", "Po", "At", "Rn", "Fr", "Ra", "Ac", "Th", "Pa",
+				"U", "Np", "Pu", "Am", "Cm", "Bk", "Cf", "Es", "Fm", "Md", "No", "Lr", "Cb"
+			],
+			"faceCodesTestDeckOrder":
+			[
+				"H", "He", "Li", "Be", "B", "C", "N", "O", "F", "Ne", "Na", "Mg", "Al",
+				"Si", "P", "S", "Cl", "Ar", "K", "Ca", "Sc", "Ti", "V", "Cr", "Mn", "Fe",
+				"Co", "Ni", "Cu", "Zn", "Ga", "Ge", "As", "Se", "Br", "Kr", "Rb", "Sr", "Y",
+				"Zr", "Nb", "Mo", "Tc", "Ru", "Rh", "Pd", "Ag", "Cd", "In", "Sn", "Sb", "Te",
+				"I", "Xe", "Cs", "Ba", "La", "Ce", "Pr", "Nd", "Pm", "Sm", "Eu", "Gd", "Tb",
+				"Dy", "Ho", "Er", "Tm", "Yb", "Lu", "Hf", "Ta", "W", "Re", "Os", "Ir", "Pt",
+				"Au", "Hg", "Tl", "Pb", "Bi", "Po", "At", "Rn", "Fr", "Ra", "Ac", "Th", "Pa",
+				"U", "Np", "Pu", "Am", "Cm", "Bk", "Cf", "Es", "Fm", "Md", "No", "Lr", "Cb"
+			],
+			"marks":
+			[
+				{"widthMM": 2.0, "type": "Landmark"},
+				{"widthMM": 2.0, "type": "Space"},
+				{"widthMM": 4.0, "type": "Landmark"},
+				{"widthMM": 2.0, "type": "Space"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Space"},
+				{"widthMM": 2.0, "type": "Landmark"},
+				{"widthMM": 2.0, "type": "Space"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Space"},
+				{"widthMM": 4.0, "type": "Landmark"},
+				{"widthMM": 2.0, "type": "Space"},
+				{"widthMM": 2.0, "type": "Landmark"},
+				{"widthMM": 2.0, "type": "Space"},
+				{"widthMM": 2.0, "type": "Landmark"}
+			]
+		},
+		{
+			"id": 8,
+			"ignored": true,
+			"invertLuma": false,
+			"type": "normal",
+			"name": "mds15-54",
+			"description": "15 bits, 54 values, MDS 6",
+			"physicalLengthMM": 88.2,
+			"physicalWidthMM": 63.0,
+			"printableMaxWidthMM": 55.0,
+			"physicalStackHeight52CardsMM": 15.6,
+			"physicalCompressedStackHeight52CardsMM": 15.07037037037037,
+			"minCardCount": 35,
+			"cardCodesNdo":
+			[
+				26601, 1842, 22436, 15405, 1781, 12531, 15378, 23170, 12596, 26158, 22427, 20944, 3168,
+				27971, 27780, 3480, 12555, 14144, 23418, 15262, 24666, 13959, 1805, 3027, 22108, 26582,
+				3052, 27835, 12492, 3167, 1738, 24989, 20520, 3495, 24677, 23365, 23229, 14937, 15829,
+				28028, 23753, 20503, 23822, 14950, 27376, 22115,  377, 27447, 2603, 15265, 24994, 26129,
+				190, 20975
+			],
+			"faceCodesNdo":
+			[
+				"AH", "2H", "3H", "4H", "5H", "6H", "7H", "8H", "9H", "TH", "JH", "QH", "KH",
+				"AC", "2C", "3C", "4C", "5C", "6C", "7C", "8C", "9C", "TC", "JC", "QC", "KC",
+				"KD", "QD", "JD", "TD", "9D", "8D", "7D", "6D", "5D", "4D", "3D", "2D", "AD",
+				"KS", "QS", "JS", "TS", "9S", "8S", "7S", "6S", "5S", "4S", "3S", "2S", "AS",
+				"X1", "X2"
+			],
+			"faceCodesTestDeckOrder":
+			[
+				"AH", "2H", "3H", "4H", "5H", "6H", "7H", "8H", "9H", "TH", "JH", "QH", "KH",
+				"AC", "2C", "3C", "4C", "5C", "6C", "7C", "8C", "9C", "TC", "JC", "QC", "KC",
+				"KD", "QD", "JD", "TD", "9D", "8D", "7D", "6D", "5D", "4D", "3D", "2D", "AD",
+				"KS", "QS", "JS", "TS", "9S", "8S", "7S", "6S", "5S", "4S", "3S", "2S", "AS",
+				"X1", "X2"
+			],
+			"marks":
+			[
+				{"widthMM": 2.0, "type": "Landmark"},
+				{"widthMM": 2.0, "type": "Space"},
+				{"widthMM": 4.0, "type": "Landmark"},
+				{"widthMM": 2.0, "type": "Space"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Space"},
+				{"widthMM": 4.0, "type": "Landmark"},
+				{"widthMM": 2.0, "type": "Space"},
+				{"widthMM": 2.0, "type": "Landmark"},
+				{"widthMM": 2.0, "type": "Space"},
+				{"widthMM": 2.0, "type": "Landmark"}
+			]
+		},
+		{
+			"id": 9,
+			"ignored": true,
+			"invertLuma": false,
+			"type": "normal",
+			"name": "mds16-54",
+			"description": "16 bits, 54 values, MDS 6",
+			"physicalLengthMM": 88.2,
+			"physicalWidthMM": 63.0,
+			"printableMaxWidthMM": 55.0,
+			"physicalStackHeight52CardsMM": 15.6,
+			"physicalCompressedStackHeight52CardsMM": 15.07037037037037,
+			"minCardCount": 35,
+			"cardCodesNdo":
+			[
+				55891, 2994, 42950, 28497, 3134, 21557, 25180, 42125, 21304, 52548, 39401, 37959, 12446,
+				65196, 62748, 15475, 21255, 24223, 44691, 26548, 50761, 24098, 2957, 14058, 40540, 51306,
+				12633, 62192, 14859, 12646, 3573, 50159, 38785, 15296, 50578, 44645, 41530, 22998, 27872,
+				64419, 43388, 26911, 43174, 22664, 57632, 40219, 3530, 62827, 14125, 25855, 49796, 49337,
+				211, 37749
+			],
+			"faceCodesNdo":
+			[
+				"AH", "2H", "3H", "4H", "5H", "6H", "7H", "8H", "9H", "TH", "JH", "QH", "KH",
+				"AC", "2C", "3C", "4C", "5C", "6C", "7C", "8C", "9C", "TC", "JC", "QC", "KC",
+				"KD", "QD", "JD", "TD", "9D", "8D", "7D", "6D", "5D", "4D", "3D", "2D", "AD",
+				"KS", "QS", "JS", "TS", "9S", "8S", "7S", "6S", "5S", "4S", "3S", "2S", "AS",
+				"X1", "X2"
+			],
+			"faceCodesTestDeckOrder":
+			[
+				"AH", "2H", "3H", "4H", "5H", "6H", "7H", "8H", "9H", "TH", "JH", "QH", "KH",
+				"AC", "2C", "3C", "4C", "5C", "6C", "7C", "8C", "9C", "TC", "JC", "QC", "KC",
+				"KD", "QD", "JD", "TD", "9D", "8D", "7D", "6D", "5D", "4D", "3D", "2D", "AD",
+				"KS", "QS", "JS", "TS", "9S", "8S", "7S", "6S", "5S", "4S", "3S", "2S", "AS",
+				"X1", "X2"
+			],
+			"marks":
+			[
+				{"widthMM": 2.0, "type": "Landmark"},
+				{"widthMM": 2.0, "type": "Space"},
+				{"widthMM": 4.0, "type": "Landmark"},
+				{"widthMM": 2.0, "type": "Space"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Space"},
+				{"widthMM": 4.0, "type": "Landmark"},
+				{"widthMM": 2.0, "type": "Space"},
+				{"widthMM": 1.5, "type": "Landmark"},
+				{"widthMM": 1.5, "type": "Space"},
+				{"widthMM": 1.5, "type": "Landmark"}
+			]
+		},
+		{
+			"id": 10,
+			"ignored": true,
+			"invertLuma": false,
+			"type": "normal",
+			"name": "mds16-56",
+			"description": "16 bits, 56 values, MDS 6",
+			"physicalLengthMM": 88.2,
+			"physicalWidthMM": 63.0,
+			"printableMaxWidthMM": 55.0,
+			"physicalStackHeight52CardsMM": 15.6,
+			"physicalCompressedStackHeight52CardsMM": 15.07037037037037,
+			"minCardCount": 35,
+			"cardCodesNdo":
+			[
+				51762,  3904, 40175, 28252,  3719, 21256, 25905, 40215, 22618, 49319, 40144, 38469, 14662,
+				63334, 63137, 14713, 21303, 64972, 22941, 41084, 25846, 43734, 22629,  3768, 12843, 38786,
+				49503, 13267, 63321, 21232, 14526,  1514, 43793, 28580, 21199, 43753, 41027, 40232, 22946,
+				28259, 64564, 64523, 41348, 28571, 41403, 25801, 52170, 38845,  1493, 52213, 12820, 25870,
+				43822, 49304,  1069, 38522
+			],
+			"faceCodesNdo":
+			[
+				"AH", "2H", "3H", "4H", "5H", "6H", "7H", "8H", "9H", "TH", "JH", "QH", "KH",
+				"AC", "2C", "3C", "4C", "5C", "6C", "7C", "8C", "9C", "TC", "JC", "QC", "KC",
+				"KD", "QD", "JD", "TD", "9D", "8D", "7D", "6D", "5D", "4D", "3D", "2D", "AD",
+				"KS", "QS", "JS", "TS", "9S", "8S", "7S", "6S", "5S", "4S", "3S", "2S", "AS",
+				"X1", "X2", "Z1", "Z2"
+			],
+			"faceCodesTestDeckOrder":
+			[
+				"AH", "2H", "3H", "4H", "5H", "6H", "7H", "8H", "9H", "TH", "JH", "QH", "KH",
+				"AC", "2C", "3C", "4C", "5C", "6C", "7C", "8C", "9C", "TC", "JC", "QC", "KC",
+				"KD", "QD", "JD", "TD", "9D", "8D", "7D", "6D", "5D", "4D", "3D", "2D", "AD",
+				"KS", "QS", "JS", "TS", "9S", "8S", "7S", "6S", "5S", "4S", "3S", "2S", "AS",
+				"X1", "X2", "Z1", "Z2"
+			],
+			"marks":
+			[
+				{"widthMM": 1.0, "type": "Landmark"},
+				{"widthMM": 1.0, "type": "Space"},
+				{"widthMM": 4.0, "type": "Landmark"},
+				{"widthMM": 2.0, "type": "Space"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Space"},
+				{"widthMM": 4.0, "type": "Landmark"},
+				{"widthMM": 1.0, "type": "Space"},
+				{"widthMM": 1.0, "type": "Landmark"},
+				{"widthMM": 1.0, "type": "Space"},
+				{"widthMM": 2.0, "type": "Landmark"}
+			]
+		},
+		{
+			"id": 11,
+			"ignored": true,
+			"invertLuma": false,
+			"type": "normal",
+			"name": "mds17-54",
+			"description": "17 bits, 54 values, MDS 7",
+			"physicalLengthMM": 88.2,
+			"physicalWidthMM": 63.0,
+			"printableMaxWidthMM": 55.0,
+			"physicalStackHeight52CardsMM": 15.6,
+			"physicalCompressedStackHeight52CardsMM": 15.07037037037037,
+			"minCardCount": 35,
+			"cardCodesNdo":
+			[
+				87293, 40546, 76669, 63611, 39397, 52040, 58981, 76933, 53934, 86906, 76546, 71729, 45903,
+				96720, 92081, 46263, 52400, 54569, 78564, 57826, 84636, 53969, 40477, 43734, 73654, 87170,
+				44334, 92110, 52023, 44369, 39322, 85275, 67119, 46280, 84707, 78491, 77050, 54614, 65411,
+				97832, 79132, 66007, 79203, 57757, 90166, 73673, 34692, 90185, 43689, 58906, 85348, 86789,
+				32892, 71758
+			],
+			"faceCodesNdo":
+			[
+				"AH", "2H", "3H", "4H", "5H", "6H", "7H", "8H", "9H", "TH", "JH", "QH", "KH",
+				"AC", "2C", "3C", "4C", "5C", "6C", "7C", "8C", "9C", "TC", "JC", "QC", "KC",
+				"KD", "QD", "JD", "TD", "9D", "8D", "7D", "6D", "5D", "4D", "3D", "2D", "AD",
+				"KS", "QS", "JS", "TS", "9S", "8S", "7S", "6S", "5S", "4S", "3S", "2S", "AS",
+				"X1", "X2"
+			],
+			"faceCodesTestDeckOrder":
+			[
+				"AH", "2H", "3H", "4H", "5H", "6H", "7H", "8H", "9H", "TH", "JH", "QH", "KH",
+				"AC", "2C", "3C", "4C", "5C", "6C", "7C", "8C", "9C", "TC", "JC", "QC", "KC",
+				"KD", "QD", "JD", "TD", "9D", "8D", "7D", "6D", "5D", "4D", "3D", "2D", "AD",
+				"KS", "QS", "JS", "TS", "9S", "8S", "7S", "6S", "5S", "4S", "3S", "2S", "AS",
+				"X1", "X2"
+			],
+			"marks":
+			[
+				{"widthMM": 1.0, "type": "Landmark"},
+				{"widthMM": 1.0, "type": "Space"},
+				{"widthMM": 4.0, "type": "Landmark"},
+				{"widthMM": 2.0, "type": "Space"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Space"},
+				{"widthMM": 4.0, "type": "Landmark"},
+				{"widthMM": 1.0, "type": "Space"},
+				{"widthMM": 1.0, "type": "Landmark"},
+				{"widthMM": 1.0, "type": "Space"},
+				{"widthMM": 2.0, "type": "Landmark"}
+			]
+		},
+		{
+			"id": 12,
+			"ignored": true,
+			"invertLuma": false,
+			"type": "normal",
+			"name": "mds18-54-old",
+			"description": "18-bit MDS codes optimized to 56 values with ad cards removed to get 54 values",
+			"physicalLengthMM": 88.2,
+			"physicalWidthMM": 63.0,
+			"printableMaxWidthMM": 55.0,
+			"physicalStackHeight52CardsMM": 15.6,
+			"physicalCompressedStackHeight52CardsMM": 15.07037037037037,
+			"minCardCount": 35,
+			"cardCodesNdo":
+			[
+				173813,  81093, 147350, 117813,  78794, 104044, 115653, 153093, 104803, 170703, 147305, 134236,  91747,
+				184166, 180329,  91804, 104083, 193443, 107865, 154101, 109225, 158271, 104860,  80954,  87465, 143462,
+				173578,  88665, 180374,  92563,  88742,  78645, 169279, 127216,  92524, 158400, 153866, 153338, 107942,
+				117962, 193372, 184217, 156976, 126991, 157135, 109142, 174341, 143513,  69616, 174586,  87382, 115514,
+				169408, 170544
+			],
+			"faceCodesNdo":
+			[
+				"AH", "2H", "3H", "4H", "5H", "6H", "7H", "8H", "9H", "TH", "JH", "QH", "KH",
+				"AC", "2C", "3C", "4C", "5C", "6C", "7C", "8C", "9C", "TC", "JC", "QC", "KC",
+				"KD", "QD", "JD", "TD", "9D", "8D", "7D", "6D", "5D", "4D", "3D", "2D", "AD",
+				"KS", "QS", "JS", "TS", "9S", "8S", "7S", "6S", "5S", "4S", "3S", "2S", "AS",
+				"X1", "X2"
+			],
+			"faceCodesTestDeckOrder":
+			[
+				"AH", "2H", "3H", "4H", "5H", "6H", "7H", "8H", "9H", "TH", "JH", "QH", "KH",
+				"AC", "2C", "3C", "4C", "5C", "6C", "7C", "8C", "9C", "TC", "JC", "QC", "KC",
+				"KD", "QD", "JD", "TD", "9D", "8D", "7D", "6D", "5D", "4D", "3D", "2D", "AD",
+				"KS", "QS", "JS", "TS", "9S", "8S", "7S", "6S", "5S", "4S", "3S", "2S", "AS",
+				"X1", "X2"
+			],
+			"marks":
+			[
+				{"widthMM": 1.0, "type": "Landmark"},
+				{"widthMM": 1.0, "type": "Space"},
+				{"widthMM": 4.0, "type": "Landmark"},
+				{"widthMM": 2.0, "type": "Space"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Space"},
+				{"widthMM": 4.0, "type": "Landmark"},
+				{"widthMM": 1.0, "type": "Space"},
+				{"widthMM": 1.0, "type": "Landmark"},
+				{"widthMM": 1.0, "type": "Space"},
+				{"widthMM": 2.0, "type": "Landmark"}
+			]
+		},
+		{
+			"id": 13,
+			"ignored": false,
+			"invertLuma": false,
+			"type": "normal",
+			"name": "mds18-54",
+			"description": "18 bits, 54 values, MDS 8",
+			"physicalLengthMM": 88.2,
+			"physicalWidthMM": 63.0,
+			"printableMaxWidthMM": 56.0,
+			"physicalStackHeight52CardsMM": 15.6,
+			"physicalCompressedStackHeight52CardsMM": 15.07037037037037,
+			"minCardCount": 35,
+			"cardCodesNdo":
+			[
+				174844, 87637, 153084, 118732, 81724, 103830, 118579, 154124, 105113, 173555, 152835, 144229, 91545,
+				192601, 183397, 92777, 105062, 108197, 157391, 114748, 169535, 108122, 81859, 88410, 146538, 174595,
+				88485, 183450, 103785, 91494, 78028, 170288, 135078, 92822, 169664, 157232, 154355, 108885, 127759,
+				192678, 158015, 135001, 158144, 108970, 181098, 146581, 77875, 181141, 87722, 114883, 170447, 173324,
+				68848, 144282
+			],
+			"faceCodesNdo":
+			[
+				"AH", "2H", "3H", "4H", "5H", "6H", "7H", "8H", "9H", "TH", "JH", "QH", "KH",
+				"AC", "2C", "3C", "4C", "5C", "6C", "7C", "8C", "9C", "TC", "JC", "QC", "KC",
+				"KD", "QD", "JD", "TD", "9D", "8D", "7D", "6D", "5D", "4D", "3D", "2D", "AD",
+				"KS", "QS", "JS", "TS", "9S", "8S", "7S", "6S", "5S", "4S", "3S", "2S", "AS",
+				"X1", "X2"
+			],
+			"faceCodesTestDeckOrder":
+			[
+				"AH", "2H", "3H", "4H", "5H", "6H", "7H", "8H", "9H", "TH", "JH", "QH", "KH",
+				"AC", "2C", "3C", "4C", "5C", "6C", "7C", "8C", "9C", "TC", "JC", "QC", "KC",
+				"KD", "QD", "JD", "TD", "9D", "8D", "7D", "6D", "5D", "4D", "3D", "2D", "AD",
+				"KS", "QS", "JS", "TS", "9S", "8S", "7S", "6S", "5S", "4S", "3S", "2S", "AS",
+				"X1", "X2"
+			],
+			"marks":
+			[
+				{"widthMM": 1.5, "type": "Landmark"},
+				{"widthMM": 2.0, "type": "Space"},
+				{"widthMM": 3.0, "type": "Landmark"},
+				{"widthMM": 2.0, "type": "Space"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Space"},
+				{"widthMM": 3.0, "type": "Landmark"},
+				{"widthMM": 2.0, "type": "Space"},
+				{"widthMM": 1.5, "type": "Landmark"},
+				{"widthMM": 1.5, "type": "Space"},
+				{"widthMM": 1.5, "type": "Landmark"}
+			]
+		},
+		{
+			"id": 14,
+			"ignored": true,
+			"invertLuma": false,
+			"type": "normal",
+			"name": "mds18-56",
+			"description": "18 bits, 56 values, MDS 8",
+			"physicalLengthMM": 88.2,
+			"physicalWidthMM": 63.0,
+			"printableMaxWidthMM": 55.0,
+			"physicalStackHeight52CardsMM": 15.6,
+			"physicalCompressedStackHeight52CardsMM": 15.07037037037037,
+			"minCardCount": 35,
+			"cardCodesNdo":
+			[
+				173813,  81093, 147350, 117813,  78794, 104044, 115653, 153093, 104803, 170703, 147305, 134236,  91747,
+				184166, 180329,  91804, 104083, 193443, 107865, 154101, 109225, 158271, 104860,  80954,  87465, 143462,
+				173578,  88665, 180374,  92563,  88742,  78645, 169279, 127216,  92524, 158400, 153866, 153338, 107942,
+				117962, 193372, 184217, 156976, 126991, 157135, 109142, 174341, 143513,  69616, 174586,  87382, 115514,
+				169408, 170544,  69391, 134307
+			],
+			"faceCodesNdo":
+			[
+				"AH", "2H", "3H", "4H", "5H", "6H", "7H", "8H", "9H", "TH", "JH", "QH", "KH",
+				"AC", "2C", "3C", "4C", "5C", "6C", "7C", "8C", "9C", "TC", "JC", "QC", "KC",
+				"KD", "QD", "JD", "TD", "9D", "8D", "7D", "6D", "5D", "4D", "3D", "2D", "AD",
+				"KS", "QS", "JS", "TS", "9S", "8S", "7S", "6S", "5S", "4S", "3S", "2S", "AS",
+				"X1", "X2", "Z1", "Z2"
+			],
+			"faceCodesTestDeckOrder":
+			[
+				"AH", "2H", "3H", "4H", "5H", "6H", "7H", "8H", "9H", "TH", "JH", "QH", "KH",
+				"AC", "2C", "3C", "4C", "5C", "6C", "7C", "8C", "9C", "TC", "JC", "QC", "KC",
+				"KD", "QD", "JD", "TD", "9D", "8D", "7D", "6D", "5D", "4D", "3D", "2D", "AD",
+				"KS", "QS", "JS", "TS", "9S", "8S", "7S", "6S", "5S", "4S", "3S", "2S", "AS",
+				"X1", "X2", "Z1", "Z2"
+			],
+			"marks":
+			[
+				{"widthMM": 1.0, "type": "Landmark"},
+				{"widthMM": 1.0, "type": "Space"},
+				{"widthMM": 4.0, "type": "Landmark"},
+				{"widthMM": 2.0, "type": "Space"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Space"},
+				{"widthMM": 4.0, "type": "Landmark"},
+				{"widthMM": 1.0, "type": "Space"},
+				{"widthMM": 1.0, "type": "Landmark"},
+				{"widthMM": 1.0, "type": "Space"},
+				{"widthMM": 2.0, "type": "Landmark"}
+			]
+		},
+		{
+			"id": 15,
+			"ignored": true,
+			"invertLuma": false,
+			"type": "normal",
+			"name": "mds19-54",
+			"description": "19 bits, 54 values, MDS 8",
+			"physicalLengthMM": 88.2,
+			"physicalWidthMM": 63.0,
+			"printableMaxWidthMM": 55.0,
+			"physicalStackHeight52CardsMM": 15.6,
+			"physicalCompressedStackHeight52CardsMM": 15.07037037037037,
+			"minCardCount": 35,
+			"cardCodesNdo":
+			[
+				426418, 26965, 344359, 239347, 21865, 65340, 239116, 356884, 209050, 412994, 338097, 332914, 50175,
+				449303, 438973, 52239, 197482, 218687, 371914, 223951, 383041, 212822, 26277, 39333, 334722, 422273,
+				42393, 447512, 61644, 43625, 15615, 399572, 258982, 52464, 399403, 361188, 359707, 218816, 245846,
+				449512, 376359, 249754, 382897, 222716, 429694, 337729, 4044, 438850, 27050, 234959, 402455, 404248,
+				257313, 334717
+			],
+			"faceCodesNdo":
+			[
+				"AH", "2H", "3H", "4H", "5H", "6H", "7H", "8H", "9H", "TH", "JH", "QH", "KH",
+				"AC", "2C", "3C", "4C", "5C", "6C", "7C", "8C", "9C", "TC", "JC", "QC", "KC",
+				"KD", "QD", "JD", "TD", "9D", "8D", "7D", "6D", "5D", "4D", "3D", "2D", "AD",
+				"KS", "QS", "JS", "TS", "9S", "8S", "7S", "6S", "5S", "4S", "3S", "2S", "AS",
+				"X1", "X2"
+			],
+			"faceCodesTestDeckOrder":
+			[
+				"AH", "2H", "3H", "4H", "5H", "6H", "7H", "8H", "9H", "TH", "JH", "QH", "KH",
+				"AC", "2C", "3C", "4C", "5C", "6C", "7C", "8C", "9C", "TC", "JC", "QC", "KC",
+				"KD", "QD", "JD", "TD", "9D", "8D", "7D", "6D", "5D", "4D", "3D", "2D", "AD",
+				"KS", "QS", "JS", "TS", "9S", "8S", "7S", "6S", "5S", "4S", "3S", "2S", "AS",
+				"X1", "X2"
+			],
+			"marks":
+			[
+				{"widthMM": 1.5, "type": "Landmark"},
+				{"widthMM": 2.0, "type": "Space"},
+				{"widthMM": 3.0, "type": "Landmark"},
+				{"widthMM": 2.0, "type": "Space"},
+				{"widthMM": 1.5, "type": "Bit"},
+				{"widthMM": 1.5, "type": "Bit"},
+				{"widthMM": 1.5, "type": "Bit"},
+				{"widthMM": 1.5, "type": "Bit"},
+				{"widthMM": 1.5, "type": "Bit"},
+				{"widthMM": 1.5, "type": "Bit"},
+				{"widthMM": 1.5, "type": "Bit"},
+				{"widthMM": 1.5, "type": "Bit"},
+				{"widthMM": 1.5, "type": "Bit"},
+				{"widthMM": 1.5, "type": "Bit"},
+				{"widthMM": 1.5, "type": "Bit"},
+				{"widthMM": 1.5, "type": "Bit"},
+				{"widthMM": 1.5, "type": "Bit"},
+				{"widthMM": 1.5, "type": "Bit"},
+				{"widthMM": 1.5, "type": "Bit"},
+				{"widthMM": 1.5, "type": "Bit"},
+				{"widthMM": 1.5, "type": "Bit"},
+				{"widthMM": 1.5, "type": "Bit"},
+				{"widthMM": 1.5, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Space"},
+				{"widthMM": 3.0, "type": "Landmark"},
+				{"widthMM": 2.0, "type": "Space"},
+				{"widthMM": 1.5, "type": "Landmark"},
+				{"widthMM": 1.5, "type": "Space"},
+				{"widthMM": 1.5, "type": "Landmark"}
+			]
+		},
+		{
+			"id": 16,
+			"ignored": true,
+			"invertLuma": false,
+			"type": "normal",
+			"name": "mds20-54",
+			"description": "20 bits, 54 values, MDS 8",
+			"physicalLengthMM": 88.2,
+			"physicalWidthMM": 63.0,
+			"printableMaxWidthMM": 55.0,
+			"physicalStackHeight52CardsMM": 15.6,
+			"physicalCompressedStackHeight52CardsMM": 15.07037037037037,
+			"minCardCount": 35,
+			"cardCodesNdo":
+			[
+				809236, 209010, 631671, 443654, 49963, 365562, 435103, 652997, 368686, 802674, 630708, 611231, 342344,
+				1026637, 987112, 348217, 367853, 406801, 656796, 421812, 676049, 368849, 52419, 234792, 618332, 808451,
+				258894, 1006245, 355578, 261286, 38553, 696377, 592325, 353261, 695546, 656739, 653613, 408070, 444945,
+				1035307, 658036, 445166, 669256, 414583, 828948, 618403, 27033, 851022, 222656, 434083, 696518, 798874,
+				249754, 613495
+			],
+			"faceCodesNdo":
+			[
+				"AH", "2H", "3H", "4H", "5H", "6H", "7H", "8H", "9H", "TH", "JH", "QH", "KH",
+				"AC", "2C", "3C", "4C", "5C", "6C", "7C", "8C", "9C", "TC", "JC", "QC", "KC",
+				"KD", "QD", "JD", "TD", "9D", "8D", "7D", "6D", "5D", "4D", "3D", "2D", "AD",
+				"KS", "QS", "JS", "TS", "9S", "8S", "7S", "6S", "5S", "4S", "3S", "2S", "AS",
+				"X1", "X2"
+			],
+			"faceCodesTestDeckOrder":
+			[
+				"AH", "2H", "3H", "4H", "5H", "6H", "7H", "8H", "9H", "TH", "JH", "QH", "KH",
+				"AC", "2C", "3C", "4C", "5C", "6C", "7C", "8C", "9C", "TC", "JC", "QC", "KC",
+				"KD", "QD", "JD", "TD", "9D", "8D", "7D", "6D", "5D", "4D", "3D", "2D", "AD",
+				"KS", "QS", "JS", "TS", "9S", "8S", "7S", "6S", "5S", "4S", "3S", "2S", "AS",
+				"X1", "X2"
+			],
+			"marks":
+			[
+				{"widthMM": 1.5, "type": "Landmark"},
+				{"widthMM": 2.0, "type": "Space"},
+				{"widthMM": 3.0, "type": "Landmark"},
+				{"widthMM": 2.0, "type": "Space"},
+				{"widthMM": 1.5, "type": "Bit"},
+				{"widthMM": 1.5, "type": "Bit"},
+				{"widthMM": 1.5, "type": "Bit"},
+				{"widthMM": 1.5, "type": "Bit"},
+				{"widthMM": 1.5, "type": "Bit"},
+				{"widthMM": 1.5, "type": "Bit"},
+				{"widthMM": 1.5, "type": "Bit"},
+				{"widthMM": 1.5, "type": "Bit"},
+				{"widthMM": 1.5, "type": "Bit"},
+				{"widthMM": 1.5, "type": "Bit"},
+				{"widthMM": 1.5, "type": "Bit"},
+				{"widthMM": 1.5, "type": "Bit"},
+				{"widthMM": 1.5, "type": "Bit"},
+				{"widthMM": 1.5, "type": "Bit"},
+				{"widthMM": 1.5, "type": "Bit"},
+				{"widthMM": 1.5, "type": "Bit"},
+				{"widthMM": 1.5, "type": "Bit"},
+				{"widthMM": 1.5, "type": "Bit"},
+				{"widthMM": 1.5, "type": "Bit"},
+				{"widthMM": 1.5, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Space"},
+				{"widthMM": 3.0, "type": "Landmark"},
+				{"widthMM": 2.0, "type": "Space"},
+				{"widthMM": 1.5, "type": "Landmark"},
+				{"widthMM": 1.5, "type": "Space"},
+				{"widthMM": 1.5, "type": "Landmark"}
+			]
+		},
+		{
+			"id": 17,
+			"ignored": false,
+			"invertLuma": false,
+			"type": "reversible",
+			"name": "mds14-52r",
+			"description": "14 bits, 52 values, MDS 4, reversible",
+			"physicalLengthMM": 88.2,
+			"physicalWidthMM": 63.0,
+			"printableMaxWidthMM": 55.0,
+			"physicalStackHeight52CardsMM": 15.6,
+			"physicalCompressedStackHeight52CardsMM": 15.07037037037037,
+			"minCardCount": 35,
+			"cardCodesNdo":
+			[
+				15045, 2313, 10267, 7755, 1542, 4834, 7442, 10468, 5336, 13770, 10004, 8823, 4044,
+				16217, 4420, 5159, 6017, 11640, 6952, 11998, 6014, 1785, 3178, 9293, 14906, 3221,
+				16294, 4637, 3891,  922, 13071, 8657, 4539, 12457, 11197, 11074, 6257, 7860, 11655,
+				8494, 11809, 6286, 15360, 9394,  869, 15615, 2550, 7127, 13296, 13621, 195, 8840
+			],
+			"faceCodesNdo":
+			[
+				"AH", "2H", "3H", "4H", "5H", "6H", "7H", "8H", "9H", "TH", "JH", "QH", "KH",
+				"AC", "2C", "3C", "4C", "5C", "6C", "7C", "8C", "9C", "TC", "JC", "QC", "KC",
+				"KD", "QD", "JD", "TD", "9D", "8D", "7D", "6D", "5D", "4D", "3D", "2D", "AD",
+				"KS", "QS", "JS", "TS", "9S", "8S", "7S", "6S", "5S", "4S", "3S", "2S", "AS"
+			],
+			"faceCodesTestDeckOrder":
+			[
+				"AH", "2H", "3H", "4H", "5H", "6H", "7H", "8H", "9H", "TH", "JH", "QH", "KH",
+				"AC", "2C", "3C", "4C", "5C", "6C", "7C", "8C", "9C", "TC", "JC", "QC", "KC",
+				"KD", "QD", "JD", "TD", "9D", "8D", "7D", "6D", "5D", "4D", "3D", "2D", "AD",
+				"KS", "QS", "JS", "TS", "9S", "8S", "7S", "6S", "5S", "4S", "3S", "2S", "AS"
+			],
+			"marks":
+			[
+				{"widthMM": 2.0, "type": "Landmark"},
+				{"widthMM": 1.5, "type": "Space"},
+				{"widthMM": 4.0, "type": "Landmark"},
+				{"widthMM": 1.5, "type": "Space"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 1.5, "type": "Space"},
+				{"widthMM": 4.0, "type": "Landmark"},
+				{"widthMM": 1.5, "type": "Space"},
+				{"widthMM": 2.0, "type": "Landmark"},
+			]
+		},
+		{
+			"id": 18,
+			"ignored": true,
+			"invertLuma": false,
+			"type": "reversible",
+			"name": "mds16-52r",
+			"description": "16 bits, 52 values, MDS 4, reversible",
+			"physicalLengthMM": 88.2,
+			"physicalWidthMM": 63.0,
+			"printableMaxWidthMM": 55.0,
+			"physicalStackHeight52CardsMM": 15.6,
+			"physicalCompressedStackHeight52CardsMM": 15.07037037037037,
+			"minCardCount": 35,
+			"cardCodesNdo":
+			[
+				56801, 8929, 36226, 32114, 7890, 17543, 30900, 45390, 19336, 55511, 36221, 34635, 11758,
+				60962, 16705, 19319, 29309, 46216, 30651, 48705, 20145, 8734, 10199, 34884, 56606, 10279,
+				61149, 17528, 10456, 7725, 55079, 33421, 16830, 53998, 46199, 45489, 29314, 32141, 47992,
+				33394, 48007, 30532, 57645, 35003, 6939, 57810, 10024, 30795, 55256, 55336, 5140, 34740
+			],
+			"faceCodesNdo":
+			[
+				"AH", "2H", "3H", "4H", "5H", "6H", "7H", "8H", "9H", "TH", "JH", "QH", "KH",
+				"AC", "2C", "3C", "4C", "5C", "6C", "7C", "8C", "9C", "TC", "JC", "QC", "KC",
+				"KD", "QD", "JD", "TD", "9D", "8D", "7D", "6D", "5D", "4D", "3D", "2D", "AD",
+				"KS", "QS", "JS", "TS", "9S", "8S", "7S", "6S", "5S", "4S", "3S", "2S", "AS"
+			],
+			"faceCodesTestDeckOrder":
+			[
+				"AH", "2H", "3H", "4H", "5H", "6H", "7H", "8H", "9H", "TH", "JH", "QH", "KH",
+				"AC", "2C", "3C", "4C", "5C", "6C", "7C", "8C", "9C", "TC", "JC", "QC", "KC",
+				"KD", "QD", "JD", "TD", "9D", "8D", "7D", "6D", "5D", "4D", "3D", "2D", "AD",
+				"KS", "QS", "JS", "TS", "9S", "8S", "7S", "6S", "5S", "4S", "3S", "2S", "AS"
+			],
+			"marks":
+			[
+				{"widthMM": 2.0, "type": "Landmark"},
+				{"widthMM": 1.5, "type": "Space"},
+				{"widthMM": 4.0, "type": "Landmark"},
+				{"widthMM": 1.5, "type": "Space"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 1.5, "type": "Space"},
+				{"widthMM": 4.0, "type": "Landmark"},
+				{"widthMM": 1.5, "type": "Space"},
+				{"widthMM": 2.0, "type": "Landmark"},
+			]
+		},
+		{
+			"id": 19,
+			"ignored": true,
+			"invertLuma": false,
+			"type": "reversible",
+			"name": "mds17-52r",
+			"description": "17 bits, 52 values, MDS 4, reversible",
+			"physicalLengthMM": 88.2,
+			"physicalWidthMM": 63.0,
+			"printableMaxWidthMM": 55.0,
+			"physicalStackHeight52CardsMM": 15.6,
+			"physicalCompressedStackHeight52CardsMM": 15.07037037037037,
+			"minCardCount": 35,
+			"cardCodesNdo":
+			[
+				121576, 13086, 91400, 65295, 8925, 34951, 62304, 91866, 43626, 116537, 85232, 72586, 25919,
+				128190, 27160, 39487, 46469, 96598, 52260, 103554, 45019, 10465, 20489, 73774, 119887, 20944,
+				130069, 33948, 22070, 6120, 106587, 71399, 32385, 104921, 95219, 93094, 47284, 68477, 100103,
+				71248, 100846, 50166, 125909, 79289, 3873, 126786, 19851, 57075, 111108, 115045, 2387, 72812
+			],
+			"faceCodesNdo":
+			[
+				"AH", "2H", "3H", "4H", "5H", "6H", "7H", "8H", "9H", "TH", "JH", "QH", "KH",
+				"AC", "2C", "3C", "4C", "5C", "6C", "7C", "8C", "9C", "TC", "JC", "QC", "KC",
+				"KD", "QD", "JD", "TD", "9D", "8D", "7D", "6D", "5D", "4D", "3D", "2D", "AD",
+				"KS", "QS", "JS", "TS", "9S", "8S", "7S", "6S", "5S", "4S", "3S", "2S", "AS"
+			],
+			"faceCodesTestDeckOrder":
+			[
+				"AH", "2H", "3H", "4H", "5H", "6H", "7H", "8H", "9H", "TH", "JH", "QH", "KH",
+				"AC", "2C", "3C", "4C", "5C", "6C", "7C", "8C", "9C", "TC", "JC", "QC", "KC",
+				"KD", "QD", "JD", "TD", "9D", "8D", "7D", "6D", "5D", "4D", "3D", "2D", "AD",
+				"KS", "QS", "JS", "TS", "9S", "8S", "7S", "6S", "5S", "4S", "3S", "2S", "AS"
+			],
+			"marks":
+			[
+				{"widthMM": 2.0, "type": "Landmark"},
+				{"widthMM": 1.5, "type": "Space"},
+				{"widthMM": 4.0, "type": "Landmark"},
+				{"widthMM": 1.5, "type": "Space"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 1.5, "type": "Space"},
+				{"widthMM": 4.0, "type": "Landmark"},
+				{"widthMM": 1.5, "type": "Space"},
+				{"widthMM": 2.0, "type": "Landmark"},
+			]
+		},
+		{
+			"id": 20,
+			"ignored": true,
+			"invertLuma": false,
+			"type": "reversible",
+			"name": "mds18-52r",
+			"description": "18 bits, 52 values, MDS 4, reversible",
+			"physicalLengthMM": 88.2,
+			"physicalWidthMM": 63.0,
+			"printableMaxWidthMM": 55.0,
+			"physicalStackHeight52CardsMM": 15.6,
+			"physicalCompressedStackHeight52CardsMM": 15.07037037037037,
+			"minCardCount": 35,
+			"cardCodesNdo":
+			[
+				249795, 16754, 212940, 58408, 10267, 33457, 55316, 218789, 36286, 245964, 212787, 199680, 29374,
+				261135, 32078, 36161, 45442, 223846, 55067, 234905, 45437, 10468, 20093, 208956, 249660, 20098,
+				261360, 33358, 29249, 10219, 239189, 197616, 32177, 236137, 222614, 219562, 48754, 60199, 223897,
+				197391, 234854, 48781, 258816, 209091, 7127, 259071, 16781, 55268, 239962, 245811, 5336, 199935
+			],
+			"faceCodesNdo":
+			[
+				"AH", "2H", "3H", "4H", "5H", "6H", "7H", "8H", "9H", "TH", "JH", "QH", "KH",
+				"AC", "2C", "3C", "4C", "5C", "6C", "7C", "8C", "9C", "TC", "JC", "QC", "KC",
+				"KD", "QD", "JD", "TD", "9D", "8D", "7D", "6D", "5D", "4D", "3D", "2D", "AD",
+				"KS", "QS", "JS", "TS", "9S", "8S", "7S", "6S", "5S", "4S", "3S", "2S", "AS"
+			],
+			"faceCodesTestDeckOrder":
+			[
+				"AH", "2H", "3H", "4H", "5H", "6H", "7H", "8H", "9H", "TH", "JH", "QH", "KH",
+				"AC", "2C", "3C", "4C", "5C", "6C", "7C", "8C", "9C", "TC", "JC", "QC", "KC",
+				"KD", "QD", "JD", "TD", "9D", "8D", "7D", "6D", "5D", "4D", "3D", "2D", "AD",
+				"KS", "QS", "JS", "TS", "9S", "8S", "7S", "6S", "5S", "4S", "3S", "2S", "AS"
+			],
+			"marks":
+			[
+				{"widthMM": 2.0, "type": "Landmark"},
+				{"widthMM": 1.5, "type": "Space"},
+				{"widthMM": 4.0, "type": "Landmark"},
+				{"widthMM": 1.5, "type": "Space"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 2.0, "type": "Bit"},
+				{"widthMM": 1.5, "type": "Space"},
+				{"widthMM": 4.0, "type": "Landmark"},
+				{"widthMM": 1.5, "type": "Space"},
+				{"widthMM": 2.0, "type": "Landmark"},
+			]
+		}
+	]
+}

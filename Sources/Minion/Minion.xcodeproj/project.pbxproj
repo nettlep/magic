@@ -1,0 +1,1077 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE03E08E202B731D00B66768 /* Packet.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE03E08C202B731400B66768 /* Packet.swift */; };
+		AE03E08F202B731E00B66768 /* Packet.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE03E08C202B731400B66768 /* Packet.swift */; };
+		AE03E095202BB31D00B66768 /* CodecFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE03E091202BB31700B66768 /* CodecFactory.swift */; };
+		AE03E096202BB31D00B66768 /* EntropyCodec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE03E092202BB31700B66768 /* EntropyCodec.swift */; };
+		AE03E097202BB31D00B66768 /* CodecFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE03E091202BB31700B66768 /* CodecFactory.swift */; };
+		AE03E098202BB31D00B66768 /* EntropyCodec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE03E092202BB31700B66768 /* EntropyCodec.swift */; };
+		AE1908CE20209AA80094173E /* DiscoveryAdvertiser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1908CB20209AA00094173E /* DiscoveryAdvertiser.swift */; };
+		AE1908CF20209AA80094173E /* DiscoveryListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1908CA20209AA00094173E /* DiscoveryListener.swift */; };
+		AE1908D020209AA90094173E /* DiscoveryAdvertiser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1908CB20209AA00094173E /* DiscoveryAdvertiser.swift */; };
+		AE1908D120209AA90094173E /* DiscoveryListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1908CA20209AA00094173E /* DiscoveryListener.swift */; };
+		AE1B27C9272EE49D00F1D118 /* Minion.h in Headers */ = {isa = PBXBuildFile; fileRef = AE961A511F79319F0071499D /* Minion.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE2E00492040400F007C02F0 /* WaitWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2E00482040400F007C02F0 /* WaitWorker.swift */; };
+		AE2E004A2040400F007C02F0 /* WaitWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2E00482040400F007C02F0 /* WaitWorker.swift */; };
+		AE33BF3F1F79C9D9002789A3 /* ImageError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE33BF2C1F79C9CD002789A3 /* ImageError.swift */; };
+		AE33BF401F79C9D9002789A3 /* NSBitmapImageRep.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE33BF2A1F79C9CD002789A3 /* NSBitmapImageRep.swift */; };
+		AE33BF411F79C9D9002789A3 /* NSImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE33BF291F79C9CD002789A3 /* NSImage.swift */; };
+		AE33BF441F79C9DB002789A3 /* ImageError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE33BF2C1F79C9CD002789A3 /* ImageError.swift */; };
+		AE33BF451F79C9DB002789A3 /* NSBitmapImageRep.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE33BF2A1F79C9CD002789A3 /* NSBitmapImageRep.swift */; };
+		AE33BF461F79C9DB002789A3 /* NSImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE33BF291F79C9CD002789A3 /* NSImage.swift */; };
+		AE41DD3A202DF26E007C779A /* Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE41DD38202DF26A007C779A /* Codable.swift */; };
+		AE4388DE20260469001A1D1C /* LogDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4388CB20260431001A1D1C /* LogDevice.swift */; };
+		AE4388DF20260469001A1D1C /* LogDeviceConsole.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4388CE20260431001A1D1C /* LogDeviceConsole.swift */; };
+		AE4388E020260469001A1D1C /* LogDeviceFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4388CC20260431001A1D1C /* LogDeviceFile.swift */; };
+		AE4388E120260469001A1D1C /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4388CD20260431001A1D1C /* Logger.swift */; };
+		AE4388E220260469001A1D1C /* LogLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4388CA20260431001A1D1C /* LogLevel.swift */; };
+		AE4388E32026046A001A1D1C /* LogDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4388CB20260431001A1D1C /* LogDevice.swift */; };
+		AE4388E42026046A001A1D1C /* LogDeviceConsole.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4388CE20260431001A1D1C /* LogDeviceConsole.swift */; };
+		AE4388E52026046A001A1D1C /* LogDeviceFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4388CC20260431001A1D1C /* LogDeviceFile.swift */; };
+		AE4388E62026046A001A1D1C /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4388CD20260431001A1D1C /* Logger.swift */; };
+		AE4388E72026046A001A1D1C /* LogLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4388CA20260431001A1D1C /* LogLevel.swift */; };
+		AE4388EA2026049A001A1D1C /* PathString.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4388E82026048F001A1D1C /* PathString.swift */; };
+		AE4388EB2026049B001A1D1C /* PathString.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4388E82026048F001A1D1C /* PathString.swift */; };
+		AE47AEAA203C5F1800E27152 /* Peer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE47AEA9203C5F1800E27152 /* Peer.swift */; };
+		AE47AEAB203C5F1800E27152 /* Peer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE47AEA9203C5F1800E27152 /* Peer.swift */; };
+		AE47AEAD203C639500E27152 /* Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE47AEAC203C639500E27152 /* Messages.swift */; };
+		AE47AEAE203C639500E27152 /* Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE47AEAC203C639500E27152 /* Messages.swift */; };
+		AE5FE4701F7947ED000B3D85 /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE961A591F7935BC0071499D /* Version.swift */; };
+		AE5FE4711F7947F8000B3D85 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECCAA3B1F79367F00AC867F /* Array.swift */; };
+		AE5FE4721F7947F8000B3D85 /* CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECCAA381F79367F00AC867F /* CGFloat.swift */; };
+		AE5FE4731F7947F8000B3D85 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECCAA3F1F79367F00AC867F /* Data.swift */; };
+		AE5FE4741F7947F8000B3D85 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECCAA361F79367F00AC867F /* Dictionary.swift */; };
+		AE5FE4771F7947F8000B3D85 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECCAA3A1F79367F00AC867F /* String.swift */; };
+		AE5FE4781F7947F8000B3D85 /* UnsafeMutablePointer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECCAA371F79367F00AC867F /* UnsafeMutablePointer.swift */; };
+		AE5FE4791F7947F8000B3D85 /* UnsafePointer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECCAA391F79367F00AC867F /* UnsafePointer.swift */; };
+		AE5FE47A1F7947F8000B3D85 /* UnsafeRawPointer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECCAA3E1F79367F00AC867F /* UnsafeRawPointer.swift */; };
+		AE61AE4E201E02C10033A521 /* sockaddr_in.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE61AE4D201E02C10033A521 /* sockaddr_in.swift */; };
+		AE61AE4F201E02C10033A521 /* sockaddr_in.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE61AE4D201E02C10033A521 /* sockaddr_in.swift */; };
+		AE61AE51201E053C0033A521 /* sockaddr.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE61AE50201E053C0033A521 /* sockaddr.swift */; };
+		AE61AE52201E053C0033A521 /* sockaddr.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE61AE50201E053C0033A521 /* sockaddr.swift */; };
+		AE61AE55201E07220033A521 /* Ipv4SocketAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE61AE54201E07220033A521 /* Ipv4SocketAddress.swift */; };
+		AE61AE56201E07220033A521 /* Ipv4SocketAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE61AE54201E07220033A521 /* Ipv4SocketAddress.swift */; };
+		AE61AE58201E07600033A521 /* Ipv4Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE61AE57201E07600033A521 /* Ipv4Address.swift */; };
+		AE61AE59201E07600033A521 /* Ipv4Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE61AE57201E07600033A521 /* Ipv4Address.swift */; };
+		AE61AE5B201E077B0033A521 /* Ipv4Interface.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE61AE5A201E077B0033A521 /* Ipv4Interface.swift */; };
+		AE61AE5C201E077B0033A521 /* Ipv4Interface.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE61AE5A201E077B0033A521 /* Ipv4Interface.swift */; };
+		AE61AE5E201E07B70033A521 /* Socket.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE61AE5D201E07B70033A521 /* Socket.swift */; };
+		AE61AE5F201E07B70033A521 /* Socket.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE61AE5D201E07B70033A521 /* Socket.swift */; };
+		AE79A59A2024BF3B005411E0 /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE79A5982024BF2E005411E0 /* Random.swift */; };
+		AE79A59B2024BF3C005411E0 /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE79A5982024BF2E005411E0 /* Random.swift */; };
+		AE961A5B1F7935BF0071499D /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE961A591F7935BC0071499D /* Version.swift */; };
+		AE98ACF72030967700647E51 /* Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE98ACF42030967100647E51 /* Decodable.swift */; };
+		AE98ACF82030967700647E51 /* Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE98ACF32030967100647E51 /* Encodable.swift */; };
+		AE98ACF92030967700647E51 /* Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE98ACF42030967100647E51 /* Decodable.swift */; };
+		AE98ACFA2030967700647E51 /* Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE98ACF32030967100647E51 /* Encodable.swift */; };
+		AE9FA04F202218C8002024CA /* UdpListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9FA04D202218BA002024CA /* UdpListener.swift */; };
+		AE9FA050202218C9002024CA /* UdpListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9FA04D202218BA002024CA /* UdpListener.swift */; };
+		AEA2E5612031DB5800539B28 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA2E5602031DB5800539B28 /* Server.swift */; };
+		AEA2E5622031DB5800539B28 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA2E5602031DB5800539B28 /* Server.swift */; };
+		AEA2E5642031E5EE00539B28 /* Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE41DD38202DF26A007C779A /* Codable.swift */; };
+		AEBE6D25208A5381005B5D53 /* LogDeviceGeneric.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBE6D24208A5381005B5D53 /* LogDeviceGeneric.swift */; };
+		AEBE6D26208A5381005B5D53 /* LogDeviceGeneric.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBE6D24208A5381005B5D53 /* LogDeviceGeneric.swift */; };
+		AEBFE9F124F5BF1C00C7C586 /* Atomic.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBFE9EF24F5BE5400C7C586 /* Atomic.swift */; };
+		AEBFE9F224F5BF1C00C7C586 /* Atomic.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBFE9EF24F5BE5400C7C586 /* Atomic.swift */; };
+		AEC1D0BC1F86F108002DF9A0 /* PThreadMutex.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC1D0BA1F86F0FE002DF9A0 /* PThreadMutex.swift */; };
+		AEC1D0BD1F86F109002DF9A0 /* PThreadMutex.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC1D0BA1F86F0FE002DF9A0 /* PThreadMutex.swift */; };
+		AECCAA4A1F79368500AC867F /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECCAA3B1F79367F00AC867F /* Array.swift */; };
+		AECCAA4B1F79368500AC867F /* CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECCAA381F79367F00AC867F /* CGFloat.swift */; };
+		AECCAA4C1F79368500AC867F /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECCAA3F1F79367F00AC867F /* Data.swift */; };
+		AECCAA4D1F79368500AC867F /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECCAA361F79367F00AC867F /* Dictionary.swift */; };
+		AECCAA501F79368500AC867F /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECCAA3A1F79367F00AC867F /* String.swift */; };
+		AECCAA511F79368500AC867F /* UnsafeMutablePointer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECCAA371F79367F00AC867F /* UnsafeMutablePointer.swift */; };
+		AECCAA521F79368500AC867F /* UnsafePointer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECCAA391F79367F00AC867F /* UnsafePointer.swift */; };
+		AECCAA531F79368500AC867F /* UnsafeRawPointer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECCAA3E1F79367F00AC867F /* UnsafeRawPointer.swift */; };
+		AECD69A32028A2D40091F0AB /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECD69A22028A2D40091F0AB /* Int.swift */; };
+		AECD69A42028A2D40091F0AB /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECD69A22028A2D40091F0AB /* Int.swift */; };
+		AECD69A62028A4290091F0AB /* UInt32.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECD69A52028A4280091F0AB /* UInt32.swift */; };
+		AECD69A72028A4290091F0AB /* UInt32.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECD69A52028A4280091F0AB /* UInt32.swift */; };
+		AEDB72F1202114D00096ED84 /* Sha256.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDB72EF202114C40096ED84 /* Sha256.swift */; };
+		AEDB72F2202114D00096ED84 /* Sha256.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDB72EF202114C40096ED84 /* Sha256.swift */; };
+		AEDEC6AD1F84EF4900E78976 /* CGPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDEC6AC1F84EF4900E78976 /* CGPoint.swift */; };
+		AEDEC6AE1F84F13300E78976 /* CGPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDEC6AC1F84EF4900E78976 /* CGPoint.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AE03E08C202B731400B66768 /* Packet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Packet.swift; sourceTree = "<group>"; };
+		AE03E091202BB31700B66768 /* CodecFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodecFactory.swift; sourceTree = "<group>"; };
+		AE03E092202BB31700B66768 /* EntropyCodec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntropyCodec.swift; sourceTree = "<group>"; };
+		AE1908CA20209AA00094173E /* DiscoveryListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoveryListener.swift; sourceTree = "<group>"; };
+		AE1908CB20209AA00094173E /* DiscoveryAdvertiser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoveryAdvertiser.swift; sourceTree = "<group>"; };
+		AE2E00482040400F007C02F0 /* WaitWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitWorker.swift; sourceTree = "<group>"; };
+		AE33BF291F79C9CD002789A3 /* NSImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSImage.swift; sourceTree = "<group>"; };
+		AE33BF2A1F79C9CD002789A3 /* NSBitmapImageRep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSBitmapImageRep.swift; sourceTree = "<group>"; };
+		AE33BF2C1F79C9CD002789A3 /* ImageError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageError.swift; sourceTree = "<group>"; };
+		AE41DD38202DF26A007C779A /* Codable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Codable.swift; sourceTree = "<group>"; };
+		AE4388CA20260431001A1D1C /* LogLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogLevel.swift; sourceTree = "<group>"; };
+		AE4388CB20260431001A1D1C /* LogDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogDevice.swift; sourceTree = "<group>"; };
+		AE4388CC20260431001A1D1C /* LogDeviceFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogDeviceFile.swift; sourceTree = "<group>"; };
+		AE4388CD20260431001A1D1C /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		AE4388CE20260431001A1D1C /* LogDeviceConsole.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogDeviceConsole.swift; sourceTree = "<group>"; };
+		AE4388E82026048F001A1D1C /* PathString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathString.swift; sourceTree = "<group>"; };
+		AE47AEA9203C5F1800E27152 /* Peer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Peer.swift; sourceTree = "<group>"; };
+		AE47AEAC203C639500E27152 /* Messages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messages.swift; sourceTree = "<group>"; };
+		AE5FE4621F7946AF000B3D85 /* MinionIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MinionIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE61AE4D201E02C10033A521 /* sockaddr_in.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sockaddr_in.swift; sourceTree = "<group>"; };
+		AE61AE50201E053C0033A521 /* sockaddr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sockaddr.swift; sourceTree = "<group>"; };
+		AE61AE54201E07220033A521 /* Ipv4SocketAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ipv4SocketAddress.swift; sourceTree = "<group>"; };
+		AE61AE57201E07600033A521 /* Ipv4Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ipv4Address.swift; sourceTree = "<group>"; };
+		AE61AE5A201E077B0033A521 /* Ipv4Interface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ipv4Interface.swift; sourceTree = "<group>"; };
+		AE61AE5D201E07B70033A521 /* Socket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Socket.swift; sourceTree = "<group>"; };
+		AE79A5982024BF2E005411E0 /* Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Random.swift; sourceTree = "<group>"; };
+		AE961A4F1F79319F0071499D /* Minion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Minion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE961A511F79319F0071499D /* Minion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Minion.h; sourceTree = "<group>"; };
+		AE961A521F79319F0071499D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE961A591F7935BC0071499D /* Version.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Version.swift; sourceTree = "<group>"; };
+		AE98ACF32030967100647E51 /* Encodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Encodable.swift; sourceTree = "<group>"; };
+		AE98ACF42030967100647E51 /* Decodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Decodable.swift; sourceTree = "<group>"; };
+		AE9FA04D202218BA002024CA /* UdpListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UdpListener.swift; sourceTree = "<group>"; };
+		AEA2E5602031DB5800539B28 /* Server.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
+		AEBE6D24208A5381005B5D53 /* LogDeviceGeneric.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogDeviceGeneric.swift; sourceTree = "<group>"; };
+		AEBFE9EF24F5BE5400C7C586 /* Atomic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Atomic.swift; sourceTree = "<group>"; };
+		AEC1D0BA1F86F0FE002DF9A0 /* PThreadMutex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PThreadMutex.swift; sourceTree = "<group>"; };
+		AECCAA361F79367F00AC867F /* Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
+		AECCAA371F79367F00AC867F /* UnsafeMutablePointer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnsafeMutablePointer.swift; sourceTree = "<group>"; };
+		AECCAA381F79367F00AC867F /* CGFloat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGFloat.swift; sourceTree = "<group>"; };
+		AECCAA391F79367F00AC867F /* UnsafePointer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnsafePointer.swift; sourceTree = "<group>"; };
+		AECCAA3A1F79367F00AC867F /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		AECCAA3B1F79367F00AC867F /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		AECCAA3E1F79367F00AC867F /* UnsafeRawPointer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnsafeRawPointer.swift; sourceTree = "<group>"; };
+		AECCAA3F1F79367F00AC867F /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		AECD69A22028A2D40091F0AB /* Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
+		AECD69A52028A4280091F0AB /* UInt32.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UInt32.swift; sourceTree = "<group>"; };
+		AEDB72EF202114C40096ED84 /* Sha256.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sha256.swift; sourceTree = "<group>"; };
+		AEDEC6AC1F84EF4900E78976 /* CGPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPoint.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE5FE45E1F7946AF000B3D85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE961A4B1F79319F0071499D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AE03E090202BB2BD00B66768 /* Codec */ = {
+			isa = PBXGroup;
+			children = (
+				AE03E091202BB31700B66768 /* CodecFactory.swift */,
+				AE03E092202BB31700B66768 /* EntropyCodec.swift */,
+			);
+			name = Codec;
+			sourceTree = "<group>";
+		};
+		AE1908C920209A830094173E /* Udp */ = {
+			isa = PBXGroup;
+			children = (
+				AE1908CB20209AA00094173E /* DiscoveryAdvertiser.swift */,
+				AE1908CA20209AA00094173E /* DiscoveryListener.swift */,
+				AE9FA04D202218BA002024CA /* UdpListener.swift */,
+			);
+			name = Udp;
+			sourceTree = "<group>";
+		};
+		AE41DD33202DF21E007C779A /* Coding */ = {
+			isa = PBXGroup;
+			children = (
+				AE41DD38202DF26A007C779A /* Codable.swift */,
+				AE98ACF42030967100647E51 /* Decodable.swift */,
+				AE98ACF32030967100647E51 /* Encodable.swift */,
+				AEDB72EF202114C40096ED84 /* Sha256.swift */,
+			);
+			name = Coding;
+			sourceTree = "<group>";
+		};
+		AE4388C4202603A3001A1D1C /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+				AEA2E55E2031DAA700539B28 /* Devices */,
+				AE4388CD20260431001A1D1C /* Logger.swift */,
+				AE4388CA20260431001A1D1C /* LogLevel.swift */,
+			);
+			name = Logging;
+			sourceTree = "<group>";
+		};
+		AE61AE53201E07030033A521 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				AEA2E55F2031DAF100539B28 /* Socket */,
+				AE1908C920209A830094173E /* Udp */,
+				AE61AE60201E08DC0033A521 /* Extensions */,
+				AE03E08C202B731400B66768 /* Packet.swift */,
+				AEA2E5602031DB5800539B28 /* Server.swift */,
+				AE47AEA9203C5F1800E27152 /* Peer.swift */,
+				AE47AEAC203C639500E27152 /* Messages.swift */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		AE61AE60201E08DC0033A521 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AE61AE50201E053C0033A521 /* sockaddr.swift */,
+				AE61AE4D201E02C10033A521 /* sockaddr_in.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		AE961A501F79319F0071499D /* Minion */ = {
+			isa = PBXGroup;
+			children = (
+				AE961A581F7935800071499D /* @Supporting files */,
+				AE03E090202BB2BD00B66768 /* Codec */,
+				AE41DD33202DF21E007C779A /* Coding */,
+				AECCAA541F7936FB00AC867F /* Extensions */,
+				AE4388C4202603A3001A1D1C /* Logging */,
+				AE61AE53201E07030033A521 /* Network */,
+				AEA2E55D2031DA6A00539B28 /* Utils */,
+			);
+			path = Minion;
+			sourceTree = "<group>";
+		};
+		AE961A581F7935800071499D /* @Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				AE961A591F7935BC0071499D /* Version.swift */,
+				AE961A511F79319F0071499D /* Minion.h */,
+				AE961A521F79319F0071499D /* Info.plist */,
+			);
+			name = "@Supporting files";
+			sourceTree = "<group>";
+		};
+		AEA2E55D2031DA6A00539B28 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				AEBFE9EF24F5BE5400C7C586 /* Atomic.swift */,
+				AE4388E82026048F001A1D1C /* PathString.swift */,
+				AEC1D0BA1F86F0FE002DF9A0 /* PThreadMutex.swift */,
+				AE79A5982024BF2E005411E0 /* Random.swift */,
+				AE2E00482040400F007C02F0 /* WaitWorker.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		AEA2E55E2031DAA700539B28 /* Devices */ = {
+			isa = PBXGroup;
+			children = (
+				AEBE6D24208A5381005B5D53 /* LogDeviceGeneric.swift */,
+				AE4388CB20260431001A1D1C /* LogDevice.swift */,
+				AE4388CE20260431001A1D1C /* LogDeviceConsole.swift */,
+				AE4388CC20260431001A1D1C /* LogDeviceFile.swift */,
+			);
+			name = Devices;
+			sourceTree = "<group>";
+		};
+		AEA2E55F2031DAF100539B28 /* Socket */ = {
+			isa = PBXGroup;
+			children = (
+				AE61AE57201E07600033A521 /* Ipv4Address.swift */,
+				AE61AE5A201E077B0033A521 /* Ipv4Interface.swift */,
+				AE61AE54201E07220033A521 /* Ipv4SocketAddress.swift */,
+				AE61AE5D201E07B70033A521 /* Socket.swift */,
+			);
+			name = Socket;
+			sourceTree = "<group>";
+		};
+		AECCAA541F7936FB00AC867F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AECCAA3B1F79367F00AC867F /* Array.swift */,
+				AECCAA381F79367F00AC867F /* CGFloat.swift */,
+				AECCAA3F1F79367F00AC867F /* Data.swift */,
+				AECCAA361F79367F00AC867F /* Dictionary.swift */,
+				AE33BF2C1F79C9CD002789A3 /* ImageError.swift */,
+				AECD69A22028A2D40091F0AB /* Int.swift */,
+				AE33BF2A1F79C9CD002789A3 /* NSBitmapImageRep.swift */,
+				AE33BF291F79C9CD002789A3 /* NSImage.swift */,
+				AECCAA3A1F79367F00AC867F /* String.swift */,
+				AECD69A52028A4280091F0AB /* UInt32.swift */,
+				AECCAA371F79367F00AC867F /* UnsafeMutablePointer.swift */,
+				AECCAA391F79367F00AC867F /* UnsafePointer.swift */,
+				AECCAA3E1F79367F00AC867F /* UnsafeRawPointer.swift */,
+				AEDEC6AC1F84EF4900E78976 /* CGPoint.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		AEDF6FE91DD148F3001E9083 = {
+			isa = PBXGroup;
+			children = (
+				AE961A501F79319F0071499D /* Minion */,
+				AEDF6FF31DD148F3001E9083 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AEDF6FF31DD148F3001E9083 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE961A4F1F79319F0071499D /* Minion.framework */,
+				AE5FE4621F7946AF000B3D85 /* MinionIOS.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		AE961A4C1F79319F0071499D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE1B27C9272EE49D00F1D118 /* Minion.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		AE5FE4611F7946AF000B3D85 /* MinionIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE5FE46E1F7946AF000B3D85 /* Build configuration list for PBXNativeTarget "MinionIOS" */;
+			buildPhases = (
+				AE33BF251F79BBE9002789A3 /* Update version */,
+				AE33BF261F79BBFD002789A3 /* Swift lint */,
+				AE5FE45D1F7946AF000B3D85 /* Sources */,
+				AE5FE45E1F7946AF000B3D85 /* Frameworks */,
+				AE5FE4601F7946AF000B3D85 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MinionIOS;
+			productName = MinionIOS;
+			productReference = AE5FE4621F7946AF000B3D85 /* MinionIOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AE961A4E1F79319F0071499D /* Minion */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE961A541F79319F0071499D /* Build configuration list for PBXNativeTarget "Minion" */;
+			buildPhases = (
+				AECCAA681F79429500AC867F /* Update version */,
+				AECCAA691F7942BC00AC867F /* Swift lint */,
+				AE961A4C1F79319F0071499D /* Headers */,
+				AE961A4A1F79319F0071499D /* Sources */,
+				AE961A4B1F79319F0071499D /* Frameworks */,
+				AE961A4D1F79319F0071499D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Minion;
+			productName = Minion;
+			productReference = AE961A4F1F79319F0071499D /* Minion.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AEDF6FEA1DD148F3001E9083 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1340;
+				ORGANIZATIONNAME = "Paul Nettle";
+				TargetAttributes = {
+					AE5FE4611F7946AF000B3D85 = {
+						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 1020;
+						ProvisioningStyle = Automatic;
+					};
+					AE961A4E1F79319F0071499D = {
+						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 1020;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = AEDF6FED1DD148F3001E9083 /* Build configuration list for PBXProject "Minion" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AEDF6FE91DD148F3001E9083;
+			productRefGroup = AEDF6FF31DD148F3001E9083 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE961A4E1F79319F0071499D /* Minion */,
+				AE5FE4611F7946AF000B3D85 /* MinionIOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE5FE4601F7946AF000B3D85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE961A4D1F79319F0071499D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AE33BF251F79BBE9002789A3 /* Update version */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Update version";
+			outputPaths = (
+				"$(PROJECT_DIR)/Minion/Version.swift",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "projectName=\"Minion\"\nversionDir=\"${PROJECT_DIR}/Minion\"\nsourceFile=\"${versionDir}/Version.swift\"\n\n# The revision\nrevision=$(git -C ${versionDir} rev-list HEAD --count)\nif [ $? -ne 0 ]; then\n    echo \"> ERROR: Unable to get the revision of '${versionDir}' - is it a valid git-controlled directory?\"\n    echo\n    printUsage\nfi\n\n# The branch name\nbranch=\"$(git -C ${versionDir} symbolic-ref HEAD 2>/dev/null)\" || branch=\"(unnamed branch)\"\nif [ $? -ne 0 ]; then\n    echo \"> ERROR: Unable to get the branch name for '${versionDir}' - is it a valid git-controlled directory?\"\n    echo\n    printUsage\nfi\nbranch=${branch##refs/heads/}\n\n# The flags (i.e., was this from a modified build?)\nflags=\"\"\ngit -C ${versionDir} diff-index --quiet HEAD --\nif [ $? -ne 0 ]; then\n    flags=\":m\"\nfi\n\nversionString=\"${revision}@${branch}${flags}\"\n\n# Get the current source information\nif [[ -f ${sourceFile} ]]; then\n\tcurSource=$(cat ${sourceFile})\nelse\n\tcurSource=\"\"\nfi\n\n# Generate new source\nread -r -d '' newSource <<EOF\npublic var ${projectName}Version: String = \"${versionString}\"\n\nEOF\n\nif [[ ${curSource} != ${newSource} ]]; then\n\techo \"Updating source: '${sourceFile}'\"\n\techo \"${newSource}\" > \"${sourceFile}\"\nfi\n\nexit 0\n";
+		};
+		AE33BF261F79BBFD002789A3 /* Swift lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Swift lint";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint lint --quiet\nelse\n    echo \"Not found in the path, checking /opt/homebrew\"\n    if [ -f /opt/homebrew/bin/swiftlint ]; then\n        /opt/homebrew/bin/swiftlint lint --quiet\n    else\n        echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\n    fi\nfi\n";
+		};
+		AECCAA681F79429500AC867F /* Update version */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Update version";
+			outputPaths = (
+				"$(PROJECT_DIR)/minion/Version.swift",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "projectName=\"Minion\"\nversionDir=\"${PROJECT_DIR}/Minion\"\nsourceFile=\"${versionDir}/Version.swift\"\n\n# The revision\nrevision=$(git -C ${versionDir} rev-list HEAD --count)\nif [ $? -ne 0 ]; then\n    echo \"> ERROR: Unable to get the revision of '${versionDir}' - is it a valid git-controlled directory?\"\n    echo\n    printUsage\nfi\n\n# The branch name\nbranch=\"$(git -C ${versionDir} symbolic-ref HEAD 2>/dev/null)\" || branch=\"(unnamed branch)\"\nif [ $? -ne 0 ]; then\n    echo \"> ERROR: Unable to get the branch name for '${versionDir}' - is it a valid git-controlled directory?\"\n    echo\n    printUsage\nfi\nbranch=${branch##refs/heads/}\n\n# The flags (i.e., was this from a modified build?)\nflags=\"\"\ngit -C ${versionDir} diff-index --quiet HEAD --\nif [ $? -ne 0 ]; then\n    flags=\":m\"\nfi\n\nversionString=\"${revision}@${branch}${flags}\"\n\n# Get the current source information\nif [[ -f ${sourceFile} ]]; then\n\tcurSource=$(cat ${sourceFile})\nelse\n\tcurSource=\"\"\nfi\n\n# Generate new source\nread -r -d '' newSource <<EOF\npublic var ${projectName}Version: String = \"${versionString}\"\n\nEOF\n\nif [[ ${curSource} != ${newSource} ]]; then\n\techo \"Updating source: '${sourceFile}'\"\n\techo \"${newSource}\" > \"${sourceFile}\"\nfi\n\nexit 0\n";
+		};
+		AECCAA691F7942BC00AC867F /* Swift lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Swift lint";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint lint --quiet\nelse\n    echo \"Not found in the path, checking /opt/homebrew\"\n    if [ -f /opt/homebrew/bin/swiftlint ]; then\n        /opt/homebrew/bin/swiftlint lint --quiet\n    else\n        echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\n    fi\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE5FE45D1F7946AF000B3D85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE4388E120260469001A1D1C /* Logger.swift in Sources */,
+				AE5FE47A1F7947F8000B3D85 /* UnsafeRawPointer.swift in Sources */,
+				AE5FE4721F7947F8000B3D85 /* CGFloat.swift in Sources */,
+				AE4388E220260469001A1D1C /* LogLevel.swift in Sources */,
+				AE4388E020260469001A1D1C /* LogDeviceFile.swift in Sources */,
+				AE79A59B2024BF3C005411E0 /* Random.swift in Sources */,
+				AE5FE4781F7947F8000B3D85 /* UnsafeMutablePointer.swift in Sources */,
+				AE5FE4741F7947F8000B3D85 /* Dictionary.swift in Sources */,
+				AE47AEAB203C5F1800E27152 /* Peer.swift in Sources */,
+				AE61AE52201E053C0033A521 /* sockaddr.swift in Sources */,
+				AE61AE59201E07600033A521 /* Ipv4Address.swift in Sources */,
+				AE33BF3F1F79C9D9002789A3 /* ImageError.swift in Sources */,
+				AE4388DE20260469001A1D1C /* LogDevice.swift in Sources */,
+				AE98ACF92030967700647E51 /* Decodable.swift in Sources */,
+				AE1908CE20209AA80094173E /* DiscoveryAdvertiser.swift in Sources */,
+				AE2E004A2040400F007C02F0 /* WaitWorker.swift in Sources */,
+				AEDB72F1202114D00096ED84 /* Sha256.swift in Sources */,
+				AE03E098202BB31D00B66768 /* EntropyCodec.swift in Sources */,
+				AE61AE4F201E02C10033A521 /* sockaddr_in.swift in Sources */,
+				AEBFE9F124F5BF1C00C7C586 /* Atomic.swift in Sources */,
+				AE03E097202BB31D00B66768 /* CodecFactory.swift in Sources */,
+				AE9FA04F202218C8002024CA /* UdpListener.swift in Sources */,
+				AE5FE4791F7947F8000B3D85 /* UnsafePointer.swift in Sources */,
+				AECD69A32028A2D40091F0AB /* Int.swift in Sources */,
+				AE41DD3A202DF26E007C779A /* Codable.swift in Sources */,
+				AE4388EB2026049B001A1D1C /* PathString.swift in Sources */,
+				AE33BF401F79C9D9002789A3 /* NSBitmapImageRep.swift in Sources */,
+				AEC1D0BD1F86F109002DF9A0 /* PThreadMutex.swift in Sources */,
+				AE1908CF20209AA80094173E /* DiscoveryListener.swift in Sources */,
+				AE4388DF20260469001A1D1C /* LogDeviceConsole.swift in Sources */,
+				AE5FE4701F7947ED000B3D85 /* Version.swift in Sources */,
+				AE98ACFA2030967700647E51 /* Encodable.swift in Sources */,
+				AE61AE5F201E07B70033A521 /* Socket.swift in Sources */,
+				AE47AEAE203C639500E27152 /* Messages.swift in Sources */,
+				AE61AE56201E07220033A521 /* Ipv4SocketAddress.swift in Sources */,
+				AE61AE5C201E077B0033A521 /* Ipv4Interface.swift in Sources */,
+				AE5FE4711F7947F8000B3D85 /* Array.swift in Sources */,
+				AECD69A62028A4290091F0AB /* UInt32.swift in Sources */,
+				AEBE6D26208A5381005B5D53 /* LogDeviceGeneric.swift in Sources */,
+				AE33BF411F79C9D9002789A3 /* NSImage.swift in Sources */,
+				AEDEC6AD1F84EF4900E78976 /* CGPoint.swift in Sources */,
+				AE03E08F202B731E00B66768 /* Packet.swift in Sources */,
+				AE5FE4771F7947F8000B3D85 /* String.swift in Sources */,
+				AE5FE4731F7947F8000B3D85 /* Data.swift in Sources */,
+				AEA2E5622031DB5800539B28 /* Server.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE961A4A1F79319F0071499D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE4388E62026046A001A1D1C /* Logger.swift in Sources */,
+				AECCAA531F79368500AC867F /* UnsafeRawPointer.swift in Sources */,
+				AECCAA4B1F79368500AC867F /* CGFloat.swift in Sources */,
+				AE4388E72026046A001A1D1C /* LogLevel.swift in Sources */,
+				AE4388E52026046A001A1D1C /* LogDeviceFile.swift in Sources */,
+				AE79A59A2024BF3B005411E0 /* Random.swift in Sources */,
+				AECCAA511F79368500AC867F /* UnsafeMutablePointer.swift in Sources */,
+				AECCAA4D1F79368500AC867F /* Dictionary.swift in Sources */,
+				AE47AEAA203C5F1800E27152 /* Peer.swift in Sources */,
+				AE61AE51201E053C0033A521 /* sockaddr.swift in Sources */,
+				AE61AE58201E07600033A521 /* Ipv4Address.swift in Sources */,
+				AE33BF441F79C9DB002789A3 /* ImageError.swift in Sources */,
+				AE4388E32026046A001A1D1C /* LogDevice.swift in Sources */,
+				AE1908D020209AA90094173E /* DiscoveryAdvertiser.swift in Sources */,
+				AEDB72F2202114D00096ED84 /* Sha256.swift in Sources */,
+				AE2E00492040400F007C02F0 /* WaitWorker.swift in Sources */,
+				AE03E096202BB31D00B66768 /* EntropyCodec.swift in Sources */,
+				AE61AE4E201E02C10033A521 /* sockaddr_in.swift in Sources */,
+				AE03E095202BB31D00B66768 /* CodecFactory.swift in Sources */,
+				AEBFE9F224F5BF1C00C7C586 /* Atomic.swift in Sources */,
+				AE9FA050202218C9002024CA /* UdpListener.swift in Sources */,
+				AECCAA521F79368500AC867F /* UnsafePointer.swift in Sources */,
+				AECD69A42028A2D40091F0AB /* Int.swift in Sources */,
+				AE4388EA2026049A001A1D1C /* PathString.swift in Sources */,
+				AE33BF451F79C9DB002789A3 /* NSBitmapImageRep.swift in Sources */,
+				AEC1D0BC1F86F108002DF9A0 /* PThreadMutex.swift in Sources */,
+				AE98ACF72030967700647E51 /* Decodable.swift in Sources */,
+				AE1908D120209AA90094173E /* DiscoveryListener.swift in Sources */,
+				AE4388E42026046A001A1D1C /* LogDeviceConsole.swift in Sources */,
+				AE961A5B1F7935BF0071499D /* Version.swift in Sources */,
+				AEA2E5642031E5EE00539B28 /* Codable.swift in Sources */,
+				AE98ACF82030967700647E51 /* Encodable.swift in Sources */,
+				AE61AE5E201E07B70033A521 /* Socket.swift in Sources */,
+				AE47AEAD203C639500E27152 /* Messages.swift in Sources */,
+				AE61AE55201E07220033A521 /* Ipv4SocketAddress.swift in Sources */,
+				AE61AE5B201E077B0033A521 /* Ipv4Interface.swift in Sources */,
+				AECCAA4A1F79368500AC867F /* Array.swift in Sources */,
+				AECD69A72028A4290091F0AB /* UInt32.swift in Sources */,
+				AEBE6D25208A5381005B5D53 /* LogDeviceGeneric.swift in Sources */,
+				AE33BF461F79C9DB002789A3 /* NSImage.swift in Sources */,
+				AEDEC6AE1F84F13300E78976 /* CGPoint.swift in Sources */,
+				AE03E08E202B731D00B66768 /* Packet.swift in Sources */,
+				AECCAA501F79368500AC867F /* String.swift in Sources */,
+				AEA2E5612031DB5800539B28 /* Server.swift in Sources */,
+				AECCAA4C1F79368500AC867F /* Data.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AE5FE46B1F7946AF000B3D85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = H72QHZNSAJ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "$(SRCROOT)/minion/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.paulnettle.MinionIOS;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+				SWIFT_INCLUDE_PATHS = SystemModules;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AE5FE46C1F7946AF000B3D85 /* Debug.optimized */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = H72QHZNSAJ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "$(SRCROOT)/minion/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.paulnettle.MinionIOS;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+				SWIFT_INCLUDE_PATHS = SystemModules;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug.optimized;
+		};
+		AE5FE46D1F7946AF000B3D85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = H72QHZNSAJ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "$(SRCROOT)/minion/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.paulnettle.MinionIOS;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+				SWIFT_INCLUDE_PATHS = SystemModules;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AE7102321E18A32700A9A58E /* Debug.optimized */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_DISABLE_SAFETY_CHECKS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug.optimized;
+		};
+		AE961A551F79319F0071499D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = H72QHZNSAJ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_VERSION = A;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "$(SRCROOT)/minion/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks @executable_path";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/system",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.paulnettle.Minion;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_INCLUDE_PATHS = SystemModules;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = "";
+				SYSTEM_HEADER_SEARCH_PATHS = "";
+				USER_HEADER_SEARCH_PATHS = "";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AE961A561F79319F0071499D /* Debug.optimized */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = H72QHZNSAJ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_VERSION = A;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "$(SRCROOT)/minion/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks @executable_path";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/system",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.paulnettle.Minion;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_INCLUDE_PATHS = SystemModules;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = "";
+				SYSTEM_HEADER_SEARCH_PATHS = "";
+				USER_HEADER_SEARCH_PATHS = "";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug.optimized;
+		};
+		AE961A571F79319F0071499D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = H72QHZNSAJ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_VERSION = A;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "$(SRCROOT)/minion/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks @executable_path";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/system",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.paulnettle.Minion;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_INCLUDE_PATHS = SystemModules;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = "";
+				SYSTEM_HEADER_SEARCH_PATHS = "";
+				USER_HEADER_SEARCH_PATHS = "";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AEDF6FFF1DD148F3001E9083 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_DISABLE_SAFETY_CHECKS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		AEDF70001DD148F3001E9083 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_DISABLE_SAFETY_CHECKS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE5FE46E1F7946AF000B3D85 /* Build configuration list for PBXNativeTarget "MinionIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE5FE46B1F7946AF000B3D85 /* Debug */,
+				AE5FE46C1F7946AF000B3D85 /* Debug.optimized */,
+				AE5FE46D1F7946AF000B3D85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE961A541F79319F0071499D /* Build configuration list for PBXNativeTarget "Minion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE961A551F79319F0071499D /* Debug */,
+				AE961A561F79319F0071499D /* Debug.optimized */,
+				AE961A571F79319F0071499D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AEDF6FED1DD148F3001E9083 /* Build configuration list for PBXProject "Minion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEDF6FFF1DD148F3001E9083 /* Debug */,
+				AE7102321E18A32700A9A58E /* Debug.optimized */,
+				AEDF70001DD148F3001E9083 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AEDF6FEA1DD148F3001E9083 /* Project object */;
+}

@@ -1,0 +1,6 @@
+module C_AAlib [system]
+{
+	header "cheader.h"
+	link "aa"
+	export *
+}

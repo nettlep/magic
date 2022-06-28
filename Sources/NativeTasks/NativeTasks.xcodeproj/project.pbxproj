@@ -1,0 +1,762 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE1B2691272DEF0C00F1D118 /* NativeTasks.h in Headers */ = {isa = PBXBuildFile; fileRef = AE1B2690272DEF0C00F1D118 /* NativeTasks.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE32E31E1EDC3CF800F9AAF5 /* CircularImageBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = AED0EC581ED30C0300111DAE /* CircularImageBuffer.h */; };
+		AE32E3211EDC3CF800F9AAF5 /* Mutex.h in Headers */ = {isa = PBXBuildFile; fileRef = AED0EC5B1ED30C0300111DAE /* Mutex.h */; };
+		AE32E3221EDC3CF800F9AAF5 /* VideoCapture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AED0EC5D1ED30C0300111DAE /* VideoCapture.cpp */; };
+		AE32E3231EDC3CF800F9AAF5 /* VideoCapture.h in Headers */ = {isa = PBXBuildFile; fileRef = AED0EC5E1ED30C0300111DAE /* VideoCapture.h */; };
+		AE32E3241EDC3CF800F9AAF5 /* VcosException.h in Headers */ = {isa = PBXBuildFile; fileRef = AED0EC5F1ED30C0300111DAE /* VcosException.h */; };
+		AE32E3251EDC3CF800F9AAF5 /* VideoParameters.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AED0EC601ED30C0300111DAE /* VideoParameters.cpp */; };
+		AE32E3261EDC3CF800F9AAF5 /* VideoParameters.h in Headers */ = {isa = PBXBuildFile; fileRef = AED0EC611ED30C0300111DAE /* VideoParameters.h */; };
+		AE32E3281EDC3CFF00F9AAF5 /* NativeInterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AED0EC5C1ED30C0300111DAE /* NativeInterface.cpp */; };
+		AE32E32A1EDC3CFF00F9AAF5 /* FastImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AEACCC321EC8AD0400934644 /* FastImage.cpp */; };
+		AE32E32B1EDC3CFF00F9AAF5 /* FastImage.h in Headers */ = {isa = PBXBuildFile; fileRef = AED0EC691ED30DB100111DAE /* FastImage.h */; };
+		AE32E35B1EDC749400F9AAF5 /* NativeInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = AE32E3591EDC748B00F9AAF5 /* NativeInterface.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE32E35C1EDC749400F9AAF5 /* NativeTaskTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = AE32E35A1EDC748B00F9AAF5 /* NativeTaskTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE998E791EEDA54B0060AB8C /* Logger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE998E6B1EEDA5020060AB8C /* Logger.cpp */; };
+		AEA66821229A315900A98BAC /* SecDescriptor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AEA6681F229A315900A98BAC /* SecDescriptor.cpp */; };
+		AEA66822229A315900A98BAC /* SecDescriptor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AEA6681F229A315900A98BAC /* SecDescriptor.cpp */; };
+		AEA66823229A315900A98BAC /* SecDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = AEA66820229A315900A98BAC /* SecDescriptor.h */; };
+		AEA66824229A315900A98BAC /* SecDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = AEA66820229A315900A98BAC /* SecDescriptor.h */; };
+		AEA66825229A317200A98BAC /* Logger.h in Headers */ = {isa = PBXBuildFile; fileRef = AE998E6C1EEDA5020060AB8C /* Logger.h */; };
+		AEA66826229A317300A98BAC /* Logger.h in Headers */ = {isa = PBXBuildFile; fileRef = AE998E6C1EEDA5020060AB8C /* Logger.h */; };
+		AEA66827229A318100A98BAC /* VideoException.h in Headers */ = {isa = PBXBuildFile; fileRef = AE998E711EEDA5020060AB8C /* VideoException.h */; };
+		AEA66828229A318100A98BAC /* VideoException.h in Headers */ = {isa = PBXBuildFile; fileRef = AE998E711EEDA5020060AB8C /* VideoException.h */; };
+		AEAB4935207EB3B0005DC787 /* VcosException.h in Headers */ = {isa = PBXBuildFile; fileRef = AED0EC5F1ED30C0300111DAE /* VcosException.h */; };
+		AEAB4936207EB3B0005DC787 /* VideoCapture.h in Headers */ = {isa = PBXBuildFile; fileRef = AED0EC5E1ED30C0300111DAE /* VideoCapture.h */; };
+		AEAB4937207EB3B0005DC787 /* NativeTaskTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = AE32E35A1EDC748B00F9AAF5 /* NativeTaskTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AEAB4938207EB3B0005DC787 /* Mutex.h in Headers */ = {isa = PBXBuildFile; fileRef = AED0EC5B1ED30C0300111DAE /* Mutex.h */; };
+		AEAB4939207EB3B0005DC787 /* VideoParameters.h in Headers */ = {isa = PBXBuildFile; fileRef = AED0EC611ED30C0300111DAE /* VideoParameters.h */; };
+		AEAB493B207EB3B0005DC787 /* FastImage.h in Headers */ = {isa = PBXBuildFile; fileRef = AED0EC691ED30DB100111DAE /* FastImage.h */; };
+		AEAB493C207EB3B0005DC787 /* NativeInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = AE32E3591EDC748B00F9AAF5 /* NativeInterface.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AEAB493D207EB3B0005DC787 /* CircularImageBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = AED0EC581ED30C0300111DAE /* CircularImageBuffer.h */; };
+		AEAB493F207EB3B0005DC787 /* NativeInterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AED0EC5C1ED30C0300111DAE /* NativeInterface.cpp */; };
+		AEAB4940207EB3B0005DC787 /* Logger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AE998E6B1EEDA5020060AB8C /* Logger.cpp */; };
+		AEAB4941207EB3B0005DC787 /* VideoParameters.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AED0EC601ED30C0300111DAE /* VideoParameters.cpp */; };
+		AEAB4942207EB3B0005DC787 /* VideoCapture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AED0EC5D1ED30C0300111DAE /* VideoCapture.cpp */; };
+		AEAB4943207EB3B0005DC787 /* FastImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AEACCC321EC8AD0400934644 /* FastImage.cpp */; };
+		AEAB494E207EB5FE005DC787 /* NativeTasksIOS.h in Headers */ = {isa = PBXBuildFile; fileRef = AEAB494D207EB5FD005DC787 /* NativeTasksIOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AE1B2690272DEF0C00F1D118 /* NativeTasks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NativeTasks.h; path = include/NativeTasks.h; sourceTree = "<group>"; };
+		AE32E3141EDC3CC100F9AAF5 /* NativeTasks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NativeTasks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE32E32D1EDC3DCA00F9AAF5 /* info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = info.plist; sourceTree = "<group>"; };
+		AE32E3591EDC748B00F9AAF5 /* NativeInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NativeInterface.h; path = include/NativeInterface.h; sourceTree = "<group>"; };
+		AE32E35A1EDC748B00F9AAF5 /* NativeTaskTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NativeTaskTypes.h; path = include/NativeTaskTypes.h; sourceTree = "<group>"; };
+		AE998E6B1EEDA5020060AB8C /* Logger.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Logger.cpp; sourceTree = "<group>"; };
+		AE998E6C1EEDA5020060AB8C /* Logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Logger.h; sourceTree = "<group>"; };
+		AE998E711EEDA5020060AB8C /* VideoException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoException.h; sourceTree = "<group>"; };
+		AEA6681F229A315900A98BAC /* SecDescriptor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SecDescriptor.cpp; sourceTree = "<group>"; };
+		AEA66820229A315900A98BAC /* SecDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecDescriptor.h; sourceTree = "<group>"; };
+		AEAB494A207EB3B0005DC787 /* NativeTasksIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NativeTasksIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEAB494D207EB5FD005DC787 /* NativeTasksIOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NativeTasksIOS.h; path = include/NativeTasksIOS.h; sourceTree = "<group>"; };
+		AEACCC321EC8AD0400934644 /* FastImage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FastImage.cpp; sourceTree = "<group>"; };
+		AED0EC581ED30C0300111DAE /* CircularImageBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircularImageBuffer.h; sourceTree = "<group>"; };
+		AED0EC5B1ED30C0300111DAE /* Mutex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mutex.h; sourceTree = "<group>"; };
+		AED0EC5C1ED30C0300111DAE /* NativeInterface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NativeInterface.cpp; sourceTree = "<group>"; };
+		AED0EC5D1ED30C0300111DAE /* VideoCapture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VideoCapture.cpp; sourceTree = "<group>"; };
+		AED0EC5E1ED30C0300111DAE /* VideoCapture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoCapture.h; sourceTree = "<group>"; };
+		AED0EC5F1ED30C0300111DAE /* VcosException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VcosException.h; sourceTree = "<group>"; };
+		AED0EC601ED30C0300111DAE /* VideoParameters.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VideoParameters.cpp; sourceTree = "<group>"; };
+		AED0EC611ED30C0300111DAE /* VideoParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoParameters.h; sourceTree = "<group>"; };
+		AED0EC691ED30DB100111DAE /* FastImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FastImage.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE32E3101EDC3CC100F9AAF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEAB4944207EB3B0005DC787 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AE32E3321EDC3E0800F9AAF5 /* @Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				AE32E32D1EDC3DCA00F9AAF5 /* info.plist */,
+			);
+			name = "@Supporting files";
+			sourceTree = "<group>";
+		};
+		AEA4C2B41E9128710002110E /* NativeTasks */ = {
+			isa = PBXGroup;
+			children = (
+				AE32E3321EDC3E0800F9AAF5 /* @Supporting files */,
+				AED0EC6F1ED30FFB00111DAE /* arm */,
+				AED0EC6D1ED30FBA00111DAE /* BridgingHeader */,
+				AED0EC5C1ED30C0300111DAE /* NativeInterface.cpp */,
+				AEACCC321EC8AD0400934644 /* FastImage.cpp */,
+				AED0EC691ED30DB100111DAE /* FastImage.h */,
+			);
+			path = NativeTasks;
+			sourceTree = "<group>";
+		};
+		AEB28F861DD2883F00045CAC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AED0EC6D1ED30FBA00111DAE /* BridgingHeader */ = {
+			isa = PBXGroup;
+			children = (
+				AE1B2690272DEF0C00F1D118 /* NativeTasks.h */,
+				AEAB494D207EB5FD005DC787 /* NativeTasksIOS.h */,
+				AE32E3591EDC748B00F9AAF5 /* NativeInterface.h */,
+				AE32E35A1EDC748B00F9AAF5 /* NativeTaskTypes.h */,
+			);
+			name = BridgingHeader;
+			sourceTree = "<group>";
+		};
+		AED0EC6F1ED30FFB00111DAE /* arm */ = {
+			isa = PBXGroup;
+			children = (
+				AED0EC581ED30C0300111DAE /* CircularImageBuffer.h */,
+				AE998E6B1EEDA5020060AB8C /* Logger.cpp */,
+				AE998E6C1EEDA5020060AB8C /* Logger.h */,
+				AED0EC5B1ED30C0300111DAE /* Mutex.h */,
+				AEA6681F229A315900A98BAC /* SecDescriptor.cpp */,
+				AEA66820229A315900A98BAC /* SecDescriptor.h */,
+				AED0EC5D1ED30C0300111DAE /* VideoCapture.cpp */,
+				AED0EC5E1ED30C0300111DAE /* VideoCapture.h */,
+				AED0EC5F1ED30C0300111DAE /* VcosException.h */,
+				AE998E711EEDA5020060AB8C /* VideoException.h */,
+				AED0EC601ED30C0300111DAE /* VideoParameters.cpp */,
+				AED0EC611ED30C0300111DAE /* VideoParameters.h */,
+			);
+			name = arm;
+			sourceTree = "<group>";
+		};
+		AEDF6FE91DD148F3001E9083 = {
+			isa = PBXGroup;
+			children = (
+				AEA4C2B41E9128710002110E /* NativeTasks */,
+				AEDF6FF31DD148F3001E9083 /* Products */,
+				AEB28F861DD2883F00045CAC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AEDF6FF31DD148F3001E9083 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE32E3141EDC3CC100F9AAF5 /* NativeTasks.framework */,
+				AEAB494A207EB3B0005DC787 /* NativeTasksIOS.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		AE32E3111EDC3CC100F9AAF5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE1B2691272DEF0C00F1D118 /* NativeTasks.h in Headers */,
+				AEA66827229A318100A98BAC /* VideoException.h in Headers */,
+				AE32E3241EDC3CF800F9AAF5 /* VcosException.h in Headers */,
+				AE32E3231EDC3CF800F9AAF5 /* VideoCapture.h in Headers */,
+				AEA66825229A317200A98BAC /* Logger.h in Headers */,
+				AE32E35C1EDC749400F9AAF5 /* NativeTaskTypes.h in Headers */,
+				AE32E3211EDC3CF800F9AAF5 /* Mutex.h in Headers */,
+				AE32E3261EDC3CF800F9AAF5 /* VideoParameters.h in Headers */,
+				AE32E32B1EDC3CFF00F9AAF5 /* FastImage.h in Headers */,
+				AEA66823229A315900A98BAC /* SecDescriptor.h in Headers */,
+				AE32E35B1EDC749400F9AAF5 /* NativeInterface.h in Headers */,
+				AE32E31E1EDC3CF800F9AAF5 /* CircularImageBuffer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEAB4934207EB3B0005DC787 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEA66828229A318100A98BAC /* VideoException.h in Headers */,
+				AEAB4935207EB3B0005DC787 /* VcosException.h in Headers */,
+				AEAB4936207EB3B0005DC787 /* VideoCapture.h in Headers */,
+				AEA66826229A317300A98BAC /* Logger.h in Headers */,
+				AEAB4937207EB3B0005DC787 /* NativeTaskTypes.h in Headers */,
+				AEAB4938207EB3B0005DC787 /* Mutex.h in Headers */,
+				AEAB4939207EB3B0005DC787 /* VideoParameters.h in Headers */,
+				AEAB493B207EB3B0005DC787 /* FastImage.h in Headers */,
+				AEAB493C207EB3B0005DC787 /* NativeInterface.h in Headers */,
+				AEA66824229A315900A98BAC /* SecDescriptor.h in Headers */,
+				AEAB493D207EB3B0005DC787 /* CircularImageBuffer.h in Headers */,
+				AEAB494E207EB5FE005DC787 /* NativeTasksIOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		AE32E3131EDC3CC100F9AAF5 /* NativeTasks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE32E3191EDC3CC100F9AAF5 /* Build configuration list for PBXNativeTarget "NativeTasks" */;
+			buildPhases = (
+				AE32E3111EDC3CC100F9AAF5 /* Headers */,
+				AE32E30F1EDC3CC100F9AAF5 /* Sources */,
+				AE32E3101EDC3CC100F9AAF5 /* Frameworks */,
+				AE32E3121EDC3CC100F9AAF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NativeTasks;
+			productName = NativeTasks;
+			productReference = AE32E3141EDC3CC100F9AAF5 /* NativeTasks.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AEAB4933207EB3B0005DC787 /* NativeTasksIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEAB4946207EB3B0005DC787 /* Build configuration list for PBXNativeTarget "NativeTasksIOS" */;
+			buildPhases = (
+				AEAB4934207EB3B0005DC787 /* Headers */,
+				AEAB493E207EB3B0005DC787 /* Sources */,
+				AEAB4944207EB3B0005DC787 /* Frameworks */,
+				AEAB4945207EB3B0005DC787 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NativeTasksIOS;
+			productName = NativeTasks;
+			productReference = AEAB494A207EB3B0005DC787 /* NativeTasksIOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AEDF6FEA1DD148F3001E9083 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1340;
+				ORGANIZATIONNAME = "Paul Nettle";
+				TargetAttributes = {
+					AE32E3131EDC3CC100F9AAF5 = {
+						CreatedOnToolsVersion = 8.3.2;
+						LastSwiftMigration = 1000;
+						ProvisioningStyle = Automatic;
+					};
+					AEAB4933207EB3B0005DC787 = {
+						LastSwiftMigration = 1000;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = AEDF6FED1DD148F3001E9083 /* Build configuration list for PBXProject "NativeTasks" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AEDF6FE91DD148F3001E9083;
+			productRefGroup = AEDF6FF31DD148F3001E9083 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE32E3131EDC3CC100F9AAF5 /* NativeTasks */,
+				AEAB4933207EB3B0005DC787 /* NativeTasksIOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE32E3121EDC3CC100F9AAF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEAB4945207EB3B0005DC787 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE32E30F1EDC3CC100F9AAF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEA66821229A315900A98BAC /* SecDescriptor.cpp in Sources */,
+				AE32E3281EDC3CFF00F9AAF5 /* NativeInterface.cpp in Sources */,
+				AE998E791EEDA54B0060AB8C /* Logger.cpp in Sources */,
+				AE32E3251EDC3CF800F9AAF5 /* VideoParameters.cpp in Sources */,
+				AE32E3221EDC3CF800F9AAF5 /* VideoCapture.cpp in Sources */,
+				AE32E32A1EDC3CFF00F9AAF5 /* FastImage.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEAB493E207EB3B0005DC787 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEA66822229A315900A98BAC /* SecDescriptor.cpp in Sources */,
+				AEAB493F207EB3B0005DC787 /* NativeInterface.cpp in Sources */,
+				AEAB4940207EB3B0005DC787 /* Logger.cpp in Sources */,
+				AEAB4941207EB3B0005DC787 /* VideoParameters.cpp in Sources */,
+				AEAB4942207EB3B0005DC787 /* VideoCapture.cpp in Sources */,
+				AEAB4943207EB3B0005DC787 /* FastImage.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AE32E31A1EDC3CC100F9AAF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = H72QHZNSAJ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				INFOPLIST_FILE = "$(SRCROOT)/NativeTasks/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.paulnettle.NativeTasks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AE32E31B1EDC3CC100F9AAF5 /* Debug.optimized */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = H72QHZNSAJ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				INFOPLIST_FILE = "$(SRCROOT)/NativeTasks/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.paulnettle.NativeTasks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug.optimized;
+		};
+		AE32E31C1EDC3CC100F9AAF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = H72QHZNSAJ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				INFOPLIST_FILE = "$(SRCROOT)/NativeTasks/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.paulnettle.NativeTasks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AE7102321E18A32700A9A58E /* Debug.optimized */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_DISABLE_SAFETY_CHECKS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug.optimized;
+		};
+		AEAB4947207EB3B0005DC787 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = H72QHZNSAJ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				INFOPLIST_FILE = "$(SRCROOT)/NativeTasks/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.paulnettle.NativeTasksIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AEAB4948207EB3B0005DC787 /* Debug.optimized */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = H72QHZNSAJ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				INFOPLIST_FILE = "$(SRCROOT)/NativeTasks/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.paulnettle.NativeTasksIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug.optimized;
+		};
+		AEAB4949207EB3B0005DC787 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = H72QHZNSAJ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				INFOPLIST_FILE = "$(SRCROOT)/NativeTasks/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.paulnettle.NativeTasksIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AEDF6FFF1DD148F3001E9083 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_DISABLE_SAFETY_CHECKS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		AEDF70001DD148F3001E9083 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_DISABLE_SAFETY_CHECKS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE32E3191EDC3CC100F9AAF5 /* Build configuration list for PBXNativeTarget "NativeTasks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE32E31A1EDC3CC100F9AAF5 /* Debug */,
+				AE32E31B1EDC3CC100F9AAF5 /* Debug.optimized */,
+				AE32E31C1EDC3CC100F9AAF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AEAB4946207EB3B0005DC787 /* Build configuration list for PBXNativeTarget "NativeTasksIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEAB4947207EB3B0005DC787 /* Debug */,
+				AEAB4948207EB3B0005DC787 /* Debug.optimized */,
+				AEAB4949207EB3B0005DC787 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AEDF6FED1DD148F3001E9083 /* Build configuration list for PBXProject "NativeTasks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEDF6FFF1DD148F3001E9083 /* Debug */,
+				AE7102321E18A32700A9A58E /* Debug.optimized */,
+				AEDF70001DD148F3001E9083 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AEDF6FEA1DD148F3001E9083 /* Project object */;
+}

@@ -1,0 +1,99 @@
+#!/bin/bash
+
+scriptBasename=$(basename "$0")
+
+printUsage()
+{
+	echo "Usage: ${scriptBasename} project_name version_dir source_file"
+	echo
+	echo "  DESCRIPTION"
+	echo
+	echo "      Replaces the contents of 'source_file' with the Swift source code for a version interface for the given"
+	echo "      'project_name' containing a revision of the directory 'version_dir'."
+	echo
+	echo "      The revision string will take the form 'revision@brahch:flags', for example '1258@work:modified'."
+	echo
+	echo "      If the revision information hasn't changed, the file is not modified."
+	echo
+	echo "  PARAMETERS"
+	echo
+	echo "      project_name - The name of the project where the source file is placed"
+	echo "      project_dir - The directory from which to query revision information from git"
+	echo "      source_file - Typically, this will be '/path/to/Version.Swift in your project"
+	echo
+	echo "  NOTES"
+	echo
+	echo "      This script can to be run as a Build Phase Script from within Xcode. To do this, go the target's 'Build Phases' and"
+	echo "      add a new 'Run Script Phase' with the shell set to '/bin/sh'. Ensure this script appears before the 'Compile Sources'"
+	echo "      build phase (use drag/drop to re-order). The script text should simply call this script with appropriate parameters."
+	echo "      For example:"
+	echo
+	echo "          \${PROJECT_DIR}/../tools/${scriptBasename} \"\${TARGET_NAME}\" \"\${PROJECT_DIR}/Sources/\${TARGET_NAME}\" \"\${PROJECT_DIR}/Sources/\${TARGET_NAME}/Version.swift\""
+	echo
+	exit -1
+}
+
+if [[ $# != 3 ]]; then
+	echo "> "
+	echo "> ERROR: Invalid number of parameters"
+	echo "> "
+	echo
+	printUsage
+fi
+
+# Our command line parameters
+projectName="$1"
+versionDir="$2"
+sourceFile="$3"
+
+# The revision
+revision=$(git -C ${versionDir} rev-list HEAD --count)
+if [ $? -ne 0 ]; then
+	echo "> "
+    echo "> ERROR: Unable to get the revision of '${versionDir}' - is it a valid git-controlled directory?"
+	echo "> "
+    echo
+    printUsage
+fi
+
+# The branch name
+branch="$(git -C ${versionDir} symbolic-ref HEAD 2>/dev/null)" || branch="(unnamed branch)"
+if [ $? -ne 0 ]; then
+	echo "> "
+    echo "> ERROR: Unable to get the branch name for '${versionDir}' - is it a valid git-controlled directory?"
+	echo "> "
+    echo
+    printUsage
+fi
+branch=${branch##refs/heads/}
+
+# The flags (i.e., was this from a modified build?)
+flags=""
+git -C ${versionDir} diff-index --quiet HEAD --
+if [ $? -ne 0 ]; then
+    flags=":m"
+fi
+
+versionString="${revision}@${branch}${flags}"
+
+# Get the current source information
+if [[ -f ${sourceFile} ]]; then
+	curSource=$(cat ${sourceFile})
+else
+	curSource=""
+fi
+
+# Generate new source
+read -r -d '' newSource <<EOF
+public var ${projectName}Version: String = "${versionString}"
+
+EOF
+
+if [[ ${curSource} != ${newSource} ]]; then
+	echo "Updating source: '${sourceFile}'"
+	echo "${newSource}" > "${sourceFile}"
+#else
+	# echo "Source file is current: '${sourceFile}'"
+fi
+
+exit 0
