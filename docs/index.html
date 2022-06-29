@@ -13,7 +13,7 @@ A marked deck is not needed to experiment with the software. Test videos are inc
 
 The core libraries, along with the production server (_Whisper_) are written to support macOS and Linux, with additional support for the Raspberry Pi platform.
 
-The testbed applications (_Steve_ and _Stevie_) were written specifically for macOS and iOS, respectively. There is currently no Windows support for desktop platforms or Android support for mobile platforms.
+The testbed applications (_Steve_ and _Abra_) were written specifically for macOS and iOS, respectively. There is currently no Windows support for desktop platforms or Android support for mobile platforms.
 
 !!! Note: Author's Note
     I hope you'll have fun with this and I especially hope you'll get engaged and involved. After all, I'm releasing this publicly to see ways that other creative minds can improve on this work.
@@ -361,7 +361,7 @@ The final step is to convert the Bit Columns into binary values (_Bit Words_) by
 
 ### Error Correction
 
-Error correction is applied to the resulting list of Bit Words in order to build raw set of card-identifying codes for the deck. Codes that are error corrected are noted as such. This information helps determine the confidence factor. In addition, cards that required error correction can be displayed in the companion app (Stevie) which can be useful during the marking process to discover cards that are difficult to read.
+Error correction is applied to the resulting list of Bit Words in order to build raw set of card-identifying codes for the deck. Codes that are error corrected are noted as such. This information helps determine the confidence factor. In addition, cards that required error correction can be displayed in the companion app (Abra) which can be useful during the marking process to discover cards that are difficult to read.
 
 It is important to note that the decoding process will produce more raw codes than there are cards in a deck. Note the previous example of the Bit Columns being normalized to 260 values. In that case, the this process will generate 260 Bit Words. These Bit Words represent our initial set of _Card Codes_ (that is, card-identifying codes printed on the edges of each card.) These Card Codes are resolved into a proper representation of a deck in the next section (see the Resolve section.)
 
@@ -665,7 +665,7 @@ At the end of the scanning process a result is generated that will take one of t
 
 The final result is reported via the server interface to all connected clients.
 
-![The _Stevie_ client displaying the results from a scan.](img/ndo_results.png)
+![The _Abra_ client displaying the results from a scan.](img/error-correction-viz.png)
 
 # Deck Definitions
 
@@ -1456,7 +1456,7 @@ The two inks used during testing were not perfect. That is, they were not perfec
 
 ## Examining The Quality Of A Deck
 
-The quality of a deck can be visually examined using the _Stevie_ client app. In Stevie, open the hamburger menu and enable **Error Correction**. This is a debug visualization that highlights cards that required error correction during decoding phase. When using this feature, be sure that the deck is large in frame and is not moving.
+The quality of a deck can be visually examined using the _Abra_ client app. In Abra, open the hamburger menu and enable **Error Correction**. This is a debug visualization that highlights cards that required error correction during decoding phase. When using this feature, be sure that the deck is large in frame and is not moving.
 
 The error correction is updated each time a frame is received from the server so expect error correction updates to come at a high frequency, resulting in cards that appear to flicker Red.
 
@@ -1488,7 +1488,7 @@ Some error correction is expected. Scanning data from live video is an inherentl
 
 * The deck refuses to decode
 
-> Verify that Stevie is using the correct definition (selected across the top of the app)
+> Verify that Abra is using the correct definition (selected across the top of the app)
 > that matches the newly marked deck.
 >
 > If this doesn't resolve the problem, try using the debugging visualizations to understand
