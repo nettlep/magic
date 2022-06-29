@@ -4,7 +4,7 @@ The Nettle Magic Project is a collection of technologies intended to enable magi
 
 A deck of cards is read by scanning card-identifying codes printed on the edges of each card. Decks can be marked with different inks, including some that are virtually invisible to the human eye (UV reactive and IR absorbing inks.)
 
-![Overview of scanning a deck of cards with barcodes marked on the edges of each card](doc/img/intro-stages.png)
+![Overview of scanning a deck of cards with barcodes marked on the edges of each card](docs/img/intro-stages.png)
 
 **LEFT**: An test deck marked with visible Black ink. **CENTER**: A scanning server running on a Raspberry Pi Zero W with a NoIR camera module and a 5MM IR filter. **RIGHT**: Client software running on an iPad displaying the results of a raw scan from a scanning server. The deck in this image is marked with IR absorbing ink and viewed under IR-viewing conditions.
 
