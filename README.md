@@ -14,4 +14,4 @@ The core libraries, along with the production server (_Whisper_) are written to 
 
 The testbed applications (_Steve_ and _Stevie_) were written specifically for macOS and iOS, respectively. There is currently no Windows support for desktop platforms or Android support for mobile platforms.
 
-Full documentation is available [here](doc/index.md.html).
+Full documentation is available [here](https://nettlep.github.io/magic/).
