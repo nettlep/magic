@@ -12,6 +12,6 @@ A marked deck is not needed to experiment with the software. Test videos are inc
 
 The core libraries, along with the production server (_Whisper_) are written to support macOS and Linux, with additional support for the Raspberry Pi platform.
 
-The testbed applications (_Steve_ and _Stevie_) were written specifically for macOS and iOS, respectively. There is currently no Windows support for desktop platforms or Android support for mobile platforms.
+The testbed applications (_Steve_ and _Abra_) were written specifically for macOS and iOS, respectively. There is currently no Windows support for desktop platforms or Android support for mobile platforms.
 
 Full documentation is available [here](https://nettlep.github.io/magic/).
