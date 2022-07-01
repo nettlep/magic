@@ -9,10 +9,6 @@
 /* Begin PBXBuildFile section */
 		AE1B2728272E48ED00F1D118 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE1B2726272E48ED00F1D118 /* Assets.xcassets */; };
 		AE1B273F272E491800F1D118 /* inter6.slow-in-out.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AE1B272B272E491700F1D118 /* inter6.slow-in-out.mp4 */; };
-		AE1B2741272E491800F1D118 /* inter6.static-front-facing.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AE1B272D272E491700F1D118 /* inter6.static-front-facing.mp4 */; };
-		AE1B2742272E491800F1D118 /* inter6.random-stacking.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AE1B272E272E491700F1D118 /* inter6.random-stacking.mp4 */; };
-		AE1B2749272E491800F1D118 /* inter6.all-angles.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AE1B2735272E491700F1D118 /* inter6.all-angles.mp4 */; };
-		AE1B274A272E491800F1D118 /* inter6.full-rotation.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AE1B2736272E491700F1D118 /* inter6.full-rotation.mp4 */; };
 		AE1B274F272E491800F1D118 /* inter6.quick-random-movements.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AE1B273B272E491700F1D118 /* inter6.quick-random-movements.mp4 */; };
 		AE1B2758272E495600F1D118 /* SteveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1B2752272E495600F1D118 /* SteveViewController.swift */; };
 		AE1B2759272E495600F1D118 /* SteveWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1B2753272E495600F1D118 /* SteveWindow.swift */; };
@@ -70,35 +66,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		AE085FF821FB73C10079C039 /* mds12-54r.diamonds-flipped-3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "mds12-54r.diamonds-flipped-3.mp4"; path = "Reference/mds12-54r.diamonds-flipped-3.mp4"; sourceTree = "<group>"; };
-		AE085FF921FB73C10079C039 /* mds12-54r.diamonds-flipped-1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "mds12-54r.diamonds-flipped-1.mp4"; path = "Reference/mds12-54r.diamonds-flipped-1.mp4"; sourceTree = "<group>"; };
-		AE085FFA21FB73C10079C039 /* mds12-54r.easy-test.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "mds12-54r.easy-test.mp4"; path = "Reference/mds12-54r.easy-test.mp4"; sourceTree = "<group>"; };
-		AE085FFB21FB73C10079C039 /* mds12-54r.diamonds-flipped-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "mds12-54r.diamonds-flipped-1.jpg"; path = "Reference/mds12-54r.diamonds-flipped-1.jpg"; sourceTree = "<group>"; };
-		AE085FFC21FB73C10079C039 /* mds12-54r.diamonds-flipped-2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "mds12-54r.diamonds-flipped-2.mp4"; path = "Reference/mds12-54r.diamonds-flipped-2.mp4"; sourceTree = "<group>"; };
-		AE085FFD21FB73C10079C039 /* mds12-54r.easy-test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "mds12-54r.easy-test.jpg"; path = "Reference/mds12-54r.easy-test.jpg"; sourceTree = "<group>"; };
-		AE085FFE21FB73C10079C039 /* mds12-54r.diamonds-flipped-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "mds12-54r.diamonds-flipped-2.jpg"; path = "Reference/mds12-54r.diamonds-flipped-2.jpg"; sourceTree = "<group>"; };
 		AE1B2726272E48ED00F1D118 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE1B2727272E48ED00F1D118 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AE1B272A272E491700F1D118 /* inter6.stack-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "inter6.stack-1.jpg"; path = "Reference/inter6.stack-1.jpg"; sourceTree = "<group>"; };
 		AE1B272B272E491700F1D118 /* inter6.slow-in-out.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "inter6.slow-in-out.mp4"; path = "Reference/inter6.slow-in-out.mp4"; sourceTree = "<group>"; };
-		AE1B272C272E491700F1D118 /* inter6.stack-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "inter6.stack-2.jpg"; path = "Reference/inter6.stack-2.jpg"; sourceTree = "<group>"; };
-		AE1B272D272E491700F1D118 /* inter6.static-front-facing.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "inter6.static-front-facing.mp4"; path = "Reference/inter6.static-front-facing.mp4"; sourceTree = "<group>"; };
-		AE1B272E272E491700F1D118 /* inter6.random-stacking.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "inter6.random-stacking.mp4"; path = "Reference/inter6.random-stacking.mp4"; sourceTree = "<group>"; };
-		AE1B272F272E491700F1D118 /* inter6.stack-3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "inter6.stack-3.jpg"; path = "Reference/inter6.stack-3.jpg"; sourceTree = "<group>"; };
-		AE1B2730272E491700F1D118 /* inter6.stack-4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "inter6.stack-4.jpg"; path = "Reference/inter6.stack-4.jpg"; sourceTree = "<group>"; };
-		AE1B2731272E491700F1D118 /* inter6.first-print-test-2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "inter6.first-print-test-2.mp4"; path = "Reference/inter6.first-print-test-2.mp4"; sourceTree = "<group>"; };
-		AE1B2732272E491700F1D118 /* inter6.ref-deck-2c.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "inter6.ref-deck-2c.mp4"; path = "Reference/inter6.ref-deck-2c.mp4"; sourceTree = "<group>"; };
-		AE1B2733272E491700F1D118 /* inter6.first-print-test-img.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "inter6.first-print-test-img.jpg"; path = "Reference/inter6.first-print-test-img.jpg"; sourceTree = "<group>"; };
-		AE1B2734272E491700F1D118 /* inter6.rpi-ref2-a.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "inter6.rpi-ref2-a.mp4"; path = "Reference/inter6.rpi-ref2-a.mp4"; sourceTree = "<group>"; };
-		AE1B2735272E491700F1D118 /* inter6.all-angles.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "inter6.all-angles.mp4"; path = "Reference/inter6.all-angles.mp4"; sourceTree = "<group>"; };
-		AE1B2736272E491700F1D118 /* inter6.full-rotation.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "inter6.full-rotation.mp4"; path = "Reference/inter6.full-rotation.mp4"; sourceTree = "<group>"; };
-		AE1B2737272E491700F1D118 /* inter6.ref-deck-2b.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "inter6.ref-deck-2b.mp4"; path = "Reference/inter6.ref-deck-2b.mp4"; sourceTree = "<group>"; };
-		AE1B2738272E491700F1D118 /* inter6.rpi-ref2-b.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "inter6.rpi-ref2-b.mp4"; path = "Reference/inter6.rpi-ref2-b.mp4"; sourceTree = "<group>"; };
-		AE1B2739272E491700F1D118 /* inter6.first-print-test-1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "inter6.first-print-test-1.mp4"; path = "Reference/inter6.first-print-test-1.mp4"; sourceTree = "<group>"; };
-		AE1B273A272E491700F1D118 /* inter6.ref-deck-2d.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "inter6.ref-deck-2d.mp4"; path = "Reference/inter6.ref-deck-2d.mp4"; sourceTree = "<group>"; };
 		AE1B273B272E491700F1D118 /* inter6.quick-random-movements.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "inter6.quick-random-movements.mp4"; path = "Reference/inter6.quick-random-movements.mp4"; sourceTree = "<group>"; };
-		AE1B273C272E491700F1D118 /* inter6.ref-deck-2a.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "inter6.ref-deck-2a.mp4"; path = "Reference/inter6.ref-deck-2a.mp4"; sourceTree = "<group>"; };
-		AE1B273D272E491700F1D118 /* inter6.rpi-ref2-near-far.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "inter6.rpi-ref2-near-far.mp4"; path = "Reference/inter6.rpi-ref2-near-far.mp4"; sourceTree = "<group>"; };
 		AE1B2752272E495600F1D118 /* SteveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SteveViewController.swift; sourceTree = "<group>"; };
 		AE1B2753272E495600F1D118 /* SteveWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SteveWindow.swift; sourceTree = "<group>"; };
 		AE1B2754272E495600F1D118 /* SteveMediaProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SteveMediaProvider.swift; sourceTree = "<group>"; };
@@ -108,20 +79,15 @@
 		AE1B277C272E4D5200F1D118 /* Minion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Minion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE1B277D272E4D5200F1D118 /* NativeTasks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NativeTasks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE1B277E272E4D5200F1D118 /* Seer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Seer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AE2A67B222039D450080A429 /* mds12-54r-uv.test-1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "mds12-54r-uv.test-1.mp4"; path = "Reference/mds12-54r-uv.test-1.mp4"; sourceTree = "<group>"; };
 		AE32E3511EDC6CD400F9AAF5 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		AE3C5FED1F658C9D0001A9F0 /* Version.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Version.swift; sourceTree = "<group>"; };
 		AE53154227362C5D00CA406E /* Steve.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Steve.entitlements; sourceTree = "<group>"; };
 		AE6192F71FFB08540009A7B9 /* mds12-56b.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "mds12-56b.mp4"; path = "Reference/mds12-56b.mp4"; sourceTree = "<group>"; };
-		AE6BDDAA22079683002AEECD /* mds12-54r.ndo-reversed.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "mds12-54r.ndo-reversed.mp4"; path = "Reference/mds12-54r.ndo-reversed.mp4"; sourceTree = "<group>"; };
-		AE998E671EEDA4910060AB8C /* mds12-56b.720.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "mds12-56b.720.mp4"; path = "Reference/mds12-56b.720.mp4"; sourceTree = "<group>"; };
-		AE998E681EEDA4910060AB8C /* mds12-56b.1080.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "mds12-56b.1080.mp4"; path = "Reference/mds12-56b.1080.mp4"; sourceTree = "<group>"; };
 		AEAA72B420891B4A00B482AB /* SteveFrameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SteveFrameView.swift; sourceTree = "<group>"; };
 		AEAF59441DDA1795000689F3 /* CoreWLAN.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreWLAN.framework; path = System/Library/Frameworks/CoreWLAN.framework; sourceTree = SDKROOT; };
 		AEB28F871DD2883F00045CAC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		AEB28F891DD2947700045CAC /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		AEC0F955204586F000FA9147 /* SteveServerPeer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SteveServerPeer.swift; sourceTree = "<group>"; };
-		AEC390812039C7E5003C277E /* mds12-104.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mds12-104.png"; path = "Reference/mds12-104.png"; sourceTree = "<group>"; };
 		AED353BF1E928B6E00F05956 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AEDF6FF21DD148F3001E9083 /* Steve.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Steve.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -147,39 +113,9 @@
 		AE0B19C01DED275F000E1A72 /* Reference */ = {
 			isa = PBXGroup;
 			children = (
-				AE1B2735272E491700F1D118 /* inter6.all-angles.mp4 */,
-				AE1B2739272E491700F1D118 /* inter6.first-print-test-1.mp4 */,
-				AE1B2731272E491700F1D118 /* inter6.first-print-test-2.mp4 */,
-				AE1B2733272E491700F1D118 /* inter6.first-print-test-img.jpg */,
-				AE1B2736272E491700F1D118 /* inter6.full-rotation.mp4 */,
 				AE1B273B272E491700F1D118 /* inter6.quick-random-movements.mp4 */,
-				AE1B272E272E491700F1D118 /* inter6.random-stacking.mp4 */,
-				AE1B273C272E491700F1D118 /* inter6.ref-deck-2a.mp4 */,
-				AE1B2737272E491700F1D118 /* inter6.ref-deck-2b.mp4 */,
-				AE1B2732272E491700F1D118 /* inter6.ref-deck-2c.mp4 */,
-				AE1B273A272E491700F1D118 /* inter6.ref-deck-2d.mp4 */,
-				AE1B2734272E491700F1D118 /* inter6.rpi-ref2-a.mp4 */,
-				AE1B2738272E491700F1D118 /* inter6.rpi-ref2-b.mp4 */,
-				AE1B273D272E491700F1D118 /* inter6.rpi-ref2-near-far.mp4 */,
 				AE1B272B272E491700F1D118 /* inter6.slow-in-out.mp4 */,
-				AE1B272A272E491700F1D118 /* inter6.stack-1.jpg */,
-				AE1B272C272E491700F1D118 /* inter6.stack-2.jpg */,
-				AE1B272F272E491700F1D118 /* inter6.stack-3.jpg */,
-				AE1B2730272E491700F1D118 /* inter6.stack-4.jpg */,
-				AE1B272D272E491700F1D118 /* inter6.static-front-facing.mp4 */,
-				AE6BDDAA22079683002AEECD /* mds12-54r.ndo-reversed.mp4 */,
-				AE2A67B222039D450080A429 /* mds12-54r-uv.test-1.mp4 */,
-				AE085FFB21FB73C10079C039 /* mds12-54r.diamonds-flipped-1.jpg */,
-				AE085FF921FB73C10079C039 /* mds12-54r.diamonds-flipped-1.mp4 */,
-				AE085FFE21FB73C10079C039 /* mds12-54r.diamonds-flipped-2.jpg */,
-				AE085FFC21FB73C10079C039 /* mds12-54r.diamonds-flipped-2.mp4 */,
-				AE085FF821FB73C10079C039 /* mds12-54r.diamonds-flipped-3.mp4 */,
-				AE085FFD21FB73C10079C039 /* mds12-54r.easy-test.jpg */,
-				AE085FFA21FB73C10079C039 /* mds12-54r.easy-test.mp4 */,
-				AEC390812039C7E5003C277E /* mds12-104.png */,
 				AE6192F71FFB08540009A7B9 /* mds12-56b.mp4 */,
-				AE998E671EEDA4910060AB8C /* mds12-56b.720.mp4 */,
-				AE998E681EEDA4910060AB8C /* mds12-56b.1080.mp4 */,
 			);
 			name = Reference;
 			sourceTree = "<group>";
@@ -310,13 +246,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE1B274F272E491800F1D118 /* inter6.quick-random-movements.mp4 in Resources */,
-				AE1B2741272E491800F1D118 /* inter6.static-front-facing.mp4 in Resources */,
 				AED353C11E928B8500F05956 /* Main.storyboard in Resources */,
-				AE1B2742272E491800F1D118 /* inter6.random-stacking.mp4 in Resources */,
 				AE1B273F272E491800F1D118 /* inter6.slow-in-out.mp4 in Resources */,
 				AE1B2728272E48ED00F1D118 /* Assets.xcassets in Resources */,
-				AE1B2749272E491800F1D118 /* inter6.all-angles.mp4 in Resources */,
-				AE1B274A272E491800F1D118 /* inter6.full-rotation.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
