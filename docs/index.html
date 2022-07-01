@@ -34,6 +34,13 @@ The testbed allows for easy iteration with a multitude of debugger visualization
 
 Note: Steve will automatically discover the sample videos, but it also supports a drag/drop interface for your own videos or images.
 
+!!! Note: Preparing to run Steve
+    Steve requires two configuration files. Without these files, Steve won't work very well.
+
+    The first is the server/scanner configuration file, `whisper.conf`. This configuration file is loaded in cascading fashion, starting with `/etc/whisper.conf`. Next, the file `/usr/local/etc/whisper.conf` is loaded and any configuration settings in this file will override those from the previous. Finally, the file `~/.whisper.conf` is loaded, allowing user-specific configuration overrides.
+
+    The second configuration file is the _Deck Definitions_ (`decks.json`). See the Deck Definitions section for details. This file is loaded in a similar cascading fashion, starting with `/etc/decks.json`. Next, the file `/usr/local/etc/decks.json` is loaded and any deck definitions in this file will override those from the previous. Finally, the file `~/.decks.json` is loaded, allowing user-specific configuration overrides.
+
 ## Meet Whisper: The Server
 
 _Whisper_ is the primary scanning server. In most production performances _Whisper_ would be deployed to a device, likely hidden on the performer or in/on a prop. The scanning results would be received from a client of some kind and incorporated into a performance.
@@ -48,10 +55,23 @@ For supported platforms, to build whisper, simply run the 'build' script like so
 $ ./build release whisper
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Upon a successful build, you'll find the binary in the following location:
+!!! Note: Preparing to run Whisper
+    Whisper requires two configuration files. Without these files, Whisper won't work very well.
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    The first is the server/scanner configuration file, `whisper.conf`. This configuration file is loaded in cascading fashion, starting with `/etc/whisper.conf`. Next, the file `/usr/local/etc/whisper.conf` is loaded and any configuration settings in this file will override those from the previous. Finally, the file `~/.whisper.conf` is loaded, allowing user-specific configuration overrides.
+
+    The second configuration file is the _Deck Definitions_ (`decks.json`). See the Deck Definitions section for details. This file is loaded in a similar cascading fashion, starting with `/etc/decks.json`. Next, the file `/usr/local/etc/decks.json` is loaded and any deck definitions in this file will override those from the previous. Finally, the file `~/.decks.json` is loaded, allowing user-specific configuration overrides.
+
+If your build was successful and the configuration files are setup, you should be able to launch `whisper`. Uou'll find the binary in the following location:
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ base
 .out/release/whisper
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+As a test, you can run Whisper against one of the sample videos packaged with Steve:
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ bash
+.out/release/whisper -6 Sources/Steve/Steve/Reference/inter6.quick-random-movements.mp4
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ### A note about the included sample videos
