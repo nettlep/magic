@@ -2,13 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:../decks.json">
-   </FileRef>
-   <FileRef
       location = "group:../todo.txt">
-   </FileRef>
-   <FileRef
-      location = "group:../whisper.conf">
    </FileRef>
    <FileRef
       location = "group:Abra/Abra.xcodeproj">

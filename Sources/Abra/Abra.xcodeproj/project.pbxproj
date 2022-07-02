@@ -80,6 +80,7 @@
 		AEDB0D29270CA52800BF40EB /* ScanResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDB0CD6270CA51300BF40EB /* ScanResultsView.swift */; };
 		AEDB0D2B270CA52800BF40EB /* ConfidenceGaugeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDB0CE4270CA51300BF40EB /* ConfidenceGaugeView.swift */; };
 		AEDB0D2C270CA52800BF40EB /* FannedDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDB0CD1270CA51300BF40EB /* FannedDeck.swift */; };
+		AEE8CC9C2870E25500133E4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEDB0CD9270CA51300BF40EB /* Assets.xcassets */; };
 		AEF00CB8270F3A330089B49E /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF00CB7270F3A330089B49E /* ColorExtensions.swift */; };
 		AEF00CB9270F3A330089B49E /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF00CB7270F3A330089B49E /* ColorExtensions.swift */; };
 		AEF00CBC2710E0460089B49E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF00CBB2710E0450089B49E /* SettingsView.swift */; };
@@ -420,6 +421,7 @@
 			files = (
 				AE1B27AF272E551C00F1D118 /* decks.json in Resources */,
 				AE1B27B1272E551C00F1D118 /* whisper.conf in Resources */,
+				AEE8CC9C2870E25500133E4D /* Assets.xcassets in Resources */,
 				AEDB0D23270CA52800BF40EB /* Card.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -649,6 +651,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -696,6 +699,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -743,6 +747,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_ENABLE_OBJC_WEAK = YES;
