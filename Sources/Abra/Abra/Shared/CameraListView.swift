@@ -47,7 +47,7 @@ struct CameraListView: View {
 					.onTapGesture {
 						withAnimation {
 							cameraListVisible = false
-							DispatchQueue.global().async {
+                            DispatchQueue.global().asyncAfter(deadline: .now() + 0.6) {
 								AbraCaptureMediaProvider.shared.setCameraDevice(deviceName: device.name)
 								AbraCaptureMediaProvider.shared.restartCapture()
 							}
@@ -74,6 +74,7 @@ struct CameraListView: View {
 			}
 		}
 		.transition(.move(edge: .bottom))
+        .opacity(cameraListVisible ? 1 : 0)
 	}
 }
 

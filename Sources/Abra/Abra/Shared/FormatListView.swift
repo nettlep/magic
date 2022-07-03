@@ -76,6 +76,8 @@ struct FormatListView: View {
 			}
 		}
 		.transition(.move(edge: .bottom))
+        .opacity(formatListVisible ? 1 : 0)
+
 	}
 }
 
