@@ -110,16 +110,12 @@
 		AE39AE6A207EAC0600F09279 /* ResultStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE37F5771ED9987800E51154 /* ResultStats.swift */; };
 		AE39AE6C207EAC0600F09279 /* DecodeResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA52E061ED706A0000FFD95 /* DecodeResult.swift */; };
 		AE39AE6F207EAC0600F09279 /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3C5FF21F658CF20001A9F0 /* Version.swift */; };
-		AE39AE71207EAC0600F09279 /* VideoDecode.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE75EBB81F119F71001D4530 /* VideoDecode.swift */; };
 		AE39AE73207EAC0600F09279 /* SeerServerPeer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8F806D2051838700B94340 /* SeerServerPeer.swift */; };
 		AE39AE78207EAC0600F09279 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84A521F903B6F0008AAF8 /* Int.swift */; };
-		AE39AE7B207EAC0600F09279 /* VideoDecodeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE75EBB91F119F71001D4530 /* VideoDecodeError.swift */; };
 		AE39AE7F207EAC0600F09279 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE1A58B1EE458C300A4B1BF /* History.swift */; };
 		AE39AE81207EAC0600F09279 /* Float.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE84A511F903B6E0008AAF8 /* Float.swift */; };
 		AE3C5FF31F658D000001A9F0 /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3C5FF21F658CF20001A9F0 /* Version.swift */; };
 		AE4388C02025FC42001A1D1C /* LogDeviceTextUi.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8DCDF41FA4E9D800B2F0CF /* LogDeviceTextUi.swift */; };
-		AE75EBBC1F119F9F001D4530 /* VideoDecode.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE75EBB81F119F71001D4530 /* VideoDecode.swift */; };
-		AE75EBBD1F119F9F001D4530 /* VideoDecodeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE75EBB91F119F71001D4530 /* VideoDecodeError.swift */; };
 		AE75EBBE1F119F9F001D4530 /* TextUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB96E461F1041C500118CFE /* TextUI.swift */; };
 		AE8F806F2051839600B94340 /* SeerServerPeer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8F806D2051838700B94340 /* SeerServerPeer.swift */; };
 		AE93208B229227BD0090B4FB /* SeerMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE93208A229227BD0090B4FB /* SeerMessages.swift */; };
@@ -199,12 +195,7 @@
 		AE39AE8D207EAC0600F09279 /* SeerIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SeerIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE3C5FF21F658CF20001A9F0 /* Version.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Version.swift; sourceTree = "<group>"; };
 		AE401A25208523B500FE9DB7 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = SystemModules/C_AAlib.build/module.modulemap; sourceTree = "<group>"; };
-		AE4E5C81202758DC006DBBE6 /* C_ncurses.build */ = {isa = PBXFileReference; lastKnownFileType = folder; path = C_ncurses.build; sourceTree = "<group>"; };
-		AE4E5C84202758DC006DBBE6 /* C_Libav.build */ = {isa = PBXFileReference; lastKnownFileType = folder; path = C_Libav.build; sourceTree = "<group>"; };
-		AE4E5C85202758DC006DBBE6 /* C_libpng.build */ = {isa = PBXFileReference; lastKnownFileType = folder; path = C_libpng.build; sourceTree = "<group>"; };
-		AE4E5C87202758DC006DBBE6 /* C_AAlib.build */ = {isa = PBXFileReference; lastKnownFileType = folder; path = C_AAlib.build; sourceTree = "<group>"; };
-		AE75EBB81F119F71001D4530 /* VideoDecode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoDecode.swift; sourceTree = "<group>"; };
-		AE75EBB91F119F71001D4530 /* VideoDecodeError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoDecodeError.swift; sourceTree = "<group>"; };
+		AE50CB8B2873F86900899BEB /* SystemModules */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SystemModules; sourceTree = "<group>"; };
 		AE8DCDF41FA4E9D800B2F0CF /* LogDeviceTextUi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogDeviceTextUi.swift; sourceTree = "<group>"; };
 		AE8F806D2051838700B94340 /* SeerServerPeer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeerServerPeer.swift; sourceTree = "<group>"; };
 		AE93208A229227BD0090B4FB /* SeerMessages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeerMessages.swift; sourceTree = "<group>"; };
@@ -250,18 +241,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AE4E5C80202758AA006DBBE6 /* System modules */ = {
-			isa = PBXGroup;
-			children = (
-				AE4E5C87202758DC006DBBE6 /* C_AAlib.build */,
-				AE4E5C84202758DC006DBBE6 /* C_Libav.build */,
-				AE4E5C85202758DC006DBBE6 /* C_libpng.build */,
-				AE4E5C81202758DC006DBBE6 /* C_ncurses.build */,
-			);
-			name = "System modules";
-			path = SystemModules;
-			sourceTree = "<group>";
-		};
 		AE8F806A2051822600B94340 /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -316,7 +295,7 @@
 			isa = PBXGroup;
 			children = (
 				AEE317B51E8FFAC4006D4802 /* Seer */,
-				AE4E5C80202758AA006DBBE6 /* System modules */,
+				AE50CB8B2873F86900899BEB /* SystemModules */,
 				AEDF6FF31DD148F3001E9083 /* Products */,
 				AEB28F861DD2883F00045CAC /* Frameworks */,
 			);
@@ -414,8 +393,6 @@
 				AE1B270F272DF37800F1D118 /* PerfTimer.swift */,
 				AE1B270D272DF37800F1D118 /* RenderView.swift */,
 				AEB96E461F1041C500118CFE /* TextUI.swift */,
-				AE75EBB81F119F71001D4530 /* VideoDecode.swift */,
-				AE75EBB91F119F71001D4530 /* VideoDecodeError.swift */,
 			);
 			name = Utilitarian;
 			sourceTree = "<group>";
@@ -689,7 +666,6 @@
 				AE1B2715272DF37900F1D118 /* Debug.swift in Sources */,
 				AE1B26F1272DF30500F1D118 /* Decoder.swift in Sources */,
 				AEAA72B32088E3FE00B482AB /* MediaViewportProvider.swift in Sources */,
-				AE39AE71207EAC0600F09279 /* VideoDecode.swift in Sources */,
 				AE1B26D3272DF29800F1D118 /* DeckFormat.swift in Sources */,
 				AE39AE73207EAC0600F09279 /* SeerServerPeer.swift in Sources */,
 				AE1B26AB272DF23200F1D118 /* Rect-Imaging.swift in Sources */,
@@ -703,7 +679,6 @@
 				AE1B26E1272DF2B000F1D118 /* AnalysisResult.swift in Sources */,
 				AE93208C229227BD0090B4FB /* SeerMessages.swift in Sources */,
 				AED3D32A2087C88D00764F5F /* MediaConsumer.swift in Sources */,
-				AE39AE7B207EAC0600F09279 /* VideoDecodeError.swift in Sources */,
 				AE39AE7F207EAC0600F09279 /* History.swift in Sources */,
 				AE39AE81207EAC0600F09279 /* Float.swift in Sources */,
 				AE1B26F9272DF30500F1D118 /* SampleLine.swift in Sources */,
@@ -764,7 +739,6 @@
 				AE1B26D2272DF29800F1D118 /* DeckFormat.swift in Sources */,
 				AEAA72B22088E3FD00B482AB /* MediaViewportProvider.swift in Sources */,
 				AE1B269B272DF1D000F1D118 /* StaticMatrix.swift in Sources */,
-				AE75EBBC1F119F9F001D4530 /* VideoDecode.swift in Sources */,
 				AE8F806F2051839600B94340 /* SeerServerPeer.swift in Sources */,
 				AE1B2702272DF30500F1D118 /* Edge.swift in Sources */,
 				AE1B2710272DF37800F1D118 /* PausableTime.swift in Sources */,
@@ -774,7 +748,6 @@
 				AE1B26E0272DF2B000F1D118 /* AnalysisResult.swift in Sources */,
 				AE93208B229227BD0090B4FB /* SeerMessages.swift in Sources */,
 				AED3D3292087C88D00764F5F /* MediaConsumer.swift in Sources */,
-				AE75EBBD1F119F9F001D4530 /* VideoDecodeError.swift in Sources */,
 				AEE1A58F1EE458EF00A4B1BF /* History.swift in Sources */,
 				AEE84A5A1F903B760008AAF8 /* Float.swift in Sources */,
 				AE1B26F8272DF30500F1D118 /* SampleLine.swift in Sources */,

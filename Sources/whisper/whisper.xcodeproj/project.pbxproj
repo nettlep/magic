@@ -19,6 +19,8 @@
 		AE1B27C7272E5B4A00F1D118 /* Seer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AE1B27C1272E5B4A00F1D118 /* Seer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AE3C5FF01F658CC70001A9F0 /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3C5FEF1F658CC30001A9F0 /* Version.swift */; };
 		AE504E731F58859D00ABE97F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE504E701F58858C00ABE97F /* main.swift */; };
+		AE50CB882873F6A100899BEB /* VideoDecode.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE50CB862873F6A100899BEB /* VideoDecode.swift */; };
+		AE50CB892873F6A100899BEB /* VideoDecodeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE50CB872873F6A100899BEB /* VideoDecodeError.swift */; };
 		AE5262901F13D89200E8589D /* Signals.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8980FD1F13CA8800976748 /* Signals.swift */; };
 		AEC0F9512044E56000FA9147 /* WhisperServerPeer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2E004B204062F0007C02F0 /* WhisperServerPeer.swift */; };
 		AEF7408D1F5EF7E700B28A92 /* CommandLineParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF7408B1F5EF7E200B28A92 /* CommandLineParser.swift */; };
@@ -66,6 +68,9 @@
 		AE3C5FEF1F658CC30001A9F0 /* Version.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Version.swift; sourceTree = "<group>"; };
 		AE401A25208523B500FE9DB7 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = SystemModules/C_AAlib.build/module.modulemap; sourceTree = "<group>"; };
 		AE504E701F58858C00ABE97F /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		AE50CB862873F6A100899BEB /* VideoDecode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoDecode.swift; sourceTree = "<group>"; };
+		AE50CB872873F6A100899BEB /* VideoDecodeError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoDecodeError.swift; sourceTree = "<group>"; };
+		AE50CB8A2873F82D00899BEB /* SystemModules */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SystemModules; sourceTree = "<group>"; };
 		AE53154327362D4400CA406E /* whisper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = whisper.entitlements; sourceTree = "<group>"; };
 		AE8980FD1F13CA8800976748 /* Signals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signals.swift; sourceTree = "<group>"; };
 		AE998E5F1EEDA46D0060AB8C /* WhisperCaptureMediaProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhisperCaptureMediaProvider.swift; sourceTree = "<group>"; };
@@ -101,6 +106,8 @@
 				AEF7408A1F5EF7E200B28A92 /* KeyInput.swift */,
 				AE8980FD1F13CA8800976748 /* Signals.swift */,
 				AE3C5FEF1F658CC30001A9F0 /* Version.swift */,
+				AE50CB862873F6A100899BEB /* VideoDecode.swift */,
+				AE50CB872873F6A100899BEB /* VideoDecodeError.swift */,
 				AE1B2724272E461600F1D118 /* Whisper.swift */,
 				AE998E5F1EEDA46D0060AB8C /* WhisperCaptureMediaProvider.swift */,
 				AE0282D820A0A0B1006E7697 /* WhisperMediaViewportProvider.swift */,
@@ -131,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				AE60F7A21E916FFE0075DCE6 /* whisper */,
+				AE50CB8A2873F82D00899BEB /* SystemModules */,
 				AEDF6FF31DD148F3001E9083 /* Products */,
 				AEB28F861DD2883F00045CAC /* Frameworks */,
 			);
@@ -245,7 +253,9 @@
 				AE3C5FF01F658CC70001A9F0 /* Version.swift in Sources */,
 				AE0282D920A0A0B1006E7697 /* WhisperMediaViewportProvider.swift in Sources */,
 				AEC0F9512044E56000FA9147 /* WhisperServerPeer.swift in Sources */,
+				AE50CB892873F6A100899BEB /* VideoDecodeError.swift in Sources */,
 				AE5262901F13D89200E8589D /* Signals.swift in Sources */,
+				AE50CB882873F6A100899BEB /* VideoDecode.swift in Sources */,
 				AEF7408D1F5EF7E700B28A92 /* CommandLineParser.swift in Sources */,
 				AE1B2725272E461600F1D118 /* Whisper.swift in Sources */,
 				AEFA6FCF1F73F42A00CE1A9E /* WhisperVideoMediaProvider.swift in Sources */,
@@ -272,12 +282,17 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/opt/homebrew/include,
 					"/usr/local/include/glib-2.0",
 					"/usr/local/lib/glib-2.0/include/",
 				);
 				INSTALL_PATH = /;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path";
-				LIBRARY_SEARCH_PATHS = /usr/local/lib/;
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					/opt/homebrew/lib,
+				);
 				LINK_WITH_STANDARD_LIBRARIES = YES;
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -307,12 +322,17 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/opt/homebrew/include,
 					"/usr/local/include/glib-2.0",
 					"/usr/local/lib/glib-2.0/include/",
 				);
 				INSTALL_PATH = /;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path";
-				LIBRARY_SEARCH_PATHS = /usr/local/lib/;
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					/opt/homebrew/lib,
+				);
 				LINK_WITH_STANDARD_LIBRARIES = YES;
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -339,12 +359,17 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "NCURSES_OPAQUE=0";
 				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/opt/homebrew/include,
 					"/usr/local/include/glib-2.0",
 					"/usr/local/lib/glib-2.0/include/",
 				);
 				INSTALL_PATH = /;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path";
-				LIBRARY_SEARCH_PATHS = /usr/local/lib/;
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					/opt/homebrew/lib,
+				);
 				LINK_WITH_STANDARD_LIBRARIES = YES;
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				ONLY_ACTIVE_ARCH = NO;

@@ -16,9 +16,6 @@ import NativeTasksIOS
 #else
 import NativeTasks
 #endif
-#if os(Linux)
-import C_ncurses
-#endif
 
 struct Motion
 {
@@ -493,42 +490,6 @@ extension ImageBuffer where Sample == Color
 				}
 			}
 		}
-	}
-
-	private func motionDetector(lumaBuffer: LumaBuffer)
-	{
-		Motion.prevFrame.copy(from: Motion.thisFrame)
-		let prevBuf = Motion.prevFrame.buffer
-
-		Motion.thisFrame.copy(from: lumaBuffer.buffer, width: lumaBuffer.width, height: lumaBuffer.height)
-		let thisBuf = Motion.thisFrame.buffer
-
-		//let dbgBuf = buffer
-
-		var totalError = 0
-		for y in 0..<256
-		{
-			let yOffset = y * 256
-			//let zOffset = y * width
-			for x in 0..<256
-			{
-				let diff = abs(Int(thisBuf[x+yOffset]) - Int(prevBuf[x+yOffset]))
-				totalError += diff
-				//let limit = max(min(diff + 128, 255), 0)
-				//var pix = Color(limit)
-				//pix = pix | (pix << 16) | (pix << 8) | 0xff000000
-				//dbgBuf[x+zOffset] = pix
-			}
-		}
-
-		let metric = Double(totalError) / 256 / 256
-
-		#if os(Linux) || os(macOS)
-		if metric > 2
-		{
-			beep()
-		}
-		#endif
 	}
 
 	private func brightenSamples(x: Int, y: Int, count: Int, amount: Int)
