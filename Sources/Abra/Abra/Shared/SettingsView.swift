@@ -256,7 +256,7 @@ struct SettingsView: View {
 				}
 				.padding()
 
-				Text("Remote Setings").modifier(settingsHeader(label: "Not available on all remote clients"))
+				Text("Remote Settings").modifier(settingsHeader(label: "Not available on all remote clients"))
 				VStack(alignment: .leading) {
 					ShutdownButton()
 					RestartButton()
