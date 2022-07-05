@@ -65,7 +65,7 @@ let package = Package(
     targets: [
         .target(
             name: "whisper",
-            dependencies: ["Seer", "Minion", "NativeTasks", "C_Libav"],
+            dependencies: ["Seer", "Minion", "NativeTasks", "C_ncurses", "C_AAlib", "C_Libav"],
             path: "Sources/whisper/whisper",
             cxxSettings: commonCxxSettings,
             swiftSettings: commonSwiftSettings,
@@ -81,7 +81,7 @@ let package = Package(
         ),
         .target(
             name: "Seer",
-            dependencies: ["Minion", "NativeTasks", "C_ncurses", "C_AAlib", "C_libpng"],
+            dependencies: ["Minion", "NativeTasks", "C_libpng"],
             path: "Sources/Seer/Seer",
             cxxSettings: commonCxxSettings,
             swiftSettings: commonSwiftSettings,
@@ -103,10 +103,10 @@ let package = Package(
             linkerSettings: commonLinkerSettings
         ),
 
-        .systemLibrary(name: "C_AAlib", path: "Sources/Seer/SystemModules/C_AAlib.build"),
-        .systemLibrary(name: "C_ncurses", path: "Sources/Seer/SystemModules/C_ncurses.build"),
-        .systemLibrary(name: "C_Libav", path: "Sources/whisper/SystemModules/C_Libav.build"),
         .systemLibrary(name: "C_libpng", path: "Sources/Seer/SystemModules/C_libpng.build"),
+        .systemLibrary(name: "C_AAlib", path: "Sources/whisper/SystemModules/C_AAlib.build"),
+        .systemLibrary(name: "C_ncurses", path: "Sources/whisper/SystemModules/C_ncurses.build"),
+        .systemLibrary(name: "C_Libav", path: "Sources/whisper/SystemModules/C_Libav.build"),
     ],
 
     cxxLanguageStandard: .cxx11

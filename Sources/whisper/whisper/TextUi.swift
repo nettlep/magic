@@ -17,6 +17,7 @@ import C_ncurses
 import C_AAlib
 import NativeTasks
 import Minion
+import Seer
 
 /// Construct a TextUi object
 ///
