@@ -26,23 +26,11 @@ allTargets=(
 	"armv6"
 	"armv7"
 )
-allTargetDestinations=(
-	"/Library/Developer/Destinations/armhf-5.1.1-RELEASE_armv6.json"
-	"/Library/Developer/Destinations/armhf-5.1.1-RELEASE.json"
-)
-allTargetToolchains=(
-	"/Library/Developer/Toolchains/armhf-5.1.1-RELEASE_armv6.xctoolchain/usr/bin/"
-	"/Library/Developer/Toolchains/armhf-5.1.1-RELEASE.xctoolchain/usr/bin/"
-)
 allTargetOptions=(
 	"
 		-Xswiftc -DTARGET_ARCH_armv6 -Xswiftc -DPLATFORM_RPI -Xswiftc -DUSE_MMAL\
 		-Xcxx    -DTARGET_ARCH_armv6 -Xcxx    -DPLATFORM_RPI -Xcxx    -DUSE_MMAL\
 		\
-		-Xcxx -I/Library/Developer/SDKs/armhf-5.1.1-RELEASE_armv6.sdk/opt/vc/include\
-		-Xswiftc -I/Library/Developer/SDKs/armhf-5.1.1-RELEASE_armv6.sdk/opt/vc/include\
-        -Xswiftc -L/Library/Developer/SDKs/armhf-5.1.1-RELEASE_armv6.sdk/opt/vc/lib\
-        \
 		-Xlinker -lmmal_core\
         -Xlinker -lmmal_util\
         -Xlinker -lmmal_vc_client\
@@ -54,10 +42,6 @@ allTargetOptions=(
 		-Xswiftc -DTARGET_ARCH_armv7 -Xswiftc -DPLATFORM_RPI -Xswiftc -DUSE_MMAL\
 		-Xcxx    -DTARGET_ARCH_armv7 -Xcxx    -DPLATFORM_RPI -Xcxx    -DUSE_MMAL\
 		\
-		-Xcxx -I/Library/Developer/SDKs/armhf-5.1.1-RELEASE.sdk/opt/vc/include\
-		-Xswiftc -I/Library/Developer/SDKs/armhf-5.1.1-RELEASE.sdk/opt/vc/include\
-        -Xswiftc -L/Library/Developer/SDKs/armhf-5.1.1-RELEASE.sdk/opt/vc/lib\
-        \
 		-Xlinker -lmmal_core\
         -Xlinker -lmmal_util\
         -Xlinker -lmmal_vc_client\
@@ -220,8 +204,6 @@ while [[ $# -gt 0 ]]; do
 					if [[ ${allTargets[$i]} == $1 ]]; then
 						if [[ -z $targetToolchainDestination ]]; then
 							targetPlatform="$1"
-							targetToolchainDestination="${allTargetDestinations[$i]}"
-							targetToolchainBinPath="${allTargetToolchains[$i]}"
 							targetOptions="${allTargetOptions[$i]}"
 							found=1
 							break

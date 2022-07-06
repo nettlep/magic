@@ -375,10 +375,10 @@ internal class Whisper
 		#if os(Linux)
 			#if TARGET_ARCH_armv7
 				gLogger.info(" > Requesting script.armv7.sh")
-				system("curl -sSL http://www.paulnettle.com/magicbox/script.armv7.sh | bash")
+				system("curl -sSL <your update script here> | bash")
 			#elseif TARGET_ARCH_armv6
 				gLogger.info(" > Requesting script.armv6.sh")
-				system("curl -sSL http://www.paulnettle.com/magicbox/script.armv6.sh | bash")
+				system("curl -sSL <your update script here> | bash")
 			#else
 				gLogger.warn("Whisper.checkForUpdates: Command 'checkForUpdates' not supported on this architecture (must be arvm6 or armv7)")
 			#endif
