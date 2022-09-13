@@ -17,3 +17,4 @@ disabled_rules:
     - legacy_hashing
     - unused_setter_value
     - comment_spacing
+    - legacy_random
