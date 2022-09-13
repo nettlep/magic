@@ -315,7 +315,7 @@ class AbraClientPeer: Peer
 
 		super.onClientConnect(from: socketAddress)
 
-		gLogger.info("AbraClientPeer.onClientConnect: Cnnected to \(socketAddress.description)")
+		gLogger.info("AbraClientPeer.onClientConnect: Connected to \(socketAddress.description)")
 
 		// Stop advertising; we no longer need to find a server, we have one
 		if !stopAdvertiser()
