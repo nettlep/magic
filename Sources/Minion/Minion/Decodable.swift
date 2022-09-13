@@ -104,8 +104,13 @@ extension FixedWidthInteger where Self: Decodable
 
 		return data.withUnsafeBytes
 		{ src in
-			let ptr = src.baseAddress!.assumingMemoryBound(to: UInt8.self)
-			return (ptr + offset).withMemoryRebound(to: Self.self, capacity: 1)
+            let ptr = src.baseAddress!.assumingMemoryBound(to: UInt8.self).advanced(by: offset)
+
+            let buffer = UnsafeMutablePointer<Self>.allocate(capacity: 1)
+            defer { buffer.deallocate() }
+            memcpy(buffer, ptr, MemoryLayout<Self>.size)
+
+			return buffer.withMemoryRebound(to: Self.self, capacity: 1)
 			{
 				Self(bigEndian: $0.pointee)
 			}
@@ -140,8 +145,13 @@ extension Float: Decodable
 		return data.withUnsafeBytes
 		{ src in
 			// We use a 32-bit integer to perform endian conversion
-			let ptr = src.baseAddress!.assumingMemoryBound(to: UInt8.self)
-			var val32 = (ptr + offset).withMemoryRebound(to: UInt32.self, capacity: 1) { UInt32(bigEndian: $0.pointee) }
+			let ptr = src.baseAddress!.assumingMemoryBound(to: UInt8.self).advanced(by: offset)
+
+            let buffer = UnsafeMutablePointer<Self>.allocate(capacity: 1)
+            defer { buffer.deallocate() }
+            memcpy(buffer, ptr, MemoryLayout<Self>.size)
+
+            var val32 = buffer.withMemoryRebound(to: UInt32.self, capacity: 1) { UInt32(bigEndian: $0.pointee) }
 			return withUnsafePointer(to: &val32)
 			{
 				$0.withMemoryRebound(to: Float.self, capacity: 1) { $0.pointee }
@@ -164,8 +174,13 @@ extension Double: Decodable
 		return data.withUnsafeBytes
 		{ src in
 			// We use a 64-bit integer to perform endian conversion
-			let ptr = src.baseAddress!.assumingMemoryBound(to: UInt8.self)
-			var val64 = (ptr + offset).withMemoryRebound(to: UInt64.self, capacity: 1) { UInt64(bigEndian: $0.pointee) }
+			let ptr = src.baseAddress!.assumingMemoryBound(to: UInt8.self).advanced(by: offset)
+
+            let buffer = UnsafeMutablePointer<Self>.allocate(capacity: 1)
+            defer { buffer.deallocate() }
+            memcpy(buffer, ptr, MemoryLayout<Self>.size)
+
+            var val64 = buffer.withMemoryRebound(to: UInt64.self, capacity: 1) { UInt64(bigEndian: $0.pointee) }
 			return withUnsafePointer(to: &val64)
 			{
 				$0.withMemoryRebound(to: Double.self, capacity: 1) { $0.pointee }
