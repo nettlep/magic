@@ -1440,9 +1440,27 @@ Two inks were used during testing:
 * NIR 850nm visible absorbing dye
   - Manufactured by Qingdao Topwell Chemical Materials Co., Ltd.
   - Purchased through [Alibaba.com](https://topwellchem.en.alibaba.com/product/62078268165-805014998/NIR_850nm_visible_absorbing_dyes_for_security_application.html?spm=a2700.icbuShop.41413.9.461b6f25V3Lgcc).
+  - Cost: 20g for $160 (in March, 2019). 20g is way more than I ever needed. 1g would have sufficed.
 * DT3-88A
   - Manufactured by [Epolin](https://www.epolin.com)
   - Purchased directly from the manufacturer
+  - Cost: $65 for 1g
+
+Both of these inks worked well with different properties. The Epolin ink was preferred as it tended to be less visible, but had a slightly shorter shelf-life once marked on the deck.
+
+These inks absorb light in a narrow band of the IR portion of the spectrum centered on about 850nm. If you were to use a wide spectrum IR LED without any IR filtering, the marks would be very difficult to see since the ink would only absorb a small portion of the light visible to the IR camera. To resolve this, we combine the use of an IR light source and filter that are also tuned to this same narrow band of the spectrum. In this way, the only light reaching the camera is from that narrow band.
+
+The LED and filter used during testing:
+
+* LED
+  - Lite-On LTE-R38386A-ZF-U [[DigiKey](https://www.digikey.com/en/products/detail/liteon/LTE-R38386A-ZF-U/6819917)] [[Datasheet](https://us.liteon.com/upload/media/news/20161228%20LTE-R38386A-ZF-U%20DATA%20SHEET.pdf)]
+  - Cost: $1.79 each
+  - Notes: While this LED is a surface mount component, it is very bright with a 150-degree angle. Using standard through-hole components tends to produce narrow beams of light that may not illuminate the entire deck and certainly won't illuminate it evenly.
+* Two filters were used during testing
+  - Optolong LP800nm (long pass filter) and BP850nm (band pass filter.)
+  - Both purchased from Optolong [[Link](https://www.optolong.com/)] through Alibaba.
+  - Cost: These were custom made. Some were 10mm diameter and some were 5mm diameter. Expect to spend a few hundred USD on filters.
+  - Notes: The band pass filter is preferred as it filters out all light except the specified portion of the spectrum. The long-pass filter on the other hand only filters out light frequencies below the specified limit. Handle with care. These are glass filters and break easily.
 
 (###) Advantages
 
